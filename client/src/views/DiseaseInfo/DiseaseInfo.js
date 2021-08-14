@@ -1,20 +1,24 @@
 import React, { useState } from 'react'
 import Card from "../../components/Card/Card";
 import CardBody from "../../components/Card/CardBody";
+import CardFooter from "../../components/Card/CardFooter";
 import GridContainer from "../../components/Grid/GridContainer";
+import Muted from "../../components/Typography/Muted";
 import GridItem from "../../components/Grid/GridItem";
 import { diseases } from './diseases';
 import Pagination from '@material-ui/lab/Pagination';
 import { makeStyles } from '@material-ui/core/styles';
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) => ({
     search: {
         position: 'relative',
         borderRadius: theme.shape.borderRadius,
-        backgroundColor: '#D0E9F1',
+        backgroundColor: '#3F51B5',
         width: '100%',
+        color: '#FFFFFF',
     },
     searchIcon: {
         padding: theme.spacing(0, 2),
@@ -72,7 +76,7 @@ const DiseaseInfo = () => {
                     }}
                     inputProps={{ 'aria-label': 'search' }}
                     value={searchTerm}
-                    onChange={(e) => {setSearchTerm(e.target.value); setCurrentPage(1)}}
+                    onChange={(e) => { setSearchTerm(e.target.value); setCurrentPage(1) }}
                 />
             </div>
             <GridContainer>
@@ -81,13 +85,21 @@ const DiseaseInfo = () => {
                         return (
                             <GridItem xs={12} sm={6} md={4} key={key}>
                                 <Card style={{ textAlign: "center" }}>
-                                    <div style={{ background: 'lightblue', padding: '0.5rem 0' }}>
+                                    <div style={{ background: '#008DC9', color: '#FFFFFF', padding: '0.5rem 0' }}>
                                         <p style={{ fontWeight: 'bold' }}>{key[1]}</p>
                                     </div>
                                     <CardBody>
+                                        <Muted>Description</Muted>
                                         {key[7]}
-                                        <br />
+                                        <br/>
+                                        <br/>
+                                        <Divider />
+                                        <br/>
+                                        <Muted>Synonyms</Muted>
+                                        {key[5]}
                                     </CardBody>
+                                    <CardFooter>
+                                    </CardFooter>
                                 </Card>
                             </GridItem>
                         )

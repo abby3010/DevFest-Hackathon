@@ -62,6 +62,7 @@ const GeoMap = ({ disease }) => {
                         ]}
                         options={{
                             colorAxis: { colors: ["#FEF95D", "#F76300", "#B00000"] },
+                            // colorAxis: { colors: ["#3a1c71", "#d76d77", "#ffaf7b"] },
                             backgroundColor: '#A5DEEF',
                             datalessRegionColor: '#ffffff',
                             defaultColor: '#f5f5f5',

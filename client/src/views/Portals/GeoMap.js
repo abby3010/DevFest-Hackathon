@@ -54,7 +54,7 @@ const GeoMap = ({ disease }) => {
                             ...cases_gchart_data
                         ]}
                         options={{
-                            colorAxis: { colors: [ "#3a1c71" , "#d76d77", "#ffaf7b"] },
+                            colorAxis: { colors: ["#3a1c71", "#d76d77", "#ffaf7b"] },
                             backgroundColor: '#A5DEEF',
                             datalessRegionColor: '#ffffff',
                             defaultColor: '#f5f5f5',

@@ -200,6 +200,10 @@
     .MuiPagination-ul {
         justify-content: center;
     }
+
+    .home-portal{
+        padding: 4rem 2rem;
+    }
     
     @media screen and (max-width: 1000px) {
         .wrapper{
@@ -254,5 +258,9 @@
     @media screen and (max-width: 600px){
         blockquote{
             width: 350px;
+        }
+
+        .home-portal{
+            padding: 1rem;
         }
     }

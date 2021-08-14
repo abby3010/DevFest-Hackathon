@@ -2,6 +2,7 @@ import React from 'react';
 import GridContainer from '../../components/Grid/GridContainer';
 import GridItem from '../../components/Grid/GridItem';
 import Chart from "react-google-charts";
+import { Typography } from "@material-ui/core";
 
 const GeoMap = ({ disease }) => {
 
@@ -30,7 +31,9 @@ const GeoMap = ({ disease }) => {
             <GridContainer>
                 {/* Line Graph for Deaths and Cases */}
                 <GridItem xs={12} sm={12}>
-                    <h4>{disease[0] + " Cases vs. Deaths"}</h4>
+                    <i><Typography variant="h5" gutterBottom>
+                        {disease[0] + " Cases vs. Deaths"}
+                    </Typography></i>
                     <Chart
                         chartType="LineChart"
                         loader={<div>Loading Chart</div>}
@@ -42,10 +45,14 @@ const GeoMap = ({ disease }) => {
                     />
                 </GridItem>
             </GridContainer>
+            <br />
+            <br />
             <GridContainer>
                 {/* Geo Graph for Cases */}
                 <GridItem xs={12} sm={12}>
-                    <h4>{disease[0] + " Cases Geo Graph"}</h4>
+                    <i><Typography variant="h5" gutterBottom>
+                        {disease[0] + " Cases Geo Graph"}
+                    </Typography></i>
                     <Chart
                         chartType="GeoChart"
                         loader={<div>Loading Chart</div>}
@@ -54,7 +61,7 @@ const GeoMap = ({ disease }) => {
                             ...cases_gchart_data
                         ]}
                         options={{
-                            colorAxis: { colors: [ "#3a1c71" , "#d76d77", "#ffaf7b"] },
+                            colorAxis: { colors: ["#FEF95D", "#F76300", "#B00000"] },
                             backgroundColor: '#A5DEEF',
                             datalessRegionColor: '#ffffff',
                             defaultColor: '#f5f5f5',

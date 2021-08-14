@@ -7,13 +7,13 @@ import HealingIcon from '@material-ui/icons/Healing';
 // core components/views for App layout
 import ProfilePage from "../views/ProfilePage/Profile.js";
 import DiseaseInfo from '../views/DiseaseInfo/DiseaseInfo.js';
-import UserProjects from "../views/UserProjects/UserProjects.js"
 import Logout from '../views/Logout/logout.js';
 import CholeraPortal from '../views/Portals/Cholera.js';
 import EbolaPortal from '../views/Portals/Ebola.js';
 import MalariaPortal from '../views/Portals/Malaria.js';
 import H1N1Portal from '../views/Portals/H1N1.js';
 import Auth from '../views/Auth/AuthPage.js';
+import HomePortal from '../views/Portals/HomePortal.js';
 
 export const appRoutes = () => {
 
@@ -38,7 +38,7 @@ export const appRoutes = () => {
       path: "/portals",
       name: "Portals",
       icon: WidgetsIcon,
-      component: UserProjects,
+      component: HomePortal,
       layout: "/app",
       showInDrawer: true,
       listItems: portalsList,

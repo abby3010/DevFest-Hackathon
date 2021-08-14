@@ -79,7 +79,7 @@ const DiseaseInfo = () => {
                 {
                     currentData.map((key, val) => {
                         return (
-                            <GridItem xs={12} sm={6} md={4}>
+                            <GridItem xs={12} sm={6} md={4} key={key}>
                                 <Card style={{ textAlign: "center" }}>
                                     <div style={{ background: 'lightblue', padding: '0.5rem 0' }}>
                                         <p style={{ fontWeight: 'bold' }}>{key[1]}</p>

@@ -1,0 +1,13 @@
+0. Change the logo icon of Workosmo in sidebar
+
+1. Change callbackURL after hosting in Google API in credentials tab.
+2. Change the logo in the Navbar and change the logo image file in \client\public\logo192.png and \client\src\images\logo.jpg
+3. Change the baseURL to the server url in \client\src\api\index.js
+4. Change the IP address in MongoDB Cluster, Network access section
+
+6. Replace all the "Private key not found" error messages
+
+7. Make a 404 page in React application
+Login System:
+1. Email Validation (Check email format on the frontend)
+2. Email Verification (Send a confirmation email or Verification email)

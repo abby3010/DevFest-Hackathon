@@ -7,6 +7,7 @@ import './Main.css';
 import UserApp from './layouts/AppRoutePage';
 import SetProfile from './views/SetProfile/SetProfile';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import Portals from './views/Portals/Portals';
 
 
 const font = "'Questrial', sans-serif";
@@ -27,6 +28,7 @@ function App() {
             <Route path="/auth" component={Auth} />
             <Route path="/app" component={UserApp} />
             <Route path="/setProfile" exact component={SetProfile} />
+            <Route path="/portals" exact component={Portals} />
           </Switch>
         </Suspense>
       </MuiThemeProvider>

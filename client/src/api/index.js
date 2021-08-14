@@ -15,6 +15,8 @@ export const login = (formData) => API.post('/auth/login', formData);
 export const signUp = (formData) => API.post('/auth/signUp', formData);
 export const googleAuth = (formData) => API.post('/auth/googleAuth', formData);
 
+export const contactForm = (formData) => API.post('/contact', formData);
+
 // Get the list of all the hashtags
 export const getHashTags = () => API.post('/user/gethashtags');
 

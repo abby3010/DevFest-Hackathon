@@ -11,6 +11,7 @@ import checkLoginStatus from './middlewares/checkLoginStatus.js';
 import userRouter from "./routes/userRoutes.js";
 import authRouter from "./routes/authRoutes.js";
 import updateRouter from "./routes/updateRoutes.js";
+import { contactForm } from './routes/contactForm.js';
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use(express.json());
 
 
 app.use("/auth", authRouter);
+app.use("/contact", contactForm);
 app.use("/user", checkLoginStatus, userRouter);
 app.use("/update", checkLoginStatus, updateRouter);
 

@@ -8,14 +8,14 @@ const GeoMap = ({ disease }) => {
     var cases_data = [];
     var deaths_data = [];
     var countries = [];
+    
     useEffect(() => {
-
-
         for (let i = 0; i < disease[1].length; i++) {
             cases_data.push(disease[1][i]["Cases"]);
             deaths_data.push(disease[1][i]["Deaths"]);
             countries.push(disease[1][i]["Country"]);
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const cases_dataBar = {

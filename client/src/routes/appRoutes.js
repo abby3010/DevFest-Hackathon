@@ -3,8 +3,10 @@ import WidgetsIcon from '@material-ui/icons/Widgets';
 import Person from "@material-ui/icons/Person";
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
+import HealingIcon from '@material-ui/icons/Healing';
 // core components/views for App layout
 import ProfilePage from "../views/ProfilePage/Profile.js";
+import DiseaseInfo from '../views/DiseaseInfo/DiseaseInfo.js';
 import UserProjects from "../views/UserProjects/UserProjects.js"
 import Logout from '../views/Logout/logout.js';
 import CholeraPortal from '../views/Portals/Cholera.js';
@@ -41,17 +43,16 @@ export const appRoutes = () => {
       showInDrawer: true,
       listItems: projectList,
     },
-
-    // Individual Epidemic Portals
     {
-      path: "/portal/cholera",
-      name: "Cholera",
-      icon: Person,
-      component: CholeraPortal,
+      path: "/diseases",
+      name: "Diseases",
+      icon: HealingIcon,
+      component: DiseaseInfo,
       layout: "/app",
-      showInDrawer: false,
+      showInDrawer: true,
     },
 
+    // Individual Epidemic Portals
     {
       path: "/portal/ebola",
       name: "Ebola",
@@ -69,6 +70,14 @@ export const appRoutes = () => {
       showInDrawer: false,
     },
     {
+      path: "/portal/cholera",
+      name: "Cholera",
+      icon: Person,
+      component: CholeraPortal,
+      layout: "/app",
+      showInDrawer: false,
+    },
+    {
       path: "/portal/h1n1",
       name: "H1N1",
       icon: Person,
@@ -76,7 +85,6 @@ export const appRoutes = () => {
       layout: "/app",
       showInDrawer: false,
     },
-
     // User Profile routes
     {
       path: "/user",
@@ -95,7 +103,7 @@ export const appRoutes = () => {
       layout: "/app",
       showInDrawer: true,
     } : {
-      path: "/auth",
+      path: "auth",
       name: "Login",
       icon: VpnKeyIcon,
       component: Auth,

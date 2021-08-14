@@ -196,6 +196,10 @@
         width: 50vw;
         margin: auto;
     }
+
+    .MuiPagination-ul {
+        justify-content: center;
+    }
     
     @media screen and (max-width: 1000px) {
         .wrapper{

@@ -1,11 +1,13 @@
 // @material-ui/icons
 import WidgetsIcon from '@material-ui/icons/Widgets';
 import Person from "@material-ui/icons/Person";
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 // core components/views for App layout
 import ProfilePage from "../views/ProfilePage/Profile.js";
 import UserProjects from "../views/UserProjects/UserProjects.js"
 import ProjectScreen from '../views/ProjectDetails/ProjectScreen.js';
+import Logout from '../views/Logout/logout.js';
 
 export const appRoutes = (projects) => {
 
@@ -41,6 +43,15 @@ export const appRoutes = (projects) => {
       name: "Profile",
       icon: Person,
       component: ProfilePage,
+      layout: "/app",
+      showInDrawer: true,
+    },
+
+    {
+      path: "/logout",
+      name: "Logout",
+      icon: ExitToAppIcon,
+      component: Logout,
       layout: "/app",
       showInDrawer: true,
     },

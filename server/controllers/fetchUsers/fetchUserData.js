@@ -27,12 +27,9 @@ export const fetchUserData = async (req, res) => {
                 lastName: user.lastName,
                 about: user.about,
                 imageUrl: user.imageUrl,
-                projects: projects.filter(project => !project.isUnlisted),
                 country: user.country,
                 region: user.region,
                 city: user.city,
-                skills: user.skills,
-                educations: user.educations,
             }
 
             return res.status(200).json({ user: response });
@@ -45,12 +42,9 @@ export const fetchUserData = async (req, res) => {
             about: user.about,
             email: user.email,
             imageUrl: user.imageUrl,
-            projects: projects,
             country: user.country,
             region: user.region,
             city: user.city,
-            skills: user.skills,
-            educations: user.educations,
         }
         return res.status(200).json({ user: response });
 

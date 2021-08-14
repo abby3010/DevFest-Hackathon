@@ -56,7 +56,7 @@ export default function NavbarLinks() {
 
   const handleCloseProfile = () => {
     setOpenProfile(null);
-    logout();
+
   };
 
 
@@ -242,7 +242,7 @@ export default function NavbarLinks() {
 
                     <Divider light />
                     <MenuItem
-                      onClick={handleCloseProfile}
+                      onClick={() => logout()}
                       className={classes.dropdownItem}
                     >
                       Logout

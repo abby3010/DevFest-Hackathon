@@ -33,9 +33,7 @@ export const fetchUserData = (data) => API.post('/user/fetchuserdata', data);
 // Update the user profile
 export const updateProfile = (data) => API.post('/update/updateprofile', data);
 export const updateProfileDetails = (data) => API.post('/update/profileDetails', data);
-export const updateProfileImage = (data) => API.post('/update/profileDetails', data);
-export const updateProfileSkills = (data) => API.post('/update/profileSkills', data);
-export const updateProfileEducations = (data) => API.post('/update/profileEducations', data);
+export const updateProfileImage = (data) => API.post('/update/profileImage', data);
 
 // Update user's Project
 export const updateProjectDetails = (data) => API.post('/update/projectDetails', data);

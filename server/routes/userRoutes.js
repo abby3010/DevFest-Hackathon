@@ -10,10 +10,10 @@ import { fetchUserData } from '../controllers/fetchUsers/fetchUserData.js';
 
 const router = express.Router();
 
-router.post("/gethashtags", getHashTags);
-router.post("/getuserprojects", getUserProjects);
+// router.post("/gethashtags", getHashTags);
+// router.post("/getuserprojects", getUserProjects);
 router.post("/createnewproject", singleFileUploadController, createNewProject);
-router.post("/fetchproject", fetchSingleProject);
+// router.post("/fetchproject", fetchSingleProject);
 router.post("/fetchuserdata", fetchUserData);
 
 export default router;

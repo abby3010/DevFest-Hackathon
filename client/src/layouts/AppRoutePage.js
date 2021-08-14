@@ -13,8 +13,6 @@ import styles from "../assets/jss/appstyles/layouts/userAppStyle.js";
 
 import logo from "../assets/img/logo.gif";
 
-// import * as api from '../api/index';
-
 const switchRoutes = (routes) => (
   <Switch>
     {routes.map((prop, key) => {

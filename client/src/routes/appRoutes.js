@@ -23,7 +23,7 @@ export const appRoutes = () => {
 
   }
 
-  var projectList = [
+  var portalsList = [
     { name: "Cholera", path: '/app/portal/cholera' },
     { name: "Malaria", path: '/app/portal/malaria' },
     { name: "H1N1", path: '/app/portal/h1n1' },
@@ -41,7 +41,7 @@ export const appRoutes = () => {
       component: UserProjects,
       layout: "/app",
       showInDrawer: true,
-      listItems: projectList,
+      listItems: portalsList,
     },
     {
       path: "/diseases",

@@ -1,8 +1,8 @@
-/*eslint-disable*/
 import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -11,10 +11,9 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Icon from "@material-ui/core/Icon";
-// core components
-import NavbarLinks from "../Navbars/NavbarLinks.js";
-import FixedPlugin from "../FixedPlugin/FixedPlugin.js";
 
+// core components
+import FixedPlugin from "../FixedPlugin/FixedPlugin.js";
 import styles from "../../assets/jss/appstyles/components/sidebarStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -138,7 +137,7 @@ export default function Sidebar(props) {
         >
           {brand}
           <div className={classes.sidebarWrapper}>
-            <NavbarLinks />
+            {/* <NavbarLinks /> */}
             {links}
           </div>
         </Drawer>

@@ -10,10 +10,11 @@ import Hidden from "@material-ui/core/Hidden";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
-import NavbarLinks from "./NavbarLinks.js";
-import Button from "../CustomButtons/Button.js";
+// import NavbarLinks from "./NavbarLinks.js";
+// import Button from "../CustomButtons/Button.js";
 
 import styles from "../../assets/jss/appstyles/components/headerStyle.js";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles(styles);
 
@@ -26,9 +27,6 @@ export default function Header(props) {
     props.routes.map(prop => {
       if (window.location.href.indexOf(prop.layout + prop.path) !== -1) {
         name = prop.name;
-      }
-      else {
-        name = "Project";
       }
       return null;
     });
@@ -46,13 +44,11 @@ export default function Header(props) {
       <Toolbar className={classes.container}>
         <div className={classes.flex}>
           {/* Here we create navbar brand, based on route name */}
-          <Button color="transparent" href="#" className={classes.title}>
+          <Typography className={classes.title}>
             {makeBrand()}
-          </Button>
+          </Typography>
         </div>
-        <Hidden smDown implementation="css">
-          <NavbarLinks />
-        </Hidden>
+        
         <Hidden mdUp implementation="css">
           <IconButton
             color="inherit"

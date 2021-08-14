@@ -24,12 +24,12 @@ const headerStyle = () => ({
     color: grayColor[7],
     padding: "8px 0",
     transition: "all 150ms ease 0s",
-    // minHeight: "50px",
     display: "block"
   },
   container: {
     ...container,
-    minHeight: "30px"
+    minHeight: "53px",
+    // padding: "10px 10px",
   },
   flex: {
     flex: 1

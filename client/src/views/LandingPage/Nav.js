@@ -4,7 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '../../components/CustomButtons/Button';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -26,27 +26,35 @@ const useStyles = makeStyles((theme) => ({
 
 const Nav = () => {
     const classes = useStyles();
+    const history = useHistory();
+
+    // Check if the user is logged In
+    var loggedIn = localStorage.getItem('profile');
 
     const handleLoginClick = () => {
-        
+        return history.push("/auth");
     }
 
+    const handlePortalClick = () => {
+        return history.push("/app/portals");
+    }
     return (
         <AppBar position="static">
             <Toolbar>
 
-                <Typography variant="h6" className={classes.title}>
-                    Vaptured tError
-                </Typography>
-
-                <Link to='/portals'>
-                    <Button color="transparent">
-                        Portals
+                <div className={classes.title} >
+                    <Button color="transparent" onClick={() => history.push("/")}>
+                        <h3> EPINFO</h3>
                     </Button>
-                </Link>
+                </div>
+
+                <Button color="transparent" onClick={handlePortalClick}>
+                    <h4> Portals</h4>
+                </Button>
 
                 <Button color="transparent" onClick={handleLoginClick}>
-                    Login
+                    {loggedIn === null ? <h4> Login</h4> : <h4> My Account</h4>}
+
                 </Button>
 
             </Toolbar>

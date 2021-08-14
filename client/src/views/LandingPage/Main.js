@@ -49,7 +49,7 @@ const Main = () => {
                     </ul>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                    <a className="submit-button" href="/">Explore Portals &gt;</a>
+                    <a className="submit-button" href="/app/portals">Explore Portals &gt;</a>
                 </div>
             </div>
         </>

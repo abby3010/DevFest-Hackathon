@@ -7,7 +7,7 @@ export const login = (formData, history, setNotif) => async (dispatch) => {
 
         dispatch({ type: AUTH, data });
 
-        history.push("/app");
+        history.push("/app/portals");
     } catch (error) {
         setNotif({ open: true, color: "danger", message: error.response.data.message });
         setTimeout(function () {

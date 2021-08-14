@@ -11,7 +11,7 @@ import useStyles from './styles';
 import { signUp, login, googleAuth } from '../../redux/auth/actions/auth';
 // @material-ui/icons
 import AddAlert from "@material-ui/icons/AddAlert";
-
+import Nav from "../LandingPage/Nav";
 import Snackbar from "../../components/Snackbar/Snackbar.js";
 
 const initialFormState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '', rememberMe: false };
@@ -76,7 +76,7 @@ function Auth() {
     // Check if the user is logged In
     var loggedIn = localStorage.getItem('profile');
     if (loggedIn !== null) {
-        return <Redirect key="auth" to="/app" />;
+        return <Redirect key="auth" to="/app/portals" />;
     }
 
     return (
@@ -90,8 +90,8 @@ function Auth() {
                 closeNotification={() => setNotif({ open: false, message: "" })}
                 close
             />
+            <Nav />
             <Container component="main" maxWidth="xs">
-
                 {/* An elevated card like paper from material ui design */}
                 <Paper className={classes.paper} elevation={3}>
 

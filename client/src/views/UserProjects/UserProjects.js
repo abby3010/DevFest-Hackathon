@@ -14,7 +14,7 @@ const UserProjects = () => {
     const [notif, setNotif] = useState({ open: false, message: "", color: "info" });
 
     const profile = JSON.parse(localStorage.getItem('profile'));
-    const user = profile.result.uid;
+    const user = null;
 
 
     const handleToggleState = () => {

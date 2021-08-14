@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -19,12 +19,12 @@ const switchRoutes = (routes) => (
   <Switch>
     {routes.map((prop, key) => {
 
-      var loggedIn = localStorage.getItem('profile');
+      // var loggedIn = localStorage.getItem('profile');
 
-      if (loggedIn === null) {
-        return <Redirect key={key} to="/auth" />;
-      }
-
+      // if (loggedIn === null) {
+      //   return <Redirect key={key} to="/auth" />;
+      // }
+      
       if (prop.layout === "/app") {
         return (
           <Route
@@ -36,7 +36,6 @@ const switchRoutes = (routes) => (
       }
       return null;
     })}
-    <Redirect from="/app" to="/app/projects" />
   </Switch>
 );
 
@@ -60,19 +59,8 @@ export default function UserApp({ ...rest }) {
     }
   };
 
-
-
   React.useEffect(() => {
-    async function fetchProjects() {
-      const profile = JSON.parse(localStorage.getItem('profile'));
-      if (profile) {
-        const user = profile.result.uid;
-        var projectResult = await api.getUserProjects({ "uid": user });
-        setRoutes(appRoutes(projectResult.data.projects));
-      }
-    }
-    fetchProjects();
-
+    setRoutes(appRoutes());
     window.addEventListener("resize", resizeFunction);
     // Specify how to clean up after this effect:
     return function cleanup() {
@@ -80,20 +68,12 @@ export default function UserApp({ ...rest }) {
     };
   }, []);
 
-  // Check if the user is logged In
-  var profile = JSON.parse(localStorage.getItem('profile'));
-  if (profile === null) {
-    return <Redirect key="auth" to="/auth" />;
-  }
-  else if (profile.result.termsAgreed == null) {
-    return <Redirect key="setProfile" to="/setProfile" />;
-  }
 
   return (
     <div className={classes.wrapper}>
       <Sidebar
         routes={routes}
-        logoText={"Workosmo"}
+        logoText={"EPInfo"}
         logo={logo}
         handleDrawerToggle={handleDrawerToggle}
         open={mobileOpen}

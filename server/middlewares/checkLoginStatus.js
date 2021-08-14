@@ -17,13 +17,13 @@ const checkLoginStatus = async (req, res, next) => {
                     return res.status(403).json({ message: "Not logged in!", error: error, success: false });
                 }
                 else {
-                    req.userId = token?.id;
+                    req.userId = token.id;
                 }
             });
 
         } else {
             decodedData = jwt.decode(token);
-            req.userId = decodedData?.sub;
+            req.userId = decodedData.sub;
         }
 
         next();

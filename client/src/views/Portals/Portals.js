@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { AppBar, CssBaseline, Divider, Drawer, Toolbar, Hidden, Typography, IconButton, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
@@ -54,7 +54,7 @@ const Portals = () => {
     };
 
     const datasets = [['Cholera', cholera], ['Ebola', ebola], ['H1N1', h1n1], ['Malaria', malaria]]
-    
+
     const [disease, setDisease] = useState(datasets[0]);
 
     const drawer = (

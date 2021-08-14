@@ -7,6 +7,10 @@
     font-family: 'Questrial', sans-serif;
 }
 
+a{
+    color: white ;
+}
+
 body {
     background-color: aliceblue;
 }

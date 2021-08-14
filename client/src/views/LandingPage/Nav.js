@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '../../components/CustomButtons/Button';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -26,7 +27,9 @@ const useStyles = makeStyles((theme) => ({
 const Nav = () => {
     const classes = useStyles();
 
-    
+    const handleLoginClick = () => {
+        
+    }
 
     return (
         <AppBar position="static">
@@ -36,9 +39,11 @@ const Nav = () => {
                     Vaptured tError
                 </Typography>
 
-                <Button color="transparent" onClick={handlePortalClick}>
-                    Portals
-                </Button>
+                <Link to='/portals'>
+                    <Button color="transparent">
+                        Portals
+                    </Button>
+                </Link>
 
                 <Button color="transparent" onClick={handleLoginClick}>
                     Login

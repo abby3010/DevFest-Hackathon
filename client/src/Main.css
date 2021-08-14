@@ -191,6 +191,11 @@
         text-align: center;
     }
     
+    .chart-bearer{
+        overflow-x: clip;
+        width: 50vw;
+        margin: auto;
+    }
     
     @media screen and (max-width: 1000px) {
         .wrapper{
@@ -235,6 +240,10 @@
             font-size: 38px;
             font-weight: bold;
           }
+          .chart-bearer{
+            overflow-x: clip;
+            width: 80vw;
+        }
     }
 
 

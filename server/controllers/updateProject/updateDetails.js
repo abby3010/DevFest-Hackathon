@@ -63,7 +63,7 @@ export const updateProjectDetails = async (req, res) => {
             }
         );
 
-        return res.status(200).json({ message: "Details updated successfully!", success: true , imageLinks: updatedProject?.imageLinks });
+        return res.status(200).json({ message: "Details updated successfully!", success: true , imageLinks: updatedProject.imageLinks });
 
     } catch (error) {
         console.log(error);

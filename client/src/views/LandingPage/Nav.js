@@ -1,10 +1,9 @@
 import React from 'react'
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import Button from '../../components/CustomButtons/Button';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -22,26 +21,31 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
+
+
 const Nav = () => {
     const classes = useStyles();
 
+    
+
     return (
         <AppBar position="static">
-                <Toolbar>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography variant="h6" className={classes.title}>
-                        Vaptured tError
-                    </Typography>
-                    <Typography variant="subtitle1" className={classes.links}>
-                        Portals
-                    </Typography>
-                    <Typography variant="subtitle1" className={classes.links}>
-                        Login
-                    </Typography>
-                </Toolbar>
-            </AppBar>
+            <Toolbar>
+
+                <Typography variant="h6" className={classes.title}>
+                    Vaptured tError
+                </Typography>
+
+                <Button color="transparent" onClick={handlePortalClick}>
+                    Portals
+                </Button>
+
+                <Button color="transparent" onClick={handleLoginClick}>
+                    Login
+                </Button>
+
+            </Toolbar>
+        </AppBar>
     )
 }
 

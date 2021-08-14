@@ -64,7 +64,7 @@ const SetProfile = () => {
                     var profile = JSON.parse(localStorage.getItem("profile"));
                     profile["result"].termsAgreed = true;
                     localStorage.setItem("profile", JSON.stringify(profile));
-                    
+
                     setRedirect(true);
                 }
                 else {
@@ -186,13 +186,14 @@ const SetProfile = () => {
                                     }}
                                     name="conditions"
                                 /> I AGREE
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Donec dignissim eu lectus sit amet fermentum. Vivamus eros orci,
-                                laoreet in pharetra sed, tristique in lacus. Suspendisse justo libero,
-                                euismod id neque a, commodo lobortis tortor. Vivamus ullamcorper, risus
-                                at ultricies consequat, quam justo pulvinar massa, et sollicitudin quam
-                                arcu eleifend metus. Quisque a dapibus ipsum, sit amet posuere felis. Curabitur blandit eu diam a porta.
-                                Nulla pharetra vitae tortor vitae pharetra. Nullam imperdiet semper nulla, sit amet pulvinar arcu rutrum non.
+                                <p>
+                                    If you provide any information that is untrue, inaccurate, not current, or incomplete,
+                                    we have the right to suspend or terminate your account and refuse any and all current
+                                    or future use of the Site (or any portion thereof). You may be required to register with
+                                    the Site. You agree to keep your password confidential and will be responsible for all
+                                    use of your account and password. We reserve the right to remove, reclaou select if we
+                                    determine, in our sole discretion, that such username is inappropriate, obscene, or
+                                    otherwise objectionable.
                                 </p>
                                 <Button type="submit" color="primary" disabled={!conditions}>Submit</Button>
                             </CardBody>

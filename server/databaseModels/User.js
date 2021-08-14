@@ -36,26 +36,6 @@ const userSchema = new Schema({
     imageUrl: {
         type: String,
     },
-    featured: {
-        type: Array,
-        default: [],
-    },
-    projects: {
-        type: Array,
-        default: [],
-    },
-    companies: {
-        type: Array,
-        default: [],
-    },
-    skills: {
-        type: Array,
-        default: [],
-    },
-    educations: {
-        type: Array,
-        default: [],
-    },
     country: {
         type: String,
     },
@@ -66,14 +46,12 @@ const userSchema = new Schema({
         type: String,
     },
     termsAgreed: {
-        type: String,
+        type: Boolean,
         default: false,
     },
     about: {
         type: String,
-        default: "Hi there 👋",
     }
-
 });
 
 export default model("User", userSchema, "users");

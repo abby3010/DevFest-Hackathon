@@ -13,7 +13,7 @@ const UserProjects = () => {
     const [isNewProject, setIsNewProject] = useState(false);
     const [notif, setNotif] = useState({ open: false, message: "", color: "info" });
 
-    const profile = JSON.parse(localStorage.getItem('profile'));
+    // const profile = JSON.parse(localStorage.getItem('profile'));
     const user = null;
 
 

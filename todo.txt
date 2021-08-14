@@ -11,3 +11,8 @@
 Login System:
 1. Email Validation (Check email format on the frontend)
 2. Email Verification (Send a confirmation email or Verification email)
+
+
+
+Corona API
+Share experience with others

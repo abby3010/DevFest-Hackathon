@@ -1,5 +1,4 @@
 import User from "../../databaseModels/User.js";
-import Project from "../../databaseModels/Project.js";
 
 export const fetchUserData = async (req, res) => {
     try {
@@ -11,13 +10,6 @@ export const fetchUserData = async (req, res) => {
 
         // Fetch the user's document from database
         const user = await User.findById(req.body.uid);
-
-        // Find projects of the user
-        const projects = await Project.find({
-            _id: {
-                $in: user.projects
-            }
-        });
 
         if (req.body.privateKey != user.privateKey) {
             // SEND RESTRICTED DATA

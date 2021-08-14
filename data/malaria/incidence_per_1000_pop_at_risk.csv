@@ -1,0 +1,2034 @@
+Country,Year,No. of cases,WHO Region
+Afghanistan, 2018,29.01,Eastern Mediterranean
+Algeria, 2018,0.0,Africa
+Angola, 2018,228.91,Africa
+Argentina, 2018,0.0,Americas
+Armenia, 2018,0.0,Europe
+Azerbaijan, 2018,0.0,Europe
+Bangladesh, 2018,0.69,South-East Asia
+Belize, 2018,0.01,Americas
+Benin, 2018,386.18,Africa
+Bhutan, 2018,0.01,South-East Asia
+Bolivia (Plurinational State of), 2018,1.41,Americas
+Botswana, 2018,0.59,Africa
+Brazil, 2018,5.12,Americas
+Burkina Faso, 2018,398.73,Africa
+Burundi, 2018,250.27,Africa
+Cabo Verde, 2018,0.01,Africa
+Cambodia, 2018,23.69,Western Pacific
+Cameroon, 2018,246.99,Africa
+Central African Republic, 2018,347.33,Africa
+Chad, 2018,164.83,Africa
+China, 2018,0.0,Western Pacific
+Colombia, 2018,8.5,Americas
+Comoros, 2018,18.76,Africa
+Congo, 2018,235.07,Americas
+Costa Rica, 2018,0.04,Americas
+Côte d'Ivoire, 2018,330.6,Africa
+Democratic People's Republic of Korea, 2018,0.36,Western Pacific
+Democratic Republic of the Congo, 2018,319.84,Africa
+Djibouti, 2018,35.21,Eastern Mediterranean
+Dominican Republic, 2018,0.12,Americas
+Ecuador, 2018,3.32,Americas
+Egypt, 2018,0.0,Eastern Mediterranean
+El Salvador, 2018,0.0,Americas
+Equatorial Guinea, 2018,269.01,Africa
+Eritrea, 2018,28.88,Africa
+Eswatini, 2018,0.84,Africa
+Ethiopia, 2018,31.81,Africa
+Gabon, 2018,248.23,Africa
+Gambia, 2018,66.0,Africa
+Georgia, 2018,0.0,Europe
+Ghana, 2018,224.34,Africa
+Guatemala, 2018,0.27,Americas
+Guinea, 2018,283.89,Africa
+Guinea-Bissau, 2018,123.31,Africa
+Guyana, 2018,44.37,Americas
+Haiti, 2018,1.61,Americas
+Honduras, 2018,0.13,Americas
+India, 2018,5.33,South-East Asia
+Indonesia, 2018,3.87,South-East Asia
+Iran (Islamic Republic of), 2018,0.0,Eastern Mediterranean
+Iraq, 2018,0.0,Eastern Mediterranean
+Kazakhstan, 2018,0.0,Europe
+Kenya, 2018,70.1,Africa
+Kyrgyzstan, 2018,0.0,Europe
+Lao People's Democratic Republic, 2018,4.2,Western Pacific
+Liberia, 2018,361.5,Africa
+Madagascar, 2018,82.4,Africa
+Malawi, 2018,213.64,Africa
+Malaysia, 2018,0.0,Western Pacific
+Mali, 2018,386.78,Africa
+Mauritania, 2018,39.41,Africa
+Mexico, 2018,0.3,Americas
+Morocco, 2018,0.0,Eastern Mediterranean
+Mozambique, 2018,305.36,Africa
+Myanmar, 2018,3.4,South-East Asia
+Namibia, 2018,26.71,Africa
+Nepal, 2018,0.44,South-East Asia
+Nicaragua, 2018,7.14,Americas
+Niger, 2018,356.57,Africa
+Nigeria, 2018,291.94,Africa
+Oman, 2018,0.0,Eastern Mediterranean
+Pakistan, 2018,3.38,Eastern Mediterranean
+Panama, 2018,0.19,Americas
+Papua New Guinea, 2018,184.47,Western Pacific
+Paraguay, 2018,0.0,Americas
+Peru, 2018,4.65,Americas
+Philippines, 2018,0.18,Western Pacific
+Republic of Korea, 2018,0.14,Western Pacific
+Rwanda, 2018,486.49,Africa
+Sao Tome and Principe, 2018,13.92,Africa
+Saudi Arabia, 2018,0.02,Eastern Mediterranean
+Senegal, 2018,55.75,Africa
+Sierra Leone, 2018,320.4,Africa
+Solomon Islands, 2018,133.59,Western Pacific
+Somalia, 2018,34.27,Eastern Mediterranean
+South Africa, 2018,1.65,Africa
+South Sudan, 2018,235.92,Africa
+Sri Lanka, 2018,0.0,South-East Asia
+Sudan, 2018,46.75,Eastern Mediterranean
+Suriname, 2018,0.34,Americas
+Syrian Arab Republic, 2018,0.0,Eastern Mediterranean
+Tajikistan, 2018,0.0,Europe
+Thailand, 2018,0.36,South-East Asia
+Timor-Leste, 2018,0.0,South-East Asia
+Togo, 2018,267.31,Africa
+Turkey, 2018,0.0,Europe
+Turkmenistan, 2018,0.0,Europe
+Uganda, 2018,289.18,Africa
+United Arab Emirates, 2018,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2018,124.27,Africa
+Uzbekistan, 2018,0.0,Europe
+Vanuatu, 2018,3.99,Western Pacific
+Venezuela (Bolivarian Republic of), 2018,32.68,Americas
+Viet Nam, 2018,0.08,Western Pacific
+Yemen, 2018,45.84,Eastern Mediterranean
+Zambia, 2018,156.7,Africa
+Zimbabwe, 2018,51.0,Africa
+Afghanistan, 2017,27.07,Eastern Mediterranean
+Algeria, 2017,0.0,Africa
+Angola, 2017,228.91,Africa
+Argentina, 2017,0.0,Americas
+Armenia, 2017,0.0,Europe
+Azerbaijan, 2017,0.0,Europe
+Bangladesh, 2017,1.95,South-East Asia
+Belize, 2017,0.03,Americas
+Benin, 2017,399.56,Africa
+Bhutan, 2017,0.02,South-East Asia
+Bolivia (Plurinational State of), 2017,1.22,Americas
+Botswana, 2017,2.05,Africa
+Brazil, 2017,5.23,Americas
+Burkina Faso, 2017,399.94,Africa
+Burundi, 2017,250.27,Africa
+Cabo Verde, 2017,3.03,Africa
+Cambodia, 2017,17.9,Western Pacific
+Cameroon, 2017,262.23,Africa
+Central African Republic, 2017,347.33,Africa
+Chad, 2017,172.3,Africa
+China, 2017,0.0,Western Pacific
+Colombia, 2017,7.48,Americas
+Comoros, 2017,3.97,Africa
+Congo, 2017,240.64,Americas
+Costa Rica, 2017,0.01,Americas
+Côte d'Ivoire, 2017,362.36,Africa
+Democratic People's Republic of Korea, 2017,0.46,Western Pacific
+Democratic Republic of the Congo, 2017,329.13,Africa
+Djibouti, 2017,20.72,Eastern Mediterranean
+Dominican Republic, 2017,0.06,Americas
+Ecuador, 2017,2.61,Americas
+Egypt, 2017,0.0,Eastern Mediterranean
+El Salvador, 2017,0.0,Americas
+Equatorial Guinea, 2017,285.72,Africa
+Eritrea, 2017,33.97,Africa
+Eswatini, 2017,2.3,Africa
+Ethiopia, 2017,36.74,Africa
+Gabon, 2017,254.24,Africa
+Gambia, 2017,53.02,Africa
+Georgia, 2017,0.0,Europe
+Ghana, 2017,212.56,Africa
+Guatemala, 2017,0.34,Americas
+Guinea, 2017,311.53,Africa
+Guinea-Bissau, 2017,78.33,Africa
+Guyana, 2017,32.55,Americas
+Haiti, 2017,3.55,Americas
+Honduras, 2017,0.22,Americas
+India, 2017,7.47,South-East Asia
+Indonesia, 2017,6.77,South-East Asia
+Iran (Islamic Republic of), 2017,0.07,Eastern Mediterranean
+Iraq, 2017,0.0,Eastern Mediterranean
+Kazakhstan, 2017,0.0,Europe
+Kenya, 2017,70.1,Africa
+Kyrgyzstan, 2017,0.0,Europe
+Lao People's Democratic Republic, 2017,5.63,Western Pacific
+Liberia, 2017,401.11,Africa
+Madagascar, 2017,75.67,Africa
+Malawi, 2017,216.26,Africa
+Malaysia, 2017,0.07,Western Pacific
+Mali, 2017,386.78,Africa
+Mauritania, 2017,55.49,Africa
+Mexico, 2017,0.28,Americas
+Morocco, 2017,0.0,Eastern Mediterranean
+Mozambique, 2017,326.4,Africa
+Myanmar, 2017,3.8,South-East Asia
+Namibia, 2017,46.75,Africa
+Nepal, 2017,0.39,South-East Asia
+Nicaragua, 2017,4.98,Americas
+Niger, 2017,356.57,Africa
+Nigeria, 2017,283.06,Africa
+Oman, 2017,0.0,Eastern Mediterranean
+Pakistan, 2017,4.75,Eastern Mediterranean
+Panama, 2017,0.2,Americas
+Papua New Guinea, 2017,177.84,Western Pacific
+Paraguay, 2017,0.0,Americas
+Peru, 2017,5.87,Americas
+Philippines, 2017,0.31,Western Pacific
+Republic of Korea, 2017,0.12,Western Pacific
+Rwanda, 2017,538.34,Africa
+Sao Tome and Principe, 2017,10.81,Africa
+Saudi Arabia, 2017,0.07,Eastern Mediterranean
+Senegal, 2017,52.35,Africa
+Sierra Leone, 2017,364.13,Africa
+Solomon Islands, 2017,164.34,Western Pacific
+Somalia, 2017,37.13,Eastern Mediterranean
+South Africa, 2017,3.95,Africa
+South Sudan, 2017,245.8,Africa
+Sri Lanka, 2017,0.0,South-East Asia
+Sudan, 2017,46.75,Eastern Mediterranean
+Suriname, 2017,0.47,Americas
+Syrian Arab Republic, 2017,0.0,Eastern Mediterranean
+Tajikistan, 2017,0.0,Europe
+Thailand, 2017,0.95,South-East Asia
+Timor-Leste, 2017,0.03,South-East Asia
+Togo, 2017,278.2,Africa
+Turkey, 2017,0.0,Europe
+Turkmenistan, 2017,0.0,Europe
+Uganda, 2017,336.76,Africa
+United Arab Emirates, 2017,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2017,123.96,Africa
+Uzbekistan, 2017,0.0,Europe
+Vanuatu, 2017,7.94,Western Pacific
+Venezuela (Bolivarian Republic of), 2017,32.63,Americas
+Viet Nam, 2017,0.08,Western Pacific
+Yemen, 2017,41.64,Eastern Mediterranean
+Zambia, 2017,160.05,Africa
+Zimbabwe, 2017,108.55,Africa
+Afghanistan, 2016,26.11,Eastern Mediterranean
+Algeria, 2016,0.0,Africa
+Angola, 2016,219.99,Africa
+Argentina, 2016,0.0,Americas
+Armenia, 2016,0.0,Europe
+Azerbaijan, 2016,0.0,Europe
+Bangladesh, 2016,1.86,South-East Asia
+Belize, 2016,0.02,Americas
+Benin, 2016,421.58,Africa
+Bhutan, 2016,0.03,South-East Asia
+Bolivia (Plurinational State of), 2016,1.5,Americas
+Botswana, 2016,0.81,Africa
+Brazil, 2016,3.22,Americas
+Burkina Faso, 2016,401.73,Africa
+Burundi, 2016,225.74,Africa
+Cabo Verde, 2016,0.35,Africa
+Cambodia, 2016,11.13,Western Pacific
+Cameroon, 2016,264.31,Africa
+Central African Republic, 2016,362.02,Africa
+Chad, 2016,169.93,Africa
+China, 2016,0.0,Western Pacific
+Colombia, 2016,10.83,Americas
+Comoros, 2016,1.44,Africa
+Congo, 2016,233.38,Americas
+Costa Rica, 2016,0.0,Americas
+Côte d'Ivoire, 2016,354.66,Africa
+Democratic People's Republic of Korea, 2016,0.28,Western Pacific
+Democratic Republic of the Congo, 2016,322.77,Africa
+Djibouti, 2016,19.81,Eastern Mediterranean
+Dominican Republic, 2016,0.16,Americas
+Ecuador, 2016,2.48,Americas
+Egypt, 2016,0.0,Eastern Mediterranean
+El Salvador, 2016,0.01,Americas
+Equatorial Guinea, 2016,306.97,Africa
+Eritrea, 2016,25.64,Africa
+Eswatini, 2016,1.12,Africa
+Ethiopia, 2016,41.41,Africa
+Gabon, 2016,270.67,Africa
+Gambia, 2016,116.53,Africa
+Georgia, 2016,0.0,Europe
+Ghana, 2016,236.0,Africa
+Guatemala, 2016,0.45,Americas
+Guinea, 2016,331.47,Africa
+Guinea-Bissau, 2016,71.35,Africa
+Guyana, 2016,24.98,Americas
+Haiti, 2016,3.8,Americas
+Honduras, 2016,0.74,Americas
+India, 2016,9.99,South-East Asia
+Indonesia, 2016,5.54,South-East Asia
+Iran (Islamic Republic of), 2016,0.1,Eastern Mediterranean
+Iraq, 2016,0.0,Eastern Mediterranean
+Kazakhstan, 2016,0.0,Europe
+Kenya, 2016,70.38,Africa
+Kyrgyzstan, 2016,0.0,Europe
+Lao People's Democratic Republic, 2016,7.77,Western Pacific
+Liberia, 2016,386.3,Africa
+Madagascar, 2016,56.58,Africa
+Malawi, 2016,210.66,Africa
+Malaysia, 2016,0.22,Western Pacific
+Mali, 2016,384.22,Africa
+Mauritania, 2016,71.5,Africa
+Mexico, 2016,0.21,Americas
+Morocco, 2016,0.0,Eastern Mediterranean
+Mozambique, 2016,344.82,Africa
+Myanmar, 2016,5.12,South-East Asia
+Namibia, 2016,22.12,Africa
+Nepal, 2016,0.43,South-East Asia
+Nicaragua, 2016,2.89,Americas
+Niger, 2016,358.74,Africa
+Nigeria, 2016,281.38,Africa
+Oman, 2016,0.0,Eastern Mediterranean
+Pakistan, 2016,6.01,Eastern Mediterranean
+Panama, 2016,0.21,Americas
+Papua New Guinea, 2016,177.61,Western Pacific
+Paraguay, 2016,0.0,Americas
+Peru, 2016,6.0,Americas
+Philippines, 2016,0.29,Western Pacific
+Republic of Korea, 2016,0.17,Western Pacific
+Rwanda, 2016,585.54,Africa
+Sao Tome and Principe, 2016,11.01,Africa
+Saudi Arabia, 2016,0.1,Eastern Mediterranean
+Senegal, 2016,45.66,Africa
+Sierra Leone, 2016,391.33,Africa
+Solomon Islands, 2016,137.71,Western Pacific
+Somalia, 2016,37.26,Eastern Mediterranean
+South Africa, 2016,0.77,Africa
+South Sudan, 2016,244.55,Africa
+Sri Lanka, 2016,0.0,South-East Asia
+Sudan, 2016,41.73,Eastern Mediterranean
+Suriname, 2016,0.91,Americas
+Syrian Arab Republic, 2016,0.0,Eastern Mediterranean
+Tajikistan, 2016,0.0,Europe
+Thailand, 2016,1.03,South-East Asia
+Timor-Leste, 2016,0.11,South-East Asia
+Togo, 2016,324.86,Africa
+Turkey, 2016,0.0,Europe
+Turkmenistan, 2016,0.0,Europe
+Uganda, 2016,304.41,Africa
+United Arab Emirates, 2016,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2016,123.57,Africa
+Uzbekistan, 2016,0.0,Europe
+Vanuatu, 2016,15.01,Western Pacific
+Venezuela (Bolivarian Republic of), 2016,18.79,Americas
+Viet Nam, 2016,0.07,Western Pacific
+Yemen, 2016,37.75,Eastern Mediterranean
+Zambia, 2016,181.39,Africa
+Zimbabwe, 2016,65.78,Africa
+Afghanistan, 2015,14.91,Eastern Mediterranean
+Algeria, 2015,0.0,Africa
+Angola, 2015,199.99,Africa
+Argentina, 2015,0.0,Americas
+Armenia, 2015,0.0,Europe
+Azerbaijan, 2015,0.0,Europe
+Bangladesh, 2015,2.72,South-East Asia
+Belize, 2015,0.04,Americas
+Benin, 2015,411.82,Africa
+Bhutan, 2015,0.06,South-East Asia
+Bolivia (Plurinational State of), 2015,1.89,Americas
+Botswana, 2015,0.37,Africa
+Brazil, 2015,3.88,Americas
+Burkina Faso, 2015,400.09,Africa
+Burundi, 2015,165.5,Africa
+Cabo Verde, 2015,0.05,Africa
+Cambodia, 2015,19.94,Western Pacific
+Cameroon, 2015,254.5,Africa
+Central African Republic, 2015,379.91,Africa
+Chad, 2015,167.28,Africa
+China, 2015,0.0,Western Pacific
+Colombia, 2015,6.94,Americas
+Comoros, 2015,1.67,Africa
+Congo, 2015,226.71,Americas
+Costa Rica, 2015,0.0,Americas
+Côte d'Ivoire, 2015,320.04,Africa
+Democratic People's Republic of Korea, 2015,0.75,Western Pacific
+Democratic Republic of the Congo, 2015,308.83,Africa
+Djibouti, 2015,13.82,Eastern Mediterranean
+Dominican Republic, 2015,0.14,Americas
+Ecuador, 2015,1.31,Americas
+Egypt, 2015,0.0,Eastern Mediterranean
+El Salvador, 2015,0.0,Americas
+Equatorial Guinea, 2015,339.48,Africa
+Eritrea, 2015,19.2,Africa
+Eswatini, 2015,0.51,Africa
+Ethiopia, 2015,52.77,Africa
+Gabon, 2015,284.44,Africa
+Gambia, 2015,195.04,Africa
+Georgia, 2015,0.0,Europe
+Ghana, 2015,277.19,Africa
+Guatemala, 2015,0.65,Americas
+Guinea, 2015,356.64,Africa
+Guinea-Bissau, 2015,79.77,Africa
+Guyana, 2015,23.49,Americas
+Haiti, 2015,3.44,Americas
+Honduras, 2015,0.59,Americas
+India, 2015,9.67,South-East Asia
+Indonesia, 2015,5.38,South-East Asia
+Iran (Islamic Republic of), 2015,0.21,Eastern Mediterranean
+Iraq, 2015,0.0,Eastern Mediterranean
+Kazakhstan, 2015,0.0,Europe
+Kenya, 2015,72.17,Africa
+Kyrgyzstan, 2015,0.0,Europe
+Lao People's Democratic Republic, 2015,22.3,Western Pacific
+Liberia, 2015,346.97,Africa
+Madagascar, 2015,97.32,Africa
+Malawi, 2015,217.04,Africa
+Malaysia, 2015,0.2,Western Pacific
+Mali, 2015,391.83,Africa
+Mauritania, 2015,61.61,Africa
+Mexico, 2015,0.2,Americas
+Morocco, 2015,0.0,Eastern Mediterranean
+Mozambique, 2015,355.88,Africa
+Myanmar, 2015,8.69,South-East Asia
+Namibia, 2015,10.88,Africa
+Nepal, 2015,0.57,South-East Asia
+Nicaragua, 2015,1.06,Americas
+Niger, 2015,369.83,Africa
+Nigeria, 2015,296.08,Africa
+Oman, 2015,0.0,Eastern Mediterranean
+Pakistan, 2015,5.06,Eastern Mediterranean
+Panama, 2015,0.15,Americas
+Papua New Guinea, 2015,131.54,Western Pacific
+Paraguay, 2015,0.0,Americas
+Peru, 2015,7.85,Americas
+Philippines, 2015,0.47,Western Pacific
+Republic of Korea, 2015,0.18,Western Pacific
+Rwanda, 2015,341.96,Africa
+Sao Tome and Principe, 2015,10.32,Africa
+Saudi Arabia, 2015,0.03,Eastern Mediterranean
+Senegal, 2015,69.8,Africa
+Sierra Leone, 2015,403.72,Africa
+Solomon Islands, 2015,66.85,Western Pacific
+Somalia, 2015,37.27,Eastern Mediterranean
+South Africa, 2015,0.21,Africa
+South Sudan, 2015,240.36,Africa
+Sri Lanka, 2015,0.0,South-East Asia
+Sudan, 2015,35.88,Eastern Mediterranean
+Suriname, 2015,0.98,Americas
+Syrian Arab Republic, 2015,0.0,Eastern Mediterranean
+Tajikistan, 2015,0.0,Europe
+Thailand, 2015,1.34,South-East Asia
+Timor-Leste, 2015,0.12,South-East Asia
+Togo, 2015,364.31,Africa
+Turkey, 2015,0.0,Europe
+Turkmenistan, 2015,0.0,Europe
+Uganda, 2015,236.11,Africa
+United Arab Emirates, 2015,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2015,121.74,Africa
+Uzbekistan, 2015,0.0,Europe
+Vanuatu, 2015,2.9,Western Pacific
+Venezuela (Bolivarian Republic of), 2015,10.57,Americas
+Viet Nam, 2015,0.17,Western Pacific
+Yemen, 2015,24.9,Eastern Mediterranean
+Zambia, 2015,202.55,Africa
+Zimbabwe, 2015,97.65,Africa
+Afghanistan, 2014,12.67,Eastern Mediterranean
+Algeria, 2014,0.0,Africa
+Angola, 2014,187.94,Africa
+Argentina, 2014,0.0,Americas
+Armenia, 2014,0.0,Europe
+Azerbaijan, 2014,0.0,Europe
+Bangladesh, 2014,3.3,South-East Asia
+Belize, 2014,0.08,Americas
+Benin, 2014,399.24,Africa
+Bhutan, 2014,0.04,South-East Asia
+Bolivia (Plurinational State of), 2014,2.25,Americas
+Botswana, 2014,1.5,Africa
+Brazil, 2014,3.6,Americas
+Burkina Faso, 2014,436.06,Africa
+Burundi, 2014,141.51,Africa
+Cabo Verde, 2014,0.19,Africa
+Cambodia, 2014,22.26,Western Pacific
+Cameroon, 2014,244.08,Africa
+Central African Republic, 2014,393.04,Africa
+Chad, 2014,170.27,Africa
+China, 2014,0.0,Western Pacific
+Colombia, 2014,5.48,Americas
+Comoros, 2014,2.9,Africa
+Congo, 2014,231.85,Americas
+Costa Rica, 2014,0.0,Americas
+Côte d'Ivoire, 2014,315.07,Africa
+Democratic People's Republic of Korea, 2014,1.08,Western Pacific
+Democratic Republic of the Congo, 2014,308.39,Africa
+Djibouti, 2014,14.01,Eastern Mediterranean
+Dominican Republic, 2014,0.1,Americas
+Ecuador, 2014,0.52,Americas
+Egypt, 2014,0.0,Eastern Mediterranean
+El Salvador, 2014,0.0,Americas
+Equatorial Guinea, 2014,360.95,Africa
+Eritrea, 2014,33.12,Africa
+Eswatini, 2014,2.32,Africa
+Ethiopia, 2014,57.1,Africa
+Gabon, 2014,285.74,Africa
+Gambia, 2014,142.02,Africa
+Georgia, 2014,0.0,Europe
+Ghana, 2014,315.77,Africa
+Guatemala, 2014,0.55,Americas
+Guinea, 2014,381.09,Africa
+Guinea-Bissau, 2014,93.9,Africa
+Guyana, 2014,29.23,Americas
+Haiti, 2014,3.49,Americas
+Honduras, 2014,0.56,Americas
+India, 2014,9.2,South-East Asia
+Indonesia, 2014,6.1,South-East Asia
+Iran (Islamic Republic of), 2014,0.45,Eastern Mediterranean
+Iraq, 2014,0.0,Eastern Mediterranean
+Kazakhstan, 2014,0.0,Europe
+Kenya, 2014,83.87,Africa
+Kyrgyzstan, 2014,0.0,Europe
+Lao People's Democratic Republic, 2014,29.9,Western Pacific
+Liberia, 2014,337.57,Africa
+Madagascar, 2014,45.78,Africa
+Malawi, 2014,237.0,Africa
+Malaysia, 2014,2.63,Western Pacific
+Mali, 2014,441.01,Africa
+Mauritania, 2014,49.2,Africa
+Mexico, 2014,0.26,Americas
+Morocco, 2014,0.0,Eastern Mediterranean
+Mozambique, 2014,364.83,Africa
+Myanmar, 2014,12.33,South-East Asia
+Namibia, 2014,14.49,Africa
+Nepal, 2014,0.63,South-East Asia
+Nicaragua, 2014,0.54,Americas
+Niger, 2014,400.25,Africa
+Nigeria, 2014,314.4,Africa
+Oman, 2014,0.0,Eastern Mediterranean
+Pakistan, 2014,7.15,Eastern Mediterranean
+Panama, 2014,0.27,Americas
+Papua New Guinea, 2014,243.03,Western Pacific
+Paraguay, 2014,0.0,Americas
+Peru, 2014,7.1,Americas
+Philippines, 2014,0.25,Western Pacific
+Republic of Korea, 2014,0.16,Western Pacific
+Rwanda, 2014,219.81,Africa
+Sao Tome and Principe, 2014,8.96,Africa
+Saudi Arabia, 2014,0.01,Eastern Mediterranean
+Senegal, 2014,39.51,Africa
+Sierra Leone, 2014,409.31,Africa
+Solomon Islands, 2014,52.63,Western Pacific
+Somalia, 2014,32.1,Eastern Mediterranean
+South Africa, 2014,2.15,Africa
+South Sudan, 2014,236.14,Africa
+Sri Lanka, 2014,0.0,South-East Asia
+Sudan, 2014,33.38,Eastern Mediterranean
+Suriname, 2014,4.91,Americas
+Syrian Arab Republic, 2014,0.0,Eastern Mediterranean
+Tajikistan, 2014,0.0,Europe
+Thailand, 2014,2.92,South-East Asia
+Timor-Leste, 2014,0.51,South-East Asia
+Togo, 2014,384.68,Africa
+Turkey, 2014,0.0,Europe
+Turkmenistan, 2014,0.0,Europe
+Uganda, 2014,220.62,Africa
+United Arab Emirates, 2014,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2014,118.94,Africa
+Uzbekistan, 2014,0.0,Europe
+Vanuatu, 2014,9.2,Western Pacific
+Venezuela (Bolivarian Republic of), 2014,7.04,Americas
+Viet Nam, 2014,0.28,Western Pacific
+Yemen, 2014,29.13,Eastern Mediterranean
+Zambia, 2014,222.98,Africa
+Zimbabwe, 2014,101.89,Africa
+Afghanistan, 2013,9.01,Eastern Mediterranean
+Algeria, 2013,0.0,Africa
+Angola, 2013,180.9,Africa
+Argentina, 2013,0.0,Americas
+Armenia, 2013,0.0,Europe
+Azerbaijan, 2013,0.0,Europe
+Bangladesh, 2013,1.54,South-East Asia
+Belize, 2013,0.08,Americas
+Benin, 2013,395.0,Africa
+Bhutan, 2013,0.03,South-East Asia
+Bolivia (Plurinational State of), 2013,2.26,Americas
+Botswana, 2013,0.53,Africa
+Brazil, 2013,4.82,Americas
+Burkina Faso, 2013,487.52,Africa
+Burundi, 2013,140.59,Africa
+Cabo Verde, 2013,0.17,Africa
+Cambodia, 2013,15.89,Western Pacific
+Cameroon, 2013,243.04,Africa
+Central African Republic, 2013,406.82,Africa
+Chad, 2013,179.35,Africa
+China, 2013,0.0,Western Pacific
+Colombia, 2013,7.02,Americas
+Comoros, 2013,71.69,Africa
+Congo, 2013,231.03,Americas
+Costa Rica, 2013,0.0,Americas
+Côte d'Ivoire, 2013,338.87,Africa
+Democratic People's Republic of Korea, 2013,1.48,Western Pacific
+Democratic Republic of the Congo, 2013,327.62,Africa
+Djibouti, 2013,2.54,Eastern Mediterranean
+Dominican Republic, 2013,0.14,Americas
+Ecuador, 2013,0.8,Americas
+Egypt, 2013,0.0,Eastern Mediterranean
+El Salvador, 2013,0.0,Americas
+Equatorial Guinea, 2013,365.75,Africa
+Eritrea, 2013,15.03,Africa
+Eswatini, 2013,3.16,Africa
+Ethiopia, 2013,111.6,Africa
+Gabon, 2013,272.83,Africa
+Gambia, 2013,236.99,Africa
+Georgia, 2013,0.0,Europe
+Ghana, 2013,349.28,Africa
+Guatemala, 2013,0.62,Americas
+Guinea, 2013,408.08,Africa
+Guinea-Bissau, 2013,113.39,Africa
+Guyana, 2013,75.68,Americas
+Haiti, 2013,5.31,Americas
+Honduras, 2013,0.92,Americas
+India, 2013,9.16,South-East Asia
+Indonesia, 2013,8.13,South-East Asia
+Iran (Islamic Republic of), 2013,0.61,Eastern Mediterranean
+Iraq, 2013,0.0,Eastern Mediterranean
+Kazakhstan, 2013,0.0,Europe
+Kenya, 2013,82.48,Africa
+Kyrgyzstan, 2013,0.0,Europe
+Lao People's Democratic Republic, 2013,23.3,Western Pacific
+Liberia, 2013,317.28,Africa
+Madagascar, 2013,65.21,Africa
+Malawi, 2013,267.86,Africa
+Malaysia, 2013,2.48,Western Pacific
+Mali, 2013,452.82,Africa
+Mauritania, 2013,33.22,Africa
+Mexico, 2013,0.2,Americas
+Morocco, 2013,0.0,Eastern Mediterranean
+Mozambique, 2013,376.98,Africa
+Myanmar, 2013,19.83,South-East Asia
+Namibia, 2013,4.55,Africa
+Nepal, 2013,1.31,South-East Asia
+Nicaragua, 2013,0.56,Americas
+Niger, 2013,420.49,Africa
+Nigeria, 2013,328.65,Africa
+Oman, 2013,0.0,Eastern Mediterranean
+Pakistan, 2013,7.55,Eastern Mediterranean
+Panama, 2013,0.2,Americas
+Papua New Guinea, 2013,215.41,Western Pacific
+Paraguay, 2013,0.0,Americas
+Peru, 2013,5.36,Americas
+Philippines, 2013,0.31,Western Pacific
+Republic of Korea, 2013,0.11,Western Pacific
+Rwanda, 2013,121.45,Africa
+Sao Tome and Principe, 2013,48.12,Africa
+Saudi Arabia, 2013,0.01,Eastern Mediterranean
+Senegal, 2013,67.9,Africa
+Sierra Leone, 2013,432.7,Africa
+Solomon Islands, 2013,94.92,Western Pacific
+Somalia, 2013,28.05,Eastern Mediterranean
+South Africa, 2013,1.61,Africa
+South Sudan, 2013,234.38,Africa
+Sri Lanka, 2013,0.0,South-East Asia
+Sudan, 2013,31.45,Eastern Mediterranean
+Suriname, 2013,9.02,Americas
+Syrian Arab Republic, 2013,0.0,Eastern Mediterranean
+Tajikistan, 2013,0.0,Europe
+Thailand, 2013,2.58,South-East Asia
+Timor-Leste, 2013,1.56,South-East Asia
+Togo, 2013,385.39,Africa
+Turkey, 2013,0.0,Europe
+Turkmenistan, 2013,0.0,Europe
+Uganda, 2013,254.24,Africa
+United Arab Emirates, 2013,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2013,111.78,Africa
+Uzbekistan, 2013,0.0,Europe
+Vanuatu, 2013,20.75,Western Pacific
+Venezuela (Bolivarian Republic of), 2013,6.17,Americas
+Viet Nam, 2013,0.31,Western Pacific
+Yemen, 2013,35.76,Eastern Mediterranean
+Zambia, 2013,225.77,Africa
+Zimbabwe, 2013,81.95,Africa
+Afghanistan, 2012,11.15,Eastern Mediterranean
+Algeria, 2012,0.03,Africa
+Angola, 2012,174.43,Africa
+Argentina, 2012,0.0,Americas
+Armenia, 2012,0.0,Europe
+Azerbaijan, 2012,0.01,Europe
+Bangladesh, 2012,2.2,South-East Asia
+Belize, 2012,0.14,Americas
+Benin, 2012,378.03,Africa
+Bhutan, 2012,0.16,South-East Asia
+Bolivia (Plurinational State of), 2012,2.33,Americas
+Botswana, 2012,0.22,Africa
+Brazil, 2012,6.38,Americas
+Burkina Faso, 2012,527.54,Africa
+Burundi, 2012,153.93,Africa
+Cabo Verde, 2012,0.01,Africa
+Cambodia, 2012,24.88,Western Pacific
+Cameroon, 2012,245.13,Africa
+Central African Republic, 2012,413.09,Africa
+Chad, 2012,195.34,Africa
+China, 2012,0.0,Western Pacific
+Colombia, 2012,8.25,Americas
+Comoros, 2012,68.85,Africa
+Congo, 2012,224.63,Americas
+Costa Rica, 2012,0.0,Americas
+Côte d'Ivoire, 2012,396.28,Africa
+Democratic People's Republic of Korea, 2012,2.26,Western Pacific
+Democratic Republic of the Congo, 2012,363.0,Africa
+Djibouti, 2012,3.31,Eastern Mediterranean
+Dominican Republic, 2012,0.23,Americas
+Ecuador, 2012,1.21,Americas
+Egypt, 2012,0.0,Eastern Mediterranean
+El Salvador, 2012,0.01,Americas
+Equatorial Guinea, 2012,357.75,Africa
+Eritrea, 2012,16.15,Africa
+Eswatini, 2012,1.86,Africa
+Ethiopia, 2012,116.19,Africa
+Gabon, 2012,245.53,Africa
+Gambia, 2012,274.82,Africa
+Georgia, 2012,0.0,Europe
+Ghana, 2012,374.29,Africa
+Guatemala, 2012,0.54,Americas
+Guinea, 2012,427.8,Africa
+Guinea-Bissau, 2012,128.75,Africa
+Guyana, 2012,57.7,Americas
+Haiti, 2012,6.53,Americas
+Honduras, 2012,1.11,Americas
+India, 2012,11.85,South-East Asia
+Indonesia, 2012,9.68,South-East Asia
+Iran (Islamic Republic of), 2012,0.98,Eastern Mediterranean
+Iraq, 2012,0.0,Eastern Mediterranean
+Kazakhstan, 2012,0.0,Europe
+Kenya, 2012,73.36,Africa
+Kyrgyzstan, 2012,0.0,Europe
+Lao People's Democratic Republic, 2012,28.76,Western Pacific
+Liberia, 2012,307.9,Africa
+Madagascar, 2012,71.36,Africa
+Malawi, 2012,314.02,Africa
+Malaysia, 2012,3.15,Western Pacific
+Mali, 2012,435.65,Africa
+Mauritania, 2012,28.42,Africa
+Mexico, 2012,0.33,Americas
+Morocco, 2012,0.0,Eastern Mediterranean
+Mozambique, 2012,381.78,Africa
+Myanmar, 2012,61.86,South-East Asia
+Namibia, 2012,3.36,Africa
+Nepal, 2012,2.34,South-East Asia
+Nicaragua, 2012,0.6,Americas
+Niger, 2012,430.51,Africa
+Nigeria, 2012,347.74,Africa
+Oman, 2012,0.0,Eastern Mediterranean
+Pakistan, 2012,8.98,Eastern Mediterranean
+Panama, 2012,0.24,Americas
+Papua New Guinea, 2012,169.88,Western Pacific
+Paraguay, 2012,0.0,Americas
+Peru, 2012,3.49,Americas
+Philippines, 2012,0.34,Western Pacific
+Republic of Korea, 2012,0.11,Western Pacific
+Rwanda, 2012,71.46,Africa
+Sao Tome and Principe, 2012,56.8,Africa
+Saudi Arabia, 2012,0.04,Eastern Mediterranean
+Senegal, 2012,56.92,Africa
+Sierra Leone, 2012,447.47,Africa
+Solomon Islands, 2012,94.86,Western Pacific
+Somalia, 2012,24.45,Eastern Mediterranean
+South Africa, 2012,1.25,Africa
+South Sudan, 2012,232.68,Africa
+Sri Lanka, 2012,0.0,South-East Asia
+Sudan, 2012,30.16,Eastern Mediterranean
+Suriname, 2012,6.93,Americas
+Syrian Arab Republic, 2012,0.0,Eastern Mediterranean
+Tajikistan, 2012,0.01,Europe
+Thailand, 2012,2.53,South-East Asia
+Timor-Leste, 2012,7.26,South-East Asia
+Togo, 2012,349.7,Africa
+Turkey, 2012,0.0,Europe
+Turkmenistan, 2012,0.0,Europe
+Uganda, 2012,331.77,Africa
+United Arab Emirates, 2012,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2012,116.25,Africa
+Uzbekistan, 2012,0.0,Europe
+Vanuatu, 2012,33.64,Western Pacific
+Venezuela (Bolivarian Republic of), 2012,4.21,Americas
+Viet Nam, 2012,0.36,Western Pacific
+Yemen, 2012,45.09,Eastern Mediterranean
+Zambia, 2012,203.08,Africa
+Zimbabwe, 2012,57.22,Africa
+Afghanistan, 2011,18.87,Eastern Mediterranean
+Algeria, 2011,0.0,Africa
+Angola, 2011,175.99,Africa
+Argentina, 2011,0.0,Americas
+Armenia, 2011,0.0,Europe
+Azerbaijan, 2011,0.02,Europe
+Bangladesh, 2011,3.95,South-East Asia
+Belize, 2011,0.32,Americas
+Benin, 2011,370.11,Africa
+Bhutan, 2011,0.44,South-East Asia
+Bolivia (Plurinational State of), 2011,2.09,Americas
+Botswana, 2011,0.51,Africa
+Brazil, 2011,7.08,Americas
+Burkina Faso, 2011,539.56,Africa
+Burundi, 2011,184.15,Africa
+Cabo Verde, 2011,0.05,Africa
+Cambodia, 2011,35.79,Western Pacific
+Cameroon, 2011,265.1,Africa
+Central African Republic, 2011,419.33,Africa
+Chad, 2011,210.48,Africa
+China, 2011,0.01,Western Pacific
+Colombia, 2011,8.32,Americas
+Comoros, 2011,35.18,Africa
+Congo, 2011,224.38,Americas
+Costa Rica, 2011,0.01,Americas
+Côte d'Ivoire, 2011,442.11,Africa
+Democratic People's Republic of Korea, 2011,1.74,Western Pacific
+Democratic Republic of the Congo, 2011,399.59,Africa
+Djibouti, 2011,3.42,Eastern Mediterranean
+Dominican Republic, 2011,0.39,Americas
+Ecuador, 2011,2.74,Americas
+Egypt, 2011,0.0,Eastern Mediterranean
+El Salvador, 2011,0.01,Americas
+Equatorial Guinea, 2011,342.4,Africa
+Eritrea, 2011,23.86,Africa
+Eswatini, 2011,1.83,Africa
+Ethiopia, 2011,116.13,Africa
+Gabon, 2011,212.72,Africa
+Gambia, 2011,257.26,Africa
+Georgia, 2011,0.0,Europe
+Ghana, 2011,379.52,Africa
+Guatemala, 2011,0.71,Americas
+Guinea, 2011,426.9,Africa
+Guinea-Bissau, 2011,140.55,Africa
+Guyana, 2011,54.65,Americas
+Haiti, 2011,9.03,Americas
+Honduras, 2011,1.32,Americas
+India, 2011,14.76,South-East Asia
+Indonesia, 2011,9.89,South-East Asia
+Iran (Islamic Republic of), 2011,2.14,Eastern Mediterranean
+Iraq, 2011,0.0,Eastern Mediterranean
+Kazakhstan, 2011,0.0,Europe
+Kenya, 2011,67.86,Africa
+Kyrgyzstan, 2011,0.0,Europe
+Lao People's Democratic Republic, 2011,10.87,Western Pacific
+Liberia, 2011,330.41,Africa
+Madagascar, 2011,36.55,Africa
+Malawi, 2011,362.78,Africa
+Malaysia, 2011,3.45,Western Pacific
+Mali, 2011,404.73,Africa
+Mauritania, 2011,47.58,Africa
+Mexico, 2011,0.46,Americas
+Morocco, 2011,0.0,Eastern Mediterranean
+Mozambique, 2011,389.92,Africa
+Myanmar, 2011,43.49,South-East Asia
+Namibia, 2011,2.13,Africa
+Nepal, 2011,3.03,South-East Asia
+Nicaragua, 2011,0.45,Americas
+Niger, 2011,427.88,Africa
+Nigeria, 2011,372.56,Africa
+Oman, 2011,0.0,Eastern Mediterranean
+Pakistan, 2011,10.57,Eastern Mediterranean
+Panama, 2011,0.1,Americas
+Papua New Guinea, 2011,139.98,Western Pacific
+Paraguay, 2011,0.0,Americas
+Peru, 2011,2.69,Americas
+Philippines, 2011,0.43,Western Pacific
+Republic of Korea, 2011,0.14,Western Pacific
+Rwanda, 2011,39.29,Africa
+Sao Tome and Principe, 2011,45.75,Africa
+Saudi Arabia, 2011,0.03,Eastern Mediterranean
+Senegal, 2011,49.91,Africa
+Sierra Leone, 2011,453.65,Africa
+Solomon Islands, 2011,116.91,Western Pacific
+Somalia, 2011,24.35,Eastern Mediterranean
+South Africa, 2011,1.9,Africa
+South Sudan, 2011,235.87,Africa
+Sri Lanka, 2011,0.03,South-East Asia
+Sudan, 2011,29.97,Eastern Mediterranean
+Suriname, 2011,9.75,Americas
+Syrian Arab Republic, 2011,0.0,Eastern Mediterranean
+Tajikistan, 2011,0.03,Europe
+Thailand, 2011,1.94,South-East Asia
+Timor-Leste, 2011,31.27,South-East Asia
+Togo, 2011,313.4,Africa
+Turkey, 2011,0.0,Europe
+Turkmenistan, 2011,0.0,Europe
+Uganda, 2011,385.7,Africa
+United Arab Emirates, 2011,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2011,132.48,Africa
+Uzbekistan, 2011,0.0,Europe
+Vanuatu, 2011,47.93,Western Pacific
+Venezuela (Bolivarian Republic of), 2011,3.71,Americas
+Viet Nam, 2011,0.31,Western Pacific
+Yemen, 2011,42.73,Eastern Mediterranean
+Zambia, 2011,186.7,Africa
+Zimbabwe, 2011,70.68,Africa
+Afghanistan, 2010,15.11,Eastern Mediterranean
+Algeria, 2010,0.0,Africa
+Angola, 2010,185.52,Africa
+Argentina, 2010,0.07,Americas
+Armenia, 2010,0.0,Europe
+Azerbaijan, 2010,0.24,Europe
+Bangladesh, 2010,4.33,South-East Asia
+Belize, 2010,0.67,Americas
+Benin, 2010,387.76,Africa
+Bhutan, 2010,1.04,South-East Asia
+Bolivia (Plurinational State of), 2010,4.09,Americas
+Botswana, 2010,1.69,Africa
+Brazil, 2010,9.81,Americas
+Burkina Faso, 2010,551.24,Africa
+Burundi, 2010,210.2,Africa
+Cabo Verde, 2010,0.37,Africa
+Cambodia, 2010,34.91,Western Pacific
+Cameroon, 2010,295.53,Africa
+Central African Republic, 2010,434.51,Africa
+Chad, 2010,225.94,Africa
+China, 2010,0.01,Western Pacific
+Colombia, 2010,16.43,Americas
+Comoros, 2010,52.98,Africa
+Congo, 2010,220.92,Americas
+Costa Rica, 2010,0.07,Americas
+Côte d'Ivoire, 2010,469.27,Africa
+Democratic People's Republic of Korea, 2010,1.41,Western Pacific
+Democratic Republic of the Congo, 2010,428.31,Africa
+Djibouti, 2010,1.6,Eastern Mediterranean
+Dominican Republic, 2010,0.6,Americas
+Ecuador, 2010,4.28,Americas
+Egypt, 2010,0.0,Eastern Mediterranean
+El Salvador, 2010,0.02,Americas
+Equatorial Guinea, 2010,339.99,Africa
+Eritrea, 2010,26.33,Africa
+Eswatini, 2010,0.9,Africa
+Ethiopia, 2010,128.4,Africa
+Gabon, 2010,177.82,Africa
+Gambia, 2010,289.27,Africa
+Georgia, 2010,0.0,Europe
+Ghana, 2010,364.15,Africa
+Guatemala, 2010,0.87,Americas
+Guinea, 2010,414.66,Africa
+Guinea-Bissau, 2010,134.37,Africa
+Guyana, 2010,43.8,Americas
+Haiti, 2010,8.73,Americas
+Honduras, 2010,1.77,Americas
+India, 2010,17.52,South-East Asia
+Indonesia, 2010,11.02,South-East Asia
+Iran (Islamic Republic of), 2010,2.45,Eastern Mediterranean
+Iraq, 2010,0.0,Eastern Mediterranean
+Kazakhstan, 2010,0.0,Europe
+Kenya, 2010,67.71,Africa
+Kyrgyzstan, 2010,0.0,Europe
+Lao People's Democratic Republic, 2010,15.74,Western Pacific
+Liberia, 2010,345.77,Africa
+Madagascar, 2010,42.24,Africa
+Malawi, 2010,386.02,Africa
+Malaysia, 2010,4.6,Western Pacific
+Mali, 2010,383.6,Africa
+Mauritania, 2010,38.83,Africa
+Mexico, 2010,0.51,Americas
+Morocco, 2010,0.0,Eastern Mediterranean
+Mozambique, 2010,398.41,Africa
+Myanmar, 2010,66.98,South-East Asia
+Namibia, 2010,1.54,Africa
+Nepal, 2010,3.87,South-East Asia
+Nicaragua, 2010,0.34,Americas
+Niger, 2010,425.64,Africa
+Nigeria, 2010,398.9,Africa
+Oman, 2010,0.0,Eastern Mediterranean
+Pakistan, 2010,8.2,Eastern Mediterranean
+Panama, 2010,0.12,Americas
+Papua New Guinea, 2010,169.63,Western Pacific
+Paraguay, 2010,0.08,Americas
+Peru, 2010,3.32,Americas
+Philippines, 2010,0.98,Western Pacific
+Republic of Korea, 2010,0.37,Western Pacific
+Rwanda, 2010,126.31,Africa
+Sao Tome and Principe, 2010,15.19,Africa
+Saudi Arabia, 2010,0.01,Eastern Mediterranean
+Senegal, 2010,59.28,Africa
+Sierra Leone, 2010,458.74,Africa
+Solomon Islands, 2010,174.95,Western Pacific
+Somalia, 2010,29.59,Eastern Mediterranean
+South Africa, 2010,1.57,Africa
+South Sudan, 2010,243.97,Africa
+Sri Lanka, 2010,0.15,South-East Asia
+Sudan, 2010,30.66,Eastern Mediterranean
+Suriname, 2010,23.33,Americas
+Syrian Arab Republic, 2010,0.0,Eastern Mediterranean
+Tajikistan, 2010,0.04,Europe
+Thailand, 2010,2.55,South-East Asia
+Timor-Leste, 2010,99.74,South-East Asia
+Togo, 2010,308.88,Africa
+Turkey, 2010,0.0,Europe
+Turkmenistan, 2010,0.0,Europe
+Uganda, 2010,417.35,Africa
+United Arab Emirates, 2010,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2010,145.46,Africa
+Uzbekistan, 2010,0.0,Europe
+Vanuatu, 2010,66.33,Western Pacific
+Venezuela (Bolivarian Republic of), 2010,4.07,Americas
+Viet Nam, 2010,0.35,Western Pacific
+Yemen, 2010,62.76,Eastern Mediterranean
+Zambia, 2010,177.02,Africa
+Zimbabwe, 2010,109.43,Africa
+Afghanistan, 2009,14.77,Eastern Mediterranean
+Algeria, 2009,0.0,Africa
+Angola, 2009,204.35,Africa
+Argentina, 2009,0.42,Americas
+Armenia, 2009,0.0,Europe
+Azerbaijan, 2009,0.38,Europe
+Bangladesh, 2009,8.17,South-East Asia
+Belize, 2009,1.18,Americas
+Benin, 2009,417.96,Africa
+Bhutan, 2009,1.94,South-East Asia
+Bolivia (Plurinational State of), 2009,2.98,Americas
+Botswana, 2009,2.1,Africa
+Brazil, 2009,8.36,Americas
+Burkina Faso, 2009,552.03,Africa
+Burundi, 2009,220.65,Africa
+Cabo Verde, 2009,0.51,Africa
+Cambodia, 2009,42.77,Western Pacific
+Cameroon, 2009,322.98,Africa
+Central African Republic, 2009,448.45,Africa
+Chad, 2009,222.91,Africa
+China, 2009,0.02,Western Pacific
+Colombia, 2009,11.16,Americas
+Comoros, 2009,57.81,Africa
+Congo, 2009,226.32,Americas
+Costa Rica, 2009,0.17,Americas
+Côte d'Ivoire, 2009,494.48,Africa
+Democratic People's Republic of Korea, 2009,1.53,Western Pacific
+Democratic Republic of the Congo, 2009,452.18,Africa
+Djibouti, 2009,4.33,Eastern Mediterranean
+Dominican Republic, 2009,0.4,Americas
+Ecuador, 2009,9.57,Americas
+Egypt, 2009,0.0,Eastern Mediterranean
+El Salvador, 2009,0.02,Americas
+Equatorial Guinea, 2009,351.29,Africa
+Eritrea, 2009,8.86,Africa
+Eswatini, 2009,0.36,Africa
+Ethiopia, 2009,123.35,Africa
+Gabon, 2009,145.95,Africa
+Gambia, 2009,297.98,Africa
+Georgia, 2009,0.02,Europe
+Ghana, 2009,351.39,Africa
+Guatemala, 2009,0.77,Americas
+Guinea, 2009,398.14,Africa
+Guinea-Bissau, 2009,113.8,Africa
+Guyana, 2009,26.85,Americas
+Haiti, 2009,9.01,Americas
+Honduras, 2009,1.75,Americas
+India, 2009,18.2,South-East Asia
+Indonesia, 2009,7.3,South-East Asia
+Iran (Islamic Republic of), 2009,5.83,Eastern Mediterranean
+Iraq, 2009,0.0,Eastern Mediterranean
+Kazakhstan, 2009,0.0,Europe
+Kenya, 2009,67.94,Africa
+Kyrgyzstan, 2009,0.0,Europe
+Lao People's Democratic Republic, 2009,15.03,Western Pacific
+Liberia, 2009,368.81,Africa
+Madagascar, 2009,42.92,Africa
+Malawi, 2009,394.29,Africa
+Malaysia, 2009,5.37,Western Pacific
+Mali, 2009,374.56,Africa
+Mauritania, 2009,31.64,Africa
+Mexico, 2009,1.13,Americas
+Morocco, 2009,0.0,Eastern Mediterranean
+Mozambique, 2009,402.3,Africa
+Myanmar, 2009,49.9,South-East Asia
+Namibia, 2009,3.36,Africa
+Nepal, 2009,3.29,South-East Asia
+Nicaragua, 2009,0.31,Americas
+Niger, 2009,419.1,Africa
+Nigeria, 2009,416.59,Africa
+Oman, 2009,0.0,Eastern Mediterranean
+Pakistan, 2009,5.89,Eastern Mediterranean
+Panama, 2009,0.24,Americas
+Papua New Guinea, 2009,248.33,Western Pacific
+Paraguay, 2009,0.41,Americas
+Peru, 2009,4.6,Americas
+Philippines, 2009,1.09,Western Pacific
+Republic of Korea, 2009,0.26,Western Pacific
+Rwanda, 2009,158.16,Africa
+Sao Tome and Principe, 2009,35.15,Africa
+Saudi Arabia, 2009,0.03,Eastern Mediterranean
+Senegal, 2009,57.12,Africa
+Sierra Leone, 2009,442.15,Africa
+Solomon Islands, 2009,147.65,Western Pacific
+Somalia, 2009,38.44,Eastern Mediterranean
+South Africa, 2009,1.2,Africa
+South Sudan, 2009,255.07,Africa
+Sri Lanka, 2009,0.11,South-East Asia
+Sudan, 2009,32.29,Eastern Mediterranean
+Suriname, 2009,30.8,Americas
+Syrian Arab Republic, 2009,0.0,Eastern Mediterranean
+Tajikistan, 2009,0.07,Europe
+Thailand, 2009,2.81,South-East Asia
+Timor-Leste, 2009,102.07,South-East Asia
+Togo, 2009,326.88,Africa
+Turkey, 2009,0.01,Europe
+Turkmenistan, 2009,0.0,Europe
+Uganda, 2009,433.79,Africa
+United Arab Emirates, 2009,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2009,157.11,Africa
+Uzbekistan, 2009,0.0,Europe
+Vanuatu, 2009,64.66,Western Pacific
+Venezuela (Bolivarian Republic of), 2009,2.99,Americas
+Viet Nam, 2009,0.36,Western Pacific
+Yemen, 2009,40.02,Eastern Mediterranean
+Zambia, 2009,172.0,Africa
+Zimbabwe, 2009,90.5,Africa
+Afghanistan, 2008,17.84,Eastern Mediterranean
+Algeria, 2008,0.0,Africa
+Angola, 2008,241.19,Africa
+Argentina, 2008,0.65,Americas
+Armenia, 2008,0.0,Europe
+Azerbaijan, 2008,0.35,Europe
+Bangladesh, 2008,7.8,South-East Asia
+Belize, 2008,2.55,Americas
+Benin, 2008,453.17,Africa
+Bhutan, 2008,0.66,South-East Asia
+Bolivia (Plurinational State of), 2008,3.0,Americas
+Botswana, 2008,1.93,Africa
+Brazil, 2008,8.61,Americas
+Burkina Faso, 2008,533.39,Africa
+Burundi, 2008,222.77,Africa
+Cabo Verde, 2008,0.28,Africa
+Cambodia, 2008,21.89,Western Pacific
+Cameroon, 2008,358.72,Africa
+Central African Republic, 2008,461.79,Africa
+Chad, 2008,215.1,Africa
+China, 2008,0.03,Western Pacific
+Colombia, 2008,11.41,Americas
+Comoros, 2008,59.21,Africa
+Congo, 2008,249.16,Americas
+Costa Rica, 2008,0.62,Americas
+Côte d'Ivoire, 2008,510.08,Africa
+Democratic People's Republic of Korea, 2008,1.75,Western Pacific
+Democratic Republic of the Congo, 2008,471.43,Africa
+Djibouti, 2008,3.74,Eastern Mediterranean
+Dominican Republic, 2008,0.45,Americas
+Ecuador, 2008,11.55,Americas
+Egypt, 2008,0.0,Eastern Mediterranean
+El Salvador, 2008,0.03,Americas
+Equatorial Guinea, 2008,378.24,Africa
+Eritrea, 2008,6.78,Africa
+Eswatini, 2008,0.2,Africa
+Ethiopia, 2008,90.66,Africa
+Gabon, 2008,118.87,Africa
+Gambia, 2008,306.84,Africa
+Georgia, 2008,0.14,Europe
+Ghana, 2008,333.72,Africa
+Guatemala, 2008,0.8,Americas
+Guinea, 2008,370.17,Africa
+Guinea-Bissau, 2008,89.02,Africa
+Guyana, 2008,24.03,Americas
+Haiti, 2008,10.39,Americas
+Honduras, 2008,1.62,Americas
+India, 2008,17.93,South-East Asia
+Indonesia, 2008,7.5,South-East Asia
+Iran (Islamic Republic of), 2008,11.33,Eastern Mediterranean
+Iraq, 2008,0.0,Eastern Mediterranean
+Kazakhstan, 2008,0.0,Europe
+Kenya, 2008,67.68,Africa
+Kyrgyzstan, 2008,0.0,Europe
+Lao People's Democratic Republic, 2008,21.5,Western Pacific
+Liberia, 2008,383.33,Africa
+Madagascar, 2008,23.47,Africa
+Malawi, 2008,392.0,Africa
+Malaysia, 2008,5.57,Western Pacific
+Mali, 2008,379.06,Africa
+Mauritania, 2008,61.14,Africa
+Mexico, 2008,1.0,Americas
+Morocco, 2008,0.0,Eastern Mediterranean
+Mozambique, 2008,399.79,Africa
+Myanmar, 2008,52.96,South-East Asia
+Namibia, 2008,7.46,Africa
+Nepal, 2008,4.16,South-East Asia
+Nicaragua, 2008,0.39,Americas
+Niger, 2008,409.1,Africa
+Nigeria, 2008,424.66,Africa
+Oman, 2008,0.0,Eastern Mediterranean
+Pakistan, 2008,4.53,Eastern Mediterranean
+Panama, 2008,0.23,Americas
+Papua New Guinea, 2008,190.13,Western Pacific
+Paraguay, 2008,1.59,Americas
+Peru, 2008,4.87,Americas
+Philippines, 2008,1.41,Western Pacific
+Republic of Korea, 2008,0.31,Western Pacific
+Rwanda, 2008,72.03,Africa
+Sao Tome and Principe, 2008,36.57,Africa
+Saudi Arabia, 2008,0.03,Eastern Mediterranean
+Senegal, 2008,86.42,Africa
+Sierra Leone, 2008,413.85,Africa
+Solomon Islands, 2008,185.88,Western Pacific
+Somalia, 2008,63.1,Eastern Mediterranean
+South Africa, 2008,1.57,Africa
+South Sudan, 2008,267.14,Africa
+Sri Lanka, 2008,0.14,South-East Asia
+Sudan, 2008,35.05,Eastern Mediterranean
+Suriname, 2008,35.47,Americas
+Syrian Arab Republic, 2008,0.0,Eastern Mediterranean
+Tajikistan, 2008,0.13,Europe
+Thailand, 2008,2.45,South-East Asia
+Timor-Leste, 2008,135.16,South-East Asia
+Togo, 2008,379.9,Africa
+Turkey, 2008,0.04,Europe
+Turkmenistan, 2008,0.0,Europe
+Uganda, 2008,410.46,Africa
+United Arab Emirates, 2008,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2008,171.0,Africa
+Uzbekistan, 2008,0.0,Europe
+Vanuatu, 2008,119.14,Western Pacific
+Venezuela (Bolivarian Republic of), 2008,2.71,Americas
+Viet Nam, 2008,0.28,Western Pacific
+Yemen, 2008,31.66,Eastern Mediterranean
+Zambia, 2008,176.72,Africa
+Zimbabwe, 2008,74.73,Africa
+Afghanistan, 2007,21.55,Eastern Mediterranean
+Algeria, 2007,0.01,Africa
+Angola, 2007,286.72,Africa
+Argentina, 2007,1.95,Americas
+Armenia, 2007,0.0,Europe
+Azerbaijan, 2007,0.54,Europe
+Bangladesh, 2007,4.89,South-East Asia
+Belize, 2007,4.1,Americas
+Benin, 2007,480.24,Africa
+Bhutan, 2007,1.61,South-East Asia
+Bolivia (Plurinational State of), 2007,4.57,Americas
+Botswana, 2007,1.03,Africa
+Brazil, 2007,13.85,Americas
+Burkina Faso, 2007,503.8,Africa
+Burundi, 2007,222.92,Africa
+Cabo Verde, 2007,0.15,Africa
+Cambodia, 2007,19.76,Western Pacific
+Cameroon, 2007,386.68,Africa
+Central African Republic, 2007,471.11,Africa
+Chad, 2007,210.71,Africa
+China, 2007,0.05,Western Pacific
+Colombia, 2007,18.34,Americas
+Comoros, 2007,60.65,Africa
+Congo, 2007,281.83,Americas
+Costa Rica, 2007,0.79,Americas
+Côte d'Ivoire, 2007,509.98,Africa
+Democratic People's Republic of Korea, 2007,0.46,Western Pacific
+Democratic Republic of the Congo, 2007,481.93,Africa
+Djibouti, 2007,3.84,Eastern Mediterranean
+Dominican Republic, 2007,0.68,Americas
+Ecuador, 2007,20.32,Americas
+Egypt, 2007,0.0,Eastern Mediterranean
+El Salvador, 2007,0.03,Americas
+Equatorial Guinea, 2007,398.15,Africa
+Eritrea, 2007,12.54,Africa
+Eswatini, 2007,0.29,Africa
+Ethiopia, 2007,121.69,Africa
+Gabon, 2007,110.66,Africa
+Gambia, 2007,316.01,Africa
+Georgia, 2007,0.58,Europe
+Ghana, 2007,322.33,Africa
+Guatemala, 2007,1.74,Americas
+Guinea, 2007,343.69,Africa
+Guinea-Bissau, 2007,72.81,Africa
+Guyana, 2007,21.03,Americas
+Haiti, 2007,8.64,Americas
+Honduras, 2007,2.12,Americas
+India, 2007,17.34,South-East Asia
+Indonesia, 2007,7.7,South-East Asia
+Iran (Islamic Republic of), 2007,21.56,Eastern Mediterranean
+Iraq, 2007,0.0,Eastern Mediterranean
+Kazakhstan, 2007,0.0,Europe
+Kenya, 2007,78.02,Africa
+Kyrgyzstan, 2007,0.02,Europe
+Lao People's Democratic Republic, 2007,22.22,Western Pacific
+Liberia, 2007,383.18,Africa
+Madagascar, 2007,22.78,Africa
+Malawi, 2007,370.08,Africa
+Malaysia, 2007,3.79,Western Pacific
+Mali, 2007,388.81,Africa
+Mauritania, 2007,70.77,Africa
+Mexico, 2007,1.02,Americas
+Morocco, 2007,0.0,Eastern Mediterranean
+Mozambique, 2007,399.45,Africa
+Myanmar, 2007,43.54,South-East Asia
+Namibia, 2007,12.97,Africa
+Nepal, 2007,5.72,South-East Asia
+Nicaragua, 2007,0.7,Americas
+Niger, 2007,386.68,Africa
+Nigeria, 2007,421.33,Africa
+Oman, 2007,0.0,Eastern Mediterranean
+Pakistan, 2007,5.06,Eastern Mediterranean
+Panama, 2007,0.4,Americas
+Papua New Guinea, 2007,205.44,Western Pacific
+Paraguay, 2007,6.21,Americas
+Peru, 2007,5.63,Americas
+Philippines, 2007,2.17,Western Pacific
+Republic of Korea, 2007,0.65,Western Pacific
+Rwanda, 2007,90.64,Africa
+Sao Tome and Principe, 2007,14.56,Africa
+Saudi Arabia, 2007,0.23,Eastern Mediterranean
+Senegal, 2007,101.91,Africa
+Sierra Leone, 2007,379.94,Africa
+Solomon Islands, 2007,319.15,Western Pacific
+Somalia, 2007,100.56,Eastern Mediterranean
+South Africa, 2007,1.29,Africa
+South Sudan, 2007,276.75,Africa
+Sri Lanka, 2007,0.04,South-East Asia
+Sudan, 2007,41.08,Eastern Mediterranean
+Suriname, 2007,23.06,Americas
+Syrian Arab Republic, 2007,0.0,Eastern Mediterranean
+Tajikistan, 2007,0.27,Europe
+Thailand, 2007,2.64,South-East Asia
+Timor-Leste, 2007,115.19,South-East Asia
+Togo, 2007,434.49,Africa
+Turkey, 2007,0.07,Europe
+Turkmenistan, 2007,0.0,Europe
+Uganda, 2007,377.94,Africa
+United Arab Emirates, 2007,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2007,184.53,Africa
+Uzbekistan, 2007,0.02,Europe
+Vanuatu, 2007,124.45,Western Pacific
+Venezuela (Bolivarian Republic of), 2007,3.59,Americas
+Viet Nam, 2007,0.45,Western Pacific
+Yemen, 2007,51.42,Eastern Mediterranean
+Zambia, 2007,195.74,Africa
+Zimbabwe, 2007,175.12,Africa
+Afghanistan, 2006,20.53,Eastern Mediterranean
+Algeria, 2006,0.0,Africa
+Angola, 2006,313.81,Africa
+Argentina, 2006,1.08,Americas
+Armenia, 2006,0.0,Europe
+Azerbaijan, 2006,0.72,Europe
+Bangladesh, 2006,4.52,South-East Asia
+Belize, 2006,4.2,Americas
+Benin, 2006,492.73,Africa
+Bhutan, 2006,3.84,South-East Asia
+Bolivia (Plurinational State of), 2006,8.18,Americas
+Botswana, 2006,4.01,Africa
+Brazil, 2006,15.29,Americas
+Burkina Faso, 2006,493.78,Africa
+Burundi, 2006,235.68,Africa
+Cabo Verde, 2006,0.66,Africa
+Cambodia, 2006,45.95,Western Pacific
+Cameroon, 2006,403.13,Africa
+Central African Republic, 2006,472.63,Africa
+Chad, 2006,205.63,Africa
+China, 2006,0.06,Western Pacific
+Colombia, 2006,17.3,Americas
+Comoros, 2006,62.11,Africa
+Congo, 2006,305.85,Americas
+Costa Rica, 2006,1.91,Americas
+Côte d'Ivoire, 2006,506.57,Africa
+Democratic People's Republic of Korea, 2006,1.38,Western Pacific
+Democratic Republic of the Congo, 2006,484.55,Africa
+Djibouti, 2006,3.95,Eastern Mediterranean
+Dominican Republic, 2006,0.89,Americas
+Ecuador, 2006,24.07,Americas
+Egypt, 2006,0.0,Eastern Mediterranean
+El Salvador, 2006,0.04,Americas
+Equatorial Guinea, 2006,404.22,Africa
+Eritrea, 2006,5.63,Africa
+Eswatini, 2006,0.53,Africa
+Ethiopia, 2006,145.51,Africa
+Gabon, 2006,123.91,Africa
+Gambia, 2006,325.67,Africa
+Georgia, 2006,1.41,Europe
+Ghana, 2006,333.34,Africa
+Guatemala, 2006,3.62,Americas
+Guinea, 2006,335.5,Africa
+Guinea-Bissau, 2006,78.0,Africa
+Guyana, 2006,37.02,Americas
+Haiti, 2006,9.73,Americas
+Honduras, 2006,2.49,Americas
+India, 2006,18.23,South-East Asia
+Indonesia, 2006,8.09,South-East Asia
+Iran (Islamic Republic of), 2006,22.08,Eastern Mediterranean
+Iraq, 2006,0.01,Eastern Mediterranean
+Kazakhstan, 2006,0.0,Europe
+Kenya, 2006,100.05,Africa
+Kyrgyzstan, 2006,0.08,Europe
+Lao People's Democratic Republic, 2006,23.26,Western Pacific
+Liberia, 2006,388.81,Africa
+Madagascar, 2006,35.26,Africa
+Malawi, 2006,342.34,Africa
+Malaysia, 2006,5.05,Western Pacific
+Mali, 2006,405.71,Africa
+Mauritania, 2006,72.44,Africa
+Mexico, 2006,1.1,Americas
+Morocco, 2006,0.0,Eastern Mediterranean
+Mozambique, 2006,403.93,Africa
+Myanmar, 2006,34.69,South-East Asia
+Namibia, 2006,43.57,Africa
+Nepal, 2006,4.89,South-East Asia
+Nicaragua, 2006,1.64,Americas
+Niger, 2006,370.73,Africa
+Nigeria, 2006,418.17,Africa
+Oman, 2006,0.0,Eastern Mediterranean
+Pakistan, 2006,5.28,Eastern Mediterranean
+Panama, 2006,0.53,Americas
+Papua New Guinea, 2006,246.74,Western Pacific
+Paraguay, 2006,3.87,Americas
+Peru, 2006,7.25,Americas
+Philippines, 2006,2.33,Western Pacific
+Republic of Korea, 2006,0.6,Western Pacific
+Rwanda, 2006,154.02,Africa
+Sao Tome and Principe, 2006,31.83,Africa
+Saudi Arabia, 2006,0.65,Eastern Mediterranean
+Senegal, 2006,117.67,Africa
+Sierra Leone, 2006,374.6,Africa
+Solomon Islands, 2006,591.27,Western Pacific
+Somalia, 2006,120.07,Eastern Mediterranean
+South Africa, 2006,2.49,Africa
+South Sudan, 2006,289.3,Africa
+Sri Lanka, 2006,0.13,South-East Asia
+Sudan, 2006,46.69,Eastern Mediterranean
+Suriname, 2006,44.07,Americas
+Syrian Arab Republic, 2006,0.0,Eastern Mediterranean
+Tajikistan, 2006,0.58,Europe
+Thailand, 2006,2.43,South-East Asia
+Timor-Leste, 2006,126.77,South-East Asia
+Togo, 2006,460.07,Africa
+Turkey, 2006,0.18,Europe
+Turkmenistan, 2006,0.0,Europe
+Uganda, 2006,377.71,Africa
+United Arab Emirates, 2006,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2006,205.83,Africa
+Uzbekistan, 2006,0.04,Europe
+Vanuatu, 2006,107.02,Western Pacific
+Venezuela (Bolivarian Republic of), 2006,3.25,Americas
+Viet Nam, 2006,0.7,Western Pacific
+Yemen, 2006,38.25,Eastern Mediterranean
+Zambia, 2006,222.52,Africa
+Zimbabwe, 2006,117.51,Africa
+Afghanistan, 2005,27.08,Eastern Mediterranean
+Algeria, 2005,0.0,Africa
+Angola, 2005,323.69,Africa
+Argentina, 2005,1.3,Americas
+Armenia, 2005,0.0,Europe
+Azerbaijan, 2005,1.23,Europe
+Bangladesh, 2005,6.05,South-East Asia
+Belize, 2005,7.91,Americas
+Benin, 2005,487.04,Africa
+Bhutan, 2005,3.8,South-East Asia
+Bolivia (Plurinational State of), 2005,8.88,Americas
+Botswana, 2005,1.25,Africa
+Brazil, 2005,17.42,Americas
+Burkina Faso, 2005,506.78,Africa
+Burundi, 2005,262.05,Africa
+Cabo Verde, 2005,0.56,Africa
+Cambodia, 2005,41.41,Western Pacific
+Cameroon, 2005,412.07,Africa
+Central African Republic, 2005,472.1,Africa
+Chad, 2005,198.92,Africa
+China, 2005,0.04,Western Pacific
+Colombia, 2005,17.68,Americas
+Comoros, 2005,63.61,Africa
+Congo, 2005,322.76,Americas
+Costa Rica, 2005,2.36,Americas
+Côte d'Ivoire, 2005,510.04,Africa
+Democratic People's Republic of Korea, 2005,1.21,Western Pacific
+Democratic Republic of the Congo, 2005,485.05,Africa
+Djibouti, 2005,4.06,Eastern Mediterranean
+Dominican Republic, 2005,0.99,Americas
+Ecuador, 2005,42.32,Americas
+Egypt, 2005,0.0,Eastern Mediterranean
+El Salvador, 2005,0.05,Americas
+Equatorial Guinea, 2005,411.5,Africa
+Eritrea, 2005,9.79,Africa
+Eswatini, 2005,0.97,Africa
+Ethiopia, 2005,161.13,Africa
+Gabon, 2005,154.29,Africa
+Gambia, 2005,335.95,Africa
+Georgia, 2005,3.68,Europe
+Ghana, 2005,339.03,Africa
+Guatemala, 2005,4.71,Americas
+Guinea, 2005,342.01,Africa
+Guinea-Bissau, 2005,98.45,Africa
+Guyana, 2005,73.15,Americas
+Haiti, 2005,10.23,Americas
+Honduras, 2005,3.46,Americas
+India, 2005,22.69,South-East Asia
+Indonesia, 2005,9.74,South-East Asia
+Iran (Islamic Republic of), 2005,26.62,Eastern Mediterranean
+Iraq, 2005,0.01,Eastern Mediterranean
+Kazakhstan, 2005,0.0,Europe
+Kenya, 2005,127.31,Africa
+Kyrgyzstan, 2005,0.06,Europe
+Lao People's Democratic Republic, 2005,12.96,Western Pacific
+Liberia, 2005,404.63,Africa
+Madagascar, 2005,35.94,Africa
+Malawi, 2005,329.47,Africa
+Malaysia, 2005,5.42,Western Pacific
+Mali, 2005,431.24,Africa
+Mauritania, 2005,81.78,Africa
+Mexico, 2005,1.32,Americas
+Morocco, 2005,0.0,Eastern Mediterranean
+Mozambique, 2005,417.87,Africa
+Myanmar, 2005,50.79,South-East Asia
+Namibia, 2005,42.45,Africa
+Nepal, 2005,5.01,South-East Asia
+Nicaragua, 2005,3.54,Americas
+Niger, 2005,355.24,Africa
+Nigeria, 2005,415.28,Africa
+Oman, 2005,0.0,Eastern Mediterranean
+Pakistan, 2005,5.36,Eastern Mediterranean
+Panama, 2005,1.2,Americas
+Papua New Guinea, 2005,238.51,Western Pacific
+Paraguay, 2005,1.79,Americas
+Peru, 2005,9.88,Americas
+Philippines, 2005,3.03,Western Pacific
+Republic of Korea, 2005,0.4,Western Pacific
+Rwanda, 2005,154.61,Africa
+Sao Tome and Principe, 2005,115.19,Africa
+Saudi Arabia, 2005,0.56,Eastern Mediterranean
+Senegal, 2005,110.85,Africa
+Sierra Leone, 2005,388.26,Africa
+Solomon Islands, 2005,613.79,Western Pacific
+Somalia, 2005,136.56,Eastern Mediterranean
+South Africa, 2005,1.62,Africa
+South Sudan, 2005,300.67,Africa
+Sri Lanka, 2005,0.36,South-East Asia
+Sudan, 2005,49.59,Eastern Mediterranean
+Suriname, 2005,123.78,Americas
+Syrian Arab Republic, 2005,0.0,Eastern Mediterranean
+Tajikistan, 2005,1.02,Europe
+Thailand, 2005,2.4,South-East Asia
+Timor-Leste, 2005,120.77,South-East Asia
+Togo, 2005,470.38,Africa
+Turkey, 2005,0.47,Europe
+Turkmenistan, 2005,0.0,Europe
+Uganda, 2005,405.36,Africa
+United Arab Emirates, 2005,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2005,228.94,Africa
+Uzbekistan, 2005,0.06,Europe
+Vanuatu, 2005,122.44,Western Pacific
+Venezuela (Bolivarian Republic of), 2005,4.01,Americas
+Viet Nam, 2005,0.66,Western Pacific
+Yemen, 2005,32.84,Eastern Mediterranean
+Zambia, 2005,255.89,Africa
+Zimbabwe, 2005,119.05,Africa
+Afghanistan, 2004,37.64,Eastern Mediterranean
+Algeria, 2004,0.0,Africa
+Angola, 2004,319.66,Africa
+Argentina, 2004,0.6,Americas
+Armenia, 2004,0.02,Europe
+Azerbaijan, 2004,1.99,Europe
+Bangladesh, 2004,6.24,South-East Asia
+Belize, 2004,5.6,Americas
+Benin, 2004,475.38,Africa
+Bhutan, 2004,5.65,South-East Asia
+Bolivia (Plurinational State of), 2004,4.91,Americas
+Botswana, 2004,1.04,Africa
+Brazil, 2004,13.83,Americas
+Burkina Faso, 2004,537.01,Africa
+Burundi, 2004,307.77,Africa
+Cabo Verde, 2004,0.38,Africa
+Cambodia, 2004,43.62,Western Pacific
+Cameroon, 2004,411.64,Africa
+Central African Republic, 2004,470.99,Africa
+Chad, 2004,195.46,Africa
+China, 2004,0.05,Western Pacific
+Colombia, 2004,21.2,Americas
+Comoros, 2004,65.13,Africa
+Congo, 2004,334.51,Americas
+Costa Rica, 2004,0.87,Americas
+Côte d'Ivoire, 2004,518.67,Africa
+Democratic People's Republic of Korea, 2004,2.92,Western Pacific
+Democratic Republic of the Congo, 2004,483.43,Africa
+Djibouti, 2004,4.19,Eastern Mediterranean
+Dominican Republic, 2004,0.62,Americas
+Ecuador, 2004,72.51,Americas
+Egypt, 2004,0.0,Eastern Mediterranean
+El Salvador, 2004,0.09,Americas
+Equatorial Guinea, 2004,418.37,Africa
+Eritrea, 2004,5.55,Africa
+Eswatini, 2004,2.0,Africa
+Ethiopia, 2004,218.76,Africa
+Gabon, 2004,207.38,Africa
+Gambia, 2004,346.91,Africa
+Georgia, 2004,6.08,Europe
+Ghana, 2004,354.12,Africa
+Guatemala, 2004,3.53,Americas
+Guinea, 2004,369.48,Africa
+Guinea-Bissau, 2004,146.42,Africa
+Guyana, 2004,54.2,Americas
+Haiti, 2004,10.56,Americas
+Honduras, 2004,3.81,Americas
+India, 2004,21.27,South-East Asia
+Indonesia, 2004,6.52,South-East Asia
+Iran (Islamic Republic of), 2004,19.62,Eastern Mediterranean
+Iraq, 2004,0.04,Eastern Mediterranean
+Kazakhstan, 2004,0.0,Europe
+Kenya, 2004,166.15,Africa
+Kyrgyzstan, 2004,0.02,Europe
+Lao People's Democratic Republic, 2004,16.53,Western Pacific
+Liberia, 2004,428.7,Africa
+Madagascar, 2004,46.62,Africa
+Malawi, 2004,337.61,Africa
+Malaysia, 2004,6.11,Western Pacific
+Mali, 2004,429.37,Africa
+Mauritania, 2004,90.82,Africa
+Mexico, 2004,1.54,Americas
+Morocco, 2004,0.0,Eastern Mediterranean
+Mozambique, 2004,455.54,Africa
+Myanmar, 2004,51.6,South-East Asia
+Namibia, 2004,69.67,Africa
+Nepal, 2004,4.9,South-East Asia
+Nicaragua, 2004,3.73,Americas
+Niger, 2004,362.81,Africa
+Nigeria, 2004,411.39,Africa
+Oman, 2004,0.0,Eastern Mediterranean
+Pakistan, 2004,4.44,Eastern Mediterranean
+Panama, 2004,1.7,Americas
+Papua New Guinea, 2004,291.69,Western Pacific
+Paraguay, 2004,3.36,Americas
+Peru, 2004,10.64,Americas
+Philippines, 2004,3.45,Western Pacific
+Republic of Korea, 2004,0.25,Western Pacific
+Rwanda, 2004,126.8,Africa
+Sao Tome and Principe, 2004,302.38,Africa
+Saudi Arabia, 2004,0.66,Eastern Mediterranean
+Senegal, 2004,125.73,Africa
+Sierra Leone, 2004,414.05,Africa
+Solomon Islands, 2004,743.51,Western Pacific
+Somalia, 2004,119.99,Eastern Mediterranean
+South Africa, 2004,2.83,Africa
+South Sudan, 2004,315.72,Africa
+Sri Lanka, 2004,0.83,South-East Asia
+Sudan, 2004,52.43,Eastern Mediterranean
+Suriname, 2004,114.9,Americas
+Syrian Arab Republic, 2004,0.0,Eastern Mediterranean
+Tajikistan, 2004,1.61,Europe
+Thailand, 2004,2.16,South-East Asia
+Timor-Leste, 2004,181.26,South-East Asia
+Togo, 2004,466.23,Africa
+Turkey, 2004,1.22,Europe
+Turkmenistan, 2004,0.0,Europe
+Uganda, 2004,457.23,Africa
+United Arab Emirates, 2004,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2004,252.15,Africa
+Uzbekistan, 2004,0.04,Europe
+Vanuatu, 2004,162.17,Western Pacific
+Venezuela (Bolivarian Republic of), 2004,4.23,Americas
+Viet Nam, 2004,0.92,Western Pacific
+Yemen, 2004,32.22,Eastern Mediterranean
+Zambia, 2004,299.26,Africa
+Zimbabwe, 2004,120.18,Africa
+Afghanistan, 2003,68.41,Eastern Mediterranean
+Algeria, 2003,0.0,Africa
+Angola, 2003,315.35,Africa
+Argentina, 2003,0.64,Americas
+Armenia, 2003,0.01,Europe
+Azerbaijan, 2003,2.51,Europe
+Bangladesh, 2003,6.44,South-East Asia
+Belize, 2003,5.83,Americas
+Benin, 2003,454.31,Africa
+Bhutan, 2003,8.19,South-East Asia
+Bolivia (Plurinational State of), 2003,6.82,Americas
+Botswana, 2003,1.63,Africa
+Brazil, 2003,12.62,Americas
+Burkina Faso, 2003,566.27,Africa
+Burundi, 2003,355.74,Africa
+Cabo Verde, 2003,0.58,Africa
+Cambodia, 2003,51.13,Western Pacific
+Cameroon, 2003,394.6,Africa
+Central African Republic, 2003,461.47,Africa
+Chad, 2003,203.94,Africa
+China, 2003,0.05,Western Pacific
+Colombia, 2003,27.68,Americas
+Comoros, 2003,66.69,Africa
+Congo, 2003,338.9,Americas
+Costa Rica, 2003,0.49,Americas
+Côte d'Ivoire, 2003,520.09,Africa
+Democratic People's Republic of Korea, 2003,1.8,Western Pacific
+Democratic Republic of the Congo, 2003,476.15,Africa
+Djibouti, 2003,4.32,Eastern Mediterranean
+Dominican Republic, 2003,0.41,Americas
+Ecuador, 2003,133.63,Americas
+Egypt, 2003,0.0,Eastern Mediterranean
+El Salvador, 2003,0.07,Americas
+Equatorial Guinea, 2003,415.25,Africa
+Eritrea, 2003,19.03,Africa
+Eswatini, 2003,1.19,Africa
+Ethiopia, 2003,183.52,Africa
+Gabon, 2003,270.82,Africa
+Gambia, 2003,358.48,Africa
+Georgia, 2003,7.45,Europe
+Ghana, 2003,372.85,Africa
+Guatemala, 2003,3.9,Americas
+Guinea, 2003,404.52,Africa
+Guinea-Bissau, 2003,226.97,Africa
+Guyana, 2003,51.91,Americas
+Haiti, 2003,10.91,Americas
+Honduras, 2003,3.2,Americas
+India, 2003,19.42,South-East Asia
+Indonesia, 2003,8.57,South-East Asia
+Iran (Islamic Republic of), 2003,33.86,Eastern Mediterranean
+Iraq, 2003,0.09,Eastern Mediterranean
+Kazakhstan, 2003,0.0,Europe
+Kenya, 2003,196.73,Africa
+Kyrgyzstan, 2003,0.12,Europe
+Lao People's Democratic Republic, 2003,20.04,Western Pacific
+Liberia, 2003,446.45,Africa
+Madagascar, 2003,68.29,Africa
+Malawi, 2003,363.76,Africa
+Malaysia, 2003,6.42,Western Pacific
+Mali, 2003,423.81,Africa
+Mauritania, 2003,113.48,Africa
+Mexico, 2003,1.75,Americas
+Morocco, 2003,0.0,Eastern Mediterranean
+Mozambique, 2003,488.09,Africa
+Myanmar, 2003,52.5,South-East Asia
+Namibia, 2003,45.3,Africa
+Nepal, 2003,10.41,South-East Asia
+Nicaragua, 2003,3.68,Americas
+Niger, 2003,346.82,Africa
+Nigeria, 2003,409.16,Africa
+Oman, 2003,0.0,Eastern Mediterranean
+Pakistan, 2003,6.14,Eastern Mediterranean
+Panama, 2003,1.53,Americas
+Papua New Guinea, 2003,230.12,Western Pacific
+Paraguay, 2003,6.86,Americas
+Peru, 2003,10.4,Americas
+Philippines, 2003,3.25,Western Pacific
+Republic of Korea, 2003,0.35,Western Pacific
+Rwanda, 2003,144.92,Africa
+Sao Tome and Principe, 2003,283.61,Africa
+Saudi Arabia, 2003,0.96,Eastern Mediterranean
+Senegal, 2003,164.93,Africa
+Sierra Leone, 2003,439.79,Africa
+Solomon Islands, 2003,539.99,Western Pacific
+Somalia, 2003,121.0,Eastern Mediterranean
+South Africa, 2003,2.88,Africa
+South Sudan, 2003,332.83,Africa
+Sri Lanka, 2003,2.38,South-East Asia
+Sudan, 2003,58.1,Eastern Mediterranean
+Suriname, 2003,152.38,Americas
+Syrian Arab Republic, 2003,0.0,Eastern Mediterranean
+Tajikistan, 2003,2.48,Europe
+Thailand, 2003,3.05,South-East Asia
+Timor-Leste, 2003,51.9,South-East Asia
+Togo, 2003,451.14,Africa
+Turkey, 2003,2.15,Europe
+Turkmenistan, 2003,0.0,Europe
+Uganda, 2003,492.1,Africa
+United Arab Emirates, 2003,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2003,277.2,Africa
+Uzbekistan, 2003,0.04,Europe
+Vanuatu, 2003,214.55,Western Pacific
+Venezuela (Bolivarian Republic of), 2003,2.94,Americas
+Viet Nam, 2003,1.59,Western Pacific
+Yemen, 2003,41.22,Eastern Mediterranean
+Zambia, 2003,339.04,Africa
+Zimbabwe, 2003,120.94,Africa
+Afghanistan, 2002,104.01,Eastern Mediterranean
+Algeria, 2002,0.01,Africa
+Angola, 2002,312.3,Africa
+Argentina, 2002,0.66,Americas
+Armenia, 2002,0.02,Europe
+Azerbaijan, 2002,2.66,Europe
+Bangladesh, 2002,6.67,South-East Asia
+Belize, 2002,6.26,Americas
+Benin, 2002,435.07,Africa
+Bhutan, 2002,14.28,South-East Asia
+Bolivia (Plurinational State of), 2002,4.98,Americas
+Botswana, 2002,3.28,Africa
+Brazil, 2002,11.17,Americas
+Burkina Faso, 2002,580.57,Africa
+Burundi, 2002,391.07,Africa
+Cabo Verde, 2002,0.66,Africa
+Cambodia, 2002,39.05,Western Pacific
+Cameroon, 2002,383.4,Africa
+Central African Republic, 2002,454.36,Africa
+Chad, 2002,211.38,Africa
+China, 2002,0.05,Western Pacific
+Colombia, 2002,32.2,Americas
+Comoros, 2002,68.29,Africa
+Congo, 2002,347.47,Americas
+Costa Rica, 2002,0.71,Americas
+Côte d'Ivoire, 2002,519.63,Africa
+Democratic People's Republic of Korea, 2002,1.82,Western Pacific
+Democratic Republic of the Congo, 2002,470.37,Africa
+Djibouti, 2002,4.47,Eastern Mediterranean
+Dominican Republic, 2002,0.35,Americas
+Ecuador, 2002,226.5,Americas
+Egypt, 2002,0.0,Eastern Mediterranean
+El Salvador, 2002,0.1,Americas
+Equatorial Guinea, 2002,409.81,Africa
+Eritrea, 2002,13.23,Africa
+Eswatini, 2002,2.35,Africa
+Ethiopia, 2002,155.28,Africa
+Gabon, 2002,324.12,Africa
+Gambia, 2002,370.49,Africa
+Georgia, 2002,11.13,Europe
+Ghana, 2002,393.23,Africa
+Guatemala, 2002,4.58,Americas
+Guinea, 2002,428.29,Africa
+Guinea-Bissau, 2002,311.14,Africa
+Guyana, 2002,41.16,Americas
+Haiti, 2002,11.28,Americas
+Honduras, 2002,4.02,Americas
+India, 2002,18.5,South-East Asia
+Indonesia, 2002,8.8,South-East Asia
+Iran (Islamic Republic of), 2002,22.64,Eastern Mediterranean
+Iraq, 2002,0.29,Eastern Mediterranean
+Kazakhstan, 2002,0.0,Europe
+Kenya, 2002,207.03,Africa
+Kyrgyzstan, 2002,0.7,Europe
+Lao People's Democratic Republic, 2002,22.21,Western Pacific
+Liberia, 2002,461.73,Africa
+Madagascar, 2002,53.68,Africa
+Malawi, 2002,397.84,Africa
+Malaysia, 2002,11.38,Western Pacific
+Mali, 2002,416.46,Africa
+Mauritania, 2002,118.56,Africa
+Mexico, 2002,2.14,Americas
+Morocco, 2002,0.0,Eastern Mediterranean
+Mozambique, 2002,499.46,Africa
+Myanmar, 2002,53.49,South-East Asia
+Namibia, 2002,47.9,Africa
+Nepal, 2002,12.35,South-East Asia
+Nicaragua, 2002,4.28,Americas
+Niger, 2002,328.3,Africa
+Nigeria, 2002,412.96,Africa
+Oman, 2002,0.0,Eastern Mediterranean
+Pakistan, 2002,6.57,Eastern Mediterranean
+Panama, 2002,0.78,Americas
+Papua New Guinea, 2002,215.5,Western Pacific
+Paraguay, 2002,13.95,Americas
+Peru, 2002,12.12,Americas
+Philippines, 2002,2.56,Western Pacific
+Republic of Korea, 2002,0.54,Western Pacific
+Rwanda, 2002,171.7,Africa
+Sao Tome and Principe, 2002,343.07,Africa
+Saudi Arabia, 2002,1.5,Eastern Mediterranean
+Senegal, 2002,193.51,Africa
+Sierra Leone, 2002,458.0,Africa
+Solomon Islands, 2002,649.79,Western Pacific
+Somalia, 2002,126.19,Eastern Mediterranean
+South Africa, 2002,3.39,Africa
+South Sudan, 2002,347.21,Africa
+Sri Lanka, 2002,9.45,South-East Asia
+Sudan, 2002,63.33,Eastern Mediterranean
+Suriname, 2002,180.23,Americas
+Syrian Arab Republic, 2002,0.0,Eastern Mediterranean
+Tajikistan, 2002,2.87,Europe
+Thailand, 2002,3.66,South-East Asia
+Timor-Leste, 2002,84.79,South-East Asia
+Togo, 2002,440.31,Africa
+Turkey, 2002,2.41,Europe
+Turkmenistan, 2002,0.0,Europe
+Uganda, 2002,508.39,Africa
+United Arab Emirates, 2002,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2002,301.09,Africa
+Uzbekistan, 2002,0.04,Europe
+Vanuatu, 2002,189.01,Western Pacific
+Venezuela (Bolivarian Republic of), 2002,2.79,Americas
+Viet Nam, 2002,2.19,Western Pacific
+Yemen, 2002,46.67,Eastern Mediterranean
+Zambia, 2002,363.85,Africa
+Zimbabwe, 2002,121.5,Africa
+Afghanistan, 2001,91.89,Eastern Mediterranean
+Algeria, 2001,0.0,Africa
+Angola, 2001,328.28,Africa
+Argentina, 2001,1.15,Americas
+Armenia, 2001,0.03,Europe
+Azerbaijan, 2001,5.61,Europe
+Bangladesh, 2001,6.91,South-East Asia
+Belize, 2001,6.6,Americas
+Benin, 2001,428.66,Africa
+Bhutan, 2001,13.39,South-East Asia
+Bolivia (Plurinational State of), 2001,5.74,Americas
+Botswana, 2001,7.03,Africa
+Brazil, 2001,12.99,Americas
+Burkina Faso, 2001,588.45,Africa
+Burundi, 2001,431.24,Africa
+Cabo Verde, 2001,0.94,Africa
+Cambodia, 2001,44.3,Western Pacific
+Cameroon, 2001,387.01,Africa
+Central African Republic, 2001,456.57,Africa
+Chad, 2001,244.99,Africa
+China, 2001,0.04,Western Pacific
+Colombia, 2001,37.37,Americas
+Comoros, 2001,69.99,Africa
+Congo, 2001,373.11,Americas
+Costa Rica, 2001,0.97,Americas
+Côte d'Ivoire, 2001,519.47,Africa
+Democratic People's Republic of Korea, 2001,15.91,Western Pacific
+Democratic Republic of the Congo, 2001,473.61,Africa
+Djibouti, 2001,4.64,Eastern Mediterranean
+Dominican Republic, 2001,0.28,Americas
+Ecuador, 2001,289.36,Americas
+Egypt, 2001,0.0,Eastern Mediterranean
+El Salvador, 2001,0.3,Americas
+Equatorial Guinea, 2001,407.22,Africa
+Eritrea, 2001,22.93,Africa
+Eswatini, 2001,4.92,Africa
+Ethiopia, 2001,157.31,Africa
+Gabon, 2001,362.03,Africa
+Gambia, 2001,382.69,Africa
+Georgia, 2001,10.19,Europe
+Ghana, 2001,422.14,Africa
+Guatemala, 2001,4.74,Americas
+Guinea, 2001,450.82,Africa
+Guinea-Bissau, 2001,395.69,Africa
+Guyana, 2001,50.96,Americas
+Haiti, 2001,11.67,Americas
+Honduras, 2001,5.79,Americas
+India, 2001,19.96,South-East Asia
+Indonesia, 2001,9.05,South-East Asia
+Iran (Islamic Republic of), 2001,28.44,Eastern Mediterranean
+Iraq, 2001,0.4,Eastern Mediterranean
+Kazakhstan, 2001,0.0,Europe
+Kenya, 2001,212.49,Africa
+Kyrgyzstan, 2001,0.01,Europe
+Lao People's Democratic Republic, 2001,29.55,Western Pacific
+Liberia, 2001,475.18,Africa
+Madagascar, 2001,68.18,Africa
+Malawi, 2001,426.39,Africa
+Malaysia, 2001,13.48,Western Pacific
+Mali, 2001,407.45,Africa
+Mauritania, 2001,151.35,Africa
+Mexico, 2001,2.35,Americas
+Morocco, 2001,0.0,Eastern Mediterranean
+Mozambique, 2001,507.75,Africa
+Myanmar, 2001,54.57,South-East Asia
+Namibia, 2001,71.09,Africa
+Nepal, 2001,8.21,South-East Asia
+Nicaragua, 2001,5.91,Americas
+Niger, 2001,317.48,Africa
+Nigeria, 2001,429.04,Africa
+Oman, 2001,0.0,Eastern Mediterranean
+Pakistan, 2001,7.23,Eastern Mediterranean
+Panama, 2001,0.33,Americas
+Papua New Guinea, 2001,254.35,Western Pacific
+Paraguay, 2001,13.87,Americas
+Peru, 2001,9.98,Americas
+Philippines, 2001,2.44,Western Pacific
+Republic of Korea, 2001,0.77,Western Pacific
+Rwanda, 2001,213.38,Africa
+Sao Tome and Principe, 2001,290.73,Africa
+Saudi Arabia, 2001,1.81,Eastern Mediterranean
+Senegal, 2001,239.51,Africa
+Sierra Leone, 2001,468.8,Africa
+Solomon Islands, 2001,681.26,Western Pacific
+Somalia, 2001,125.96,Eastern Mediterranean
+South Africa, 2001,5.82,Africa
+South Sudan, 2001,373.79,Africa
+Sri Lanka, 2001,15.29,South-East Asia
+Sudan, 2001,83.81,Eastern Mediterranean
+Suriname, 2001,227.35,Americas
+Syrian Arab Republic, 2001,0.0,Eastern Mediterranean
+Tajikistan, 2001,5.4,Europe
+Thailand, 2001,5.27,South-East Asia
+Timor-Leste, 2001,118.01,South-East Asia
+Togo, 2001,439.86,Africa
+Turkey, 2001,2.59,Europe
+Turkmenistan, 2001,0.0,Europe
+Uganda, 2001,516.34,Africa
+United Arab Emirates, 2001,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2001,331.21,Africa
+Uzbekistan, 2001,0.04,Europe
+Vanuatu, 2001,98.84,Western Pacific
+Venezuela (Bolivarian Republic of), 2001,1.93,Americas
+Viet Nam, 2001,3.11,Western Pacific
+Yemen, 2001,48.6,Eastern Mediterranean
+Zambia, 2001,391.1,Africa
+Zimbabwe, 2001,122.12,Africa
+Afghanistan, 2000,95.54,Eastern Mediterranean
+Algeria, 2000,0.02,Africa
+Angola, 2000,324.44,Africa
+Argentina, 2000,2.39,Americas
+Armenia, 2000,0.05,Europe
+Azerbaijan, 2000,8.17,Europe
+Bangladesh, 2000,7.18,South-East Asia
+Belize, 2000,8.71,Americas
+Benin, 2000,410.94,Africa
+Bhutan, 2000,13.57,South-East Asia
+Bolivia (Plurinational State of), 2000,11.95,Americas
+Botswana, 2000,17.88,Africa
+Brazil, 2000,21.44,Americas
+Burkina Faso, 2000,589.33,Africa
+Burundi, 2000,442.66,Africa
+Cabo Verde, 2000,1.29,Africa
+Cambodia, 2000,77.84,Western Pacific
+Cameroon, 2000,386.33,Africa
+Central African Republic, 2000,458.76,Africa
+Chad, 2000,241.79,Africa
+China, 2000,0.01,Western Pacific
+Colombia, 2000,24.02,Americas
+Comoros, 2000,71.79,Africa
+Congo, 2000,384.6,Americas
+Costa Rica, 2000,1.35,Americas
+Côte d'Ivoire, 2000,514.62,Africa
+Democratic People's Republic of Korea, 2000,10.12,Western Pacific
+Democratic Republic of the Congo, 2000,475.68,Africa
+Djibouti, 2000,4.84,Eastern Mediterranean
+Dominican Republic, 2000,0.33,Americas
+Ecuador, 2000,282.85,Americas
+Egypt, 2000,0.0,Eastern Mediterranean
+El Salvador, 2000,0.63,Americas
+Equatorial Guinea, 2000,404.83,Africa
+Eritrea, 2000,21.56,Africa
+Eswatini, 2000,2.88,Africa
+Ethiopia, 2000,157.31,Africa
+Gabon, 2000,382.79,Africa
+Gambia, 2000,394.9,Africa
+Georgia, 2000,5.62,Europe
+Ghana, 2000,437.53,Africa
+Guatemala, 2000,7.24,Americas
+Guinea, 2000,458.08,Africa
+Guinea-Bissau, 2000,474.54,Africa
+Guyana, 2000,45.03,Americas
+Haiti, 2000,12.07,Americas
+Honduras, 2000,8.65,Americas
+India, 2000,19.93,South-East Asia
+Indonesia, 2000,9.3,South-East Asia
+Iran (Islamic Republic of), 2000,29.41,Eastern Mediterranean
+Iraq, 2000,0.61,Eastern Mediterranean
+Kazakhstan, 2000,0.0,Europe
+Kenya, 2000,213.19,Africa
+Kyrgyzstan, 2000,0.0,Europe
+Lao People's Democratic Republic, 2000,62.72,Western Pacific
+Liberia, 2000,478.34,Africa
+Madagascar, 2000,57.17,Africa
+Malawi, 2000,426.53,Africa
+Malaysia, 2000,13.69,Western Pacific
+Mali, 2000,406.23,Africa
+Mauritania, 2000,147.95,Africa
+Mexico, 2000,3.52,Americas
+Morocco, 2000,0.0,Eastern Mediterranean
+Mozambique, 2000,492.56,Africa
+Myanmar, 2000,55.76,South-East Asia
+Namibia, 2000,58.15,Africa
+Nepal, 2000,7.18,South-East Asia
+Nicaragua, 2000,13.54,Americas
+Niger, 2000,317.3,Africa
+Nigeria, 2000,438.75,Africa
+Oman, 2000,0.0,Eastern Mediterranean
+Pakistan, 2000,7.33,Eastern Mediterranean
+Panama, 2000,0.37,Americas
+Papua New Guinea, 2000,260.58,Western Pacific
+Paraguay, 2000,35.76,Americas
+Peru, 2000,9.07,Americas
+Philippines, 2000,2.64,Western Pacific
+Republic of Korea, 2000,1.26,Western Pacific
+Rwanda, 2000,223.17,Africa
+Sao Tome and Principe, 2000,224.76,Africa
+Saudi Arabia, 2000,3.99,Eastern Mediterranean
+Senegal, 2000,255.64,Africa
+Sierra Leone, 2000,465.78,Africa
+Solomon Islands, 2000,623.15,Western Pacific
+Somalia, 2000,125.58,Eastern Mediterranean
+South Africa, 2000,4.23,Africa
+South Sudan, 2000,380.08,Africa
+Sri Lanka, 2000,48.63,South-East Asia
+Sudan, 2000,89.05,Eastern Mediterranean
+Suriname, 2000,163.33,Americas
+Syrian Arab Republic, 2000,0.0,Eastern Mediterranean
+Tajikistan, 2000,9.18,Europe
+Thailand, 2000,6.58,South-East Asia
+Timor-Leste, 2000,122.55,South-East Asia
+Togo, 2000,442.02,Africa
+Turkey, 2000,2.78,Europe
+Turkmenistan, 2000,0.01,Europe
+Uganda, 2000,495.25,Africa
+United Arab Emirates, 2000,0.0,Eastern Mediterranean
+United Republic of Tanzania, 2000,342.68,Africa
+Uzbekistan, 2000,0.07,Europe
+Vanuatu, 2000,125.25,Western Pacific
+Venezuela (Bolivarian Republic of), 2000,2.94,Americas
+Viet Nam, 2000,3.42,Western Pacific
+Yemen, 2000,47.47,Eastern Mediterranean
+Zambia, 2000,385.65,Africa
+Zimbabwe, 2000,123.0,Africa

@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
 }
 
 body {
@@ -20,4 +24,12 @@ body {
     /* border: 1px solid black; */
     border-radius: 8px;
     background: #ababac;
+}
+
+hr{
+    margin: 0 4rem;
+}
+
+li {
+    list-style: none;
 }

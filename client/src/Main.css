@@ -1,0 +1,245 @@
+.landing{
+    background-color: white;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    margin: 4rem 0;
+    justify-content: space-evenly;
+  }
+
+  .title{
+      padding: 4rem 2rem 1rem 2rem;
+  }
+
+  .image {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .image img{
+      width: 100%;
+      height: auto;
+  }
+
+  .about {
+      padding: 4rem 2rem;
+      background-color:#E7F0FD;
+  }
+
+  .about h2{
+      text-align: center;
+  }
+
+  .about a {
+      padding: 0.5rem 2rem;
+  }
+
+  .about a:hover{
+    color: black;
+    transform: scale(0.9);
+  }
+
+  .table{
+      padding: 4rem 2rem;
+      display: flex;
+  }
+
+  .table ul{
+      margin: 1rem 2rem;
+  }
+
+  .list-heading{
+      margin-bottom: 0.5rem;
+      color: #3F51B5;
+  }
+
+  blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 500px;
+    margin: 0.25em auto;
+    padding: 1rem 2rem;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+    blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    color: #7a7a7a;
+    }
+    
+    blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+    }
+     
+    blockquote cite:before {
+    content: "\2014 \2009";
+    }
+
+      label {
+        display: block;
+        font-weight: bold;
+        font-family: 'Questrial', sans-serif;
+        font-weight: normal;
+        color: #3F51B5;
+    }
+    
+    form{
+        border-radius: 1rem;
+        padding: 0.5rem 1.5rem;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .contact{
+        padding: 2rem 0;
+    }
+    
+    .w-input{
+        display: block;
+        height: 1rem;
+        padding: 1rem 0.5rem;
+        margin: 0.2rem 0 1rem 0;
+        color: #333333;
+        width: 25vw;
+        background-color: #ffffff;
+        border: 2.2px solid rgb(77, 76, 76);
+        border-radius: 0.5rem;
+        font-size: 14px;
+        font-family: 'Questrial', sans-serif;
+    }
+    
+    .w-textarea{
+        display: block;
+        padding: 0.5rem;
+        margin: 0.2rem 0 1rem 0;
+        color: #333333;
+        background-color: #ffffff;
+        border: 2.2px solid rgb(77, 76, 76);
+        font-size: 14px;
+        height: 6rem;
+        border-radius: 0.5rem;
+        resize: none;
+        width: 25vw;
+        font-family: 'Questrial', sans-serif;
+    }
+    
+    .w-input:focus, .w-textarea:focus{
+      outline: none;
+    }
+    
+    .submit-button{
+        width: 100%;
+        height: 2rem;
+        text-align: center;
+        margin: 0.5rem 0 1rem 0;
+        color: white;
+        font-family: 'Questrial', sans-serif;
+        background-color: #3F51B5;
+        border: none;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        cursor: pointer;
+        transition: 0.1s ease-in;
+    }
+    
+    .submit-button:hover{
+      color: black;
+      background-color: transparent;
+      border: 2px solid #3F51B5;
+      transform: scale(1.01)
+    }
+    
+    .email-link{
+      text-align: center;
+    }
+    
+    .email-link a{
+      text-decoration: none;
+      color: black;
+      letter-spacing: 0.2rem;
+      font-family: 'Questrial', sans-serif;
+      text-align: center;
+      font-weight: bold;
+      line-height: 2rem;
+    }
+
+    .footer{
+        background-color: #E7F0FD;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    
+    @media screen and (max-width: 1000px) {
+        .wrapper{
+            width: 100%;
+            display: block;
+            padding: 2rem;
+            margin: 4rem 0;
+            justify-content: space-evenly;
+          }
+        
+          .wrapper h2{
+              padding: 4rem 2rem 0 2rem;
+          }
+        
+          .image {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+          }
+
+        .table{
+            padding: 1rem;
+            display: block;
+        }
+
+        .table ul{
+            margin-bottom: 2rem;
+        }
+
+        .w-input{
+            width: 70vw;
+        }
+        .w-textarea{
+            width: 70vw;
+        }
+        .contact h1{
+              text-align: center;
+          margin: 1rem auto;
+            letter-spacing: 0.03rem;
+            font-size: 38px;
+            font-weight: bold;
+          }
+    }
+
+
+    @media screen and (max-width: 600px){
+        blockquote{
+            width: 350px;
+        }
+    }

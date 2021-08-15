@@ -192,7 +192,7 @@ export default function CoronaPortal() {
                     </GridContainer>
 
                     {/* Update on - date */}
-                    <Muted>{"All the statistical data is taken on " + timeConverter(countrywiseData.statistic_taken_at)}</Muted>
+                    <Muted>{`All the statistical data is taken on ${countrywiseData ? timeConverter(countrywiseData.statistic_taken_at) : ''}`}</Muted>
                     <br/>
 
                     <GridContainer>

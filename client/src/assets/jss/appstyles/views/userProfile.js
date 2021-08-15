@@ -47,6 +47,9 @@ const userProfileStyle = theme => ({
             padding: "0px 0px",
         },
     },
+    button: {
+        width: '100%',
+    },
     cardTitle: {
         height: "100%",
         display: "flex",

@@ -105,15 +105,17 @@ const CreateExperience = () => {
 
         api.createNewExperience(formData)
             .then(function (response) {
-                setNotif({ open: true, color: "success", message: response.data.message });
+                setNotif({ open: true, color: "success", message: response.data.message + 'Redirecting you!' });
                 setTimeout(function () {
                     setNotif({ open: false, message: "" });
                 }, 5000);
-                history.push("/app/portals");
+                setTimeout(function(){
+                    history.push("/app/forum");
+               }, 2000);
             })
             .catch(function (error) {
                 var response = error.response.data;
-                setNotif({ open: true, color: "danger", message: "Project not created! " + response.message });
+                setNotif({ open: true, color: "danger", message: "Post not created! " + response.message });
                 setTimeout(function () {
                     setNotif({ open: false, message: "" });
                 }, 5000);
@@ -263,7 +265,7 @@ const CreateExperience = () => {
                                         <Muted>Do not post any content that is harmful to the community or the users.</Muted>
                                         <br />
                                         3. Anonmity <br/>
-                                        <Muted>If you chose to not disclose your identity with this post, </Muted>
+                                        <Muted>If you chose to not disclose your identity with this post, your name will not be visible to the readers! </Muted>
                                     </div>
                                     <Button type="submit" color="primary" disabled={!conditions}>Submit</Button>
                                 </CardBody>

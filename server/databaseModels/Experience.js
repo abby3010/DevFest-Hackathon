@@ -36,6 +36,10 @@ const experienceSchema = new Schema({
     imageURL: {
         type: String,
     },
+    likes: {
+        type: [String],
+        default: []
+    },
     createdAt: {
         type: Date,
         default: Date.now,

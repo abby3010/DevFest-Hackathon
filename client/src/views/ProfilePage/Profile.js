@@ -178,7 +178,7 @@ const ProfilePage = () => {
                     <GridItem xs={12} sm={12} md={8}>
                         <GridContainer>
                             {
-                                exps.length > 0
+                                exps.filter(exp => exp.creator_id === localUser.result.uid).length > 0
                                     ? exps.filter(exp => exp.creator_id === localUser.result.uid).map((exp, val) => {
                                         return (
                                             <GridItem xs={12} sm={6}>

@@ -105,7 +105,7 @@ const CreateExperience = () => {
 
         api.createNewExperience(formData)
             .then(function (response) {
-                setNotif({ open: true, color: "success", message: response.data.message + 'Redirecting you!' });
+                setNotif({ open: true, color: "success", message: response.data.message + ' Redirecting you!' });
                 setTimeout(function () {
                     setNotif({ open: false, message: "" });
                 }, 5000);

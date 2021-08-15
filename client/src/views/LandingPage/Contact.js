@@ -75,56 +75,60 @@ const Contact = () => {
                 closeNotification={() => setNotif({ open: false, message: "" })}
                 close
             />
-            <GridContainer>
-                <GridItem xs={12} sm={6}>
-                    <Chart
-                        height={"400px"}
-                        chartType="AreaChart"
-                        loader={<div>Loading Chart...</div>}
-                        data={[
-                            ["Disease", "Cases", "Deaths"],
-                            ["Ebola", 6325462, 2555444],
-                            ["HIV/AIDS", 102742880.0, 2748730.0],
-                            ["Malaria", 666438730.0, 2159768.0],
-                            ["H1N1", 973183, 5289],
-                            ["Cholera", 9180678, 897204],
-                        ]}
-                        options={{
-                            title: "Epidemics' cases and deaths Column chart",
-                            vAxis: { logScale: true }
-                        }}
-                        legendToggle
-                    />
-                </GridItem>
-                <GridItem xs={12} sm={6}>
-                    <Chart
-                        height={"400px"}
-                        width={"400px"}
-                        chartType="ColumnChart"
-                        loader={<div>Loading Chart...</div>}
-                        data={[
-                            ["Disease", "Cases", "Deaths"],
-                            ["Ebola", 6325462, 2555444],
-                            ["HIV/AIDS", 102742880.0, 2748730.0],
-                            ["Malaria", 666438730.0, 2159768.0],
-                            ["H1N1", 973183, 5289],
-                            ["Cholera", 9180678, 897204],
-                        ]}
-                        options={{
-                            title: "Epidemics' cases and deaths Pie chart",
-                            vAxis: { logScale: true }
-                        }}
-                        legendToggle
-                    />
-                </GridItem>
-            </GridContainer>
-            {/* <div style={{ padding: '2rem 1rem 1rem 1rem' }}>
+            <div style={{overflowX: 'clip'}}>
+                <GridContainer>
+                <GridItem xs={12} sm={1}></GridItem>
+                    <GridItem xs={12} sm={5}>
+                        <Chart
+                            height={"400px"}
+                            width={"600px"}
+                            chartType="AreaChart"
+                            loader={<div>Loading Chart...</div>}
+                            data={[
+                                ["Disease", "Cases", "Deaths"],
+                                ["Ebola", 6325462, 2555444],
+                                ["HIV/AIDS", 102742880.0, 2748730.0],
+                                ["Malaria", 666438730.0, 2159768.0],
+                                ["H1N1", 973183, 5289],
+                                ["Cholera", 9180678, 897204],
+                            ]}
+                            options={{
+                                title: "Epidemics' cases and deaths Area chart",
+                                vAxis: { logScale: true }
+                            }}
+                            legendToggle
+                        />
+                    </GridItem>
+                    <GridItem xs={12} sm={5}>
+                        <Chart
+                            height={"400px"}
+                            width={"600px"}
+                            margin={'auto'}
+                            chartType="ColumnChart"
+                            loader={<div>Loading Chart...</div>}
+                            data={[
+                                ["Disease", "Cases", "Deaths"],
+                                ["Ebola", 6325462, 2555444],
+                                ["HIV/AIDS", 102742880.0, 2748730.0],
+                                ["Malaria", 666438730.0, 2159768.0],
+                                ["H1N1", 973183, 5289],
+                                ["Cholera", 9180678, 897204],
+                            ]}
+                            options={{
+                                title: "Epidemics' cases and deaths Column chart",
+                                vAxis: { logScale: true }
+                            }}
+                            legendToggle
+                        />
+                    </GridItem>
+                    <GridItem xs={12} sm={1}></GridItem>
+                </GridContainer>
+            </div>
+            <div style={{ padding: '2rem 1rem 1rem 1rem' }}>
                 <Typography variant="h3" align="center">
                     Contact
                 </Typography>
-            </div> */}
-           
-
+            </div>
         </div>
     )
 }

@@ -17,23 +17,23 @@ export default function Footer(props) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a href="#home" className={classes.block}>
+              <a href="/" className={classes.block}>
                 Home
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="#company" className={classes.block}>
-                Company
+              <a href="/app/portals" className={classes.block}>
+                Portals
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="#portfolio" className={classes.block}>
-                Portfolio
+              <a href="/app/diseases" className={classes.block}>
+                Diseases
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="#blog" className={classes.block}>
-                Blog
+              <a href="/app/forum" className={classes.block}>
+                Forum
               </a>
             </ListItem>
           </List>
@@ -41,7 +41,7 @@ export default function Footer(props) {
         <p className={classes.right}>
           <span>
             {1900 + new Date().getYear()}{" "}
-              Workosmo - for better work experienced generation
+              Epinfo - for modernised epidemiological studies.
           </span>
         </p>
       </div>

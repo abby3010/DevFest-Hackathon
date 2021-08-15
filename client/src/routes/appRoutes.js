@@ -30,7 +30,7 @@ export const appRoutes = () => {
   }
 
   var portalsList = [
-    { name: "Corona", path: '/app/portal/corona' },
+    { name: "COVID19", path: '/app/portal/corona' },
     { name: "Cholera", path: '/app/portal/cholera' },
     { name: "Malaria", path: '/app/portal/malaria' },
     { name: "H1N1", path: '/app/portal/h1n1' },

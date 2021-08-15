@@ -1,11 +1,11 @@
-import * as api from '../../../api/index';
+// import * as api from '../../../api/index';
 
-export const fetchHashTags = () => async (dispatch) => {
-    try {
-        const { data } = await api.getHashTags();
-        dispatch({ type: "FETCH", data });
+// export const fetchHashTags = () => async (dispatch) => {
+//     try {
+//         const { data } = await api.getHashTags();
+//         dispatch({ type: "FETCH", data });
 
-    } catch (error) {
-        console.log(error.response);
-    }
-};
+//     } catch (error) {
+//         console.log(error.response);
+//     }
+// };

@@ -7,7 +7,6 @@ import Checkbox from "@material-ui/core/Checkbox";
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Divider from '@material-ui/core/Divider';
 
 // import LinearProgress from '@material-ui/core/LinearProgress';
 import { TextField, Switch } from '@material-ui/core';
@@ -27,7 +26,6 @@ import * as api from '../../api/index';
 
 import styles from "../../assets/jss/appstyles/views/setProfile.js";
 import checkboxAndRadioStyles from "../../assets/jss/appstyles/checkboxAdnRadioStyle.js";
-import default_profileImage from '../../assets/img/default_profile_image.png';
 import { fname, lname } from './RandomNameLists.js';
 
 const useStyles = makeStyles(styles);
@@ -85,8 +83,6 @@ const CreateExperience = () => {
     const [conditions, setConditions] = useState(false);
     const [useLocation, setUseLocation] = useState(true);
     const [isAnonymous, setIsAnonymous] = useState(false);
-    const [image, setImage] = useState();
-    const [imageUrl, setImageUrl] = useState('');
     const fullName = `${user.firstName} ${user.lastName}`
 
     const handleSubmit = async (e) => {
@@ -99,21 +95,22 @@ const CreateExperience = () => {
         formData.append("region", region ? region : user.region);
         formData.append("city", city ? city : user.city);
         formData.append("category", category);
-        formData.append('imageURL', imageUrl)
         formData.append("creator_id", localUser.result.uid);
         formData.append("creator_name", isAnonymous ? generateName() : fullName);
 
         api.createNewExperience(formData)
             .then(function (response) {
-                setNotif({ open: true, color: "success", message: response.data.message });
+                setNotif({ open: true, color: "success", message: response.data.message + ' Redirecting you!' });
                 setTimeout(function () {
                     setNotif({ open: false, message: "" });
                 }, 5000);
-                history.push("/app/portals");
+                setTimeout(function(){
+                    history.push("/app/forum");
+               }, 2000);
             })
             .catch(function (error) {
                 var response = error.response.data;
-                setNotif({ open: true, color: "danger", message: "Project not created! " + response.message });
+                setNotif({ open: true, color: "danger", message: "Post not created! " + response.message });
                 setTimeout(function () {
                     setNotif({ open: false, message: "" });
                 }, 5000);
@@ -135,6 +132,7 @@ const CreateExperience = () => {
                     close
                 />
                 <GridContainer >
+                    <GridItem xs={12} sm={1}></GridItem>
                     <GridItem xs={12} sm={10}>
                         <form onSubmit={handleSubmit}>
 
@@ -148,49 +146,6 @@ const CreateExperience = () => {
                                     <TextField variant="outlined" value={title} label="Title of your Post" fullWidth className={classes.cardTextField} onChange={(e) => setTitle(e.target.value)} required />
                                     <TextField variant="outlined" value={description} label="Write your post here!" fullWidth className={classes.cardTextField} multiline rows={6} onChange={(e) => setDescription(e.target.value)} required />
                                     <br />
-                                    <GridContainer>
-                                        <GridItem xs={12} sm={12} md={4}>
-                                            <div className={classes.image}>
-                                                {image ?
-                                                    <img
-                                                        className={classes.expImage}
-                                                        src={imageUrl ? imageUrl : URL.createObjectURL(image)}
-                                                        alt="Profile"
-                                                    /> :
-                                                    <img
-                                                        className={classes.expImage}
-                                                        src={default_profileImage}
-                                                        alt="Profile"
-                                                    />
-                                                }
-                                                <div style={{ padding: '10px 0', textAlign: 'center' }}>
-                                                    <Muted><i>Preview</i></Muted>
-                                                </div>
-                                            </div>
-                                        </GridItem>
-                                        <GridItem xs={12} sm={12} md={8}>
-                                            <div className={classes.selectImage}>
-                                                <input
-                                                    type="file"
-                                                    id="projectImage"
-                                                    accept="image/*"
-                                                    onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
-                                                    onChange={event => {
-                                                        const file = event.target.files[0];
-                                                        setImage(file);
-                                                        setImageUrl(null);
-                                                    }} />
-                                                {image ?
-                                                    <img src={imageUrl ? imageUrl : URL.createObjectURL(image)} className={classes.imagePreview} alt="project-logo" />
-                                                    : <img src={default_profileImage} className={classes.imagePreview} alt="project-logo" />
-                                                }
-                                                <Muted><i>Preferred: square dimensions - 400x400 or 512x512 (png, jpg, or jpeg)</i></Muted>
-                                            </div>
-                                        </GridItem>
-                                    </GridContainer>
-
-                                    <br />
-                                    <Divider />
 
                                     <div style={{ margin: '1rem 0' }}>
                                         <div style={{ display: 'flex' }}>
@@ -262,13 +217,14 @@ const CreateExperience = () => {
                                         <Muted>Do not post any content that is harmful to the community or the users.</Muted>
                                         <br />
                                         3. Anonmity <br/>
-                                        <Muted>If you chose to not disclose your identity with this post, </Muted>
+                                        <Muted>If you chose to not disclose your identity with this post, your name will not be visible to the readers! </Muted>
                                     </div>
                                     <Button type="submit" color="primary" disabled={!conditions}>Submit</Button>
                                 </CardBody>
                             </Card>
                         </form>
                     </GridItem>
+                    <GridItem xs={12} sm={1}></GridItem>
                 </GridContainer>
             </div>
         </div>

@@ -42,7 +42,7 @@ const GeoMap = ({ disease }) => {
                             ...all_together_data
                         ]}
                         options={{
-                            vAxis: { logScale:true}
+                            vAxis: { logScale: true }
                         }}
                         mapsApiKey='AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
                         legendToggle
@@ -63,7 +63,7 @@ const GeoMap = ({ disease }) => {
                         ]}
                         options={{
                             title: "Percentage of Cases",
-                            
+
                         }}
                         mapsApiKey='AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
                         legendToggle
@@ -88,6 +88,7 @@ const GeoMap = ({ disease }) => {
 
                 {/* Geo Graph for Cases */}
                 <GridItem xs={12} sm={6}>
+                    <br />
                     <Typography variant="h5" gutterBottom>
                         {disease[0] + " Cases Geo Graph"}
                     </Typography>
@@ -103,7 +104,7 @@ const GeoMap = ({ disease }) => {
                             backgroundColor: '#A5DEEF',
                             datalessRegionColor: '#ffffff',
                             defaultColor: '#f5f5f5',
-                            
+
                         }}
                         mapsApiKey='AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
                         legendToggle
@@ -111,6 +112,7 @@ const GeoMap = ({ disease }) => {
                 </GridItem>
                 {/* Geo Graph for Deaths */}
                 <GridItem xs={12} sm={6}>
+                    <br />
                     <Typography variant="h5" gutterBottom>
                         {disease[0] + " Deaths Geo Graph"}
                     </Typography>

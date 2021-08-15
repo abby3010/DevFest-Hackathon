@@ -28,8 +28,12 @@ export const fetchAllExperiences = () => API.get('/fetchall');
 // Creates a new project for the user
 export const createNewExperience = (formData) => API.post('/user/createnewexperience', formData);
 
+export const likeExp = (id) => API.patch(`/user/${id}/likeExp`)
+
 // Fetch user's data for profile page
 export const fetchUserData = (data) => API.post('/user/fetchuserdata', data);
+
+export const deleteExp = (id) => API.delete(`/user/${id}`)
 
 // Update the user profile
 export const updateProfile = (data) => API.post('/update/updateprofile', data);

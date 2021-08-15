@@ -11,6 +11,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
 import Divider from '@material-ui/core/Divider';
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     search: {
@@ -85,15 +86,15 @@ const DiseaseInfo = () => {
                             <GridItem xs={12} sm={6} md={4} key={key}>
                                 <Card style={{ textAlign: "center" }}>
                                     <div style={{ background: '#008DC9', color: '#FFFFFF', padding: '0.5rem 0' }}>
-                                        <p style={{ fontWeight: 'bold' }}>{key[1]}</p>
+                                        <Typography variant="h6" align="center">{key[1]}</Typography>
                                     </div>
                                     <CardBody>
                                         <Muted>Description</Muted>
                                         {key[7]}
-                                        <br/>
-                                        <br/>
+                                        <br />
+                                        <br />
                                         <Divider />
-                                        <br/>
+                                        <br />
                                         <Muted>Synonyms</Muted>
                                         {key[5]}
                                     </CardBody>

@@ -6,6 +6,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import AddAlert from "@material-ui/icons/AddAlert";
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
 import EditIcon from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
+import { Typography } from '@material-ui/core';
 import Button from "../../components/CustomButtons/Button.js";
 import Muted from "../../components/Typography/Muted.js";
 import Snackbar from "../../components/Snackbar/Snackbar.js";
@@ -14,7 +16,13 @@ import GridItem from "../../components/Grid/GridItem.js";
 import Card from "../../components/Card/Card.js";
 import CardAvatar from "../../components/Card/CardAvatar.js";
 import CardBody from "../../components/Card/CardBody.js";
+import CardHeader from "../../components/Card/CardHeader.js";
 import CardFooter from "../../components/Card/CardFooter.js";
+import Divider from '@material-ui/core/Divider';
+
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import { deleteExp } from '../../redux/auth/actions/post.js';
 
 import * as api from '../../api/index';
 import default_profileImage from '../../assets/img/default_profile_image.png';
@@ -28,6 +36,8 @@ const ProfilePage = () => {
     const classes = useStyles();
     const localUser = JSON.parse(localStorage.getItem("profile"));
     const [notif, setNotif] = useState({ open: false, message: "", color: "info" });
+    const dispatch = useDispatch();
+    const history = useHistory();
     // Editing controllers
     const [editDetails, setEditDetails] = useState(false);
     const [editImage, setEditImage] = useState(false);
@@ -37,6 +47,24 @@ const ProfilePage = () => {
         firstName: localUser.result.firstName,
         lastName: localUser.result.lastName,
     });
+
+    const [exps, setExps] = useState([]);
+
+    useEffect(() => {
+        api.fetchAllExperiences()
+            .then((response) => {
+                setExps(response.data);
+            })
+            .catch((error) => {
+                var response = error.response?.data;
+                console.error(error)
+                setNotif({ open: true, color: "danger", message: response?.message });
+                setTimeout(function () {
+                    setNotif({ open: false, message: "" });
+                }, 5000);
+            });
+
+    }, []);
 
     useEffect(() => {
         api.fetchUserData({ uid: localUser.result.uid, privateKey: localUser.result.privateKey })
@@ -59,6 +87,16 @@ const ProfilePage = () => {
         setTimeout(function () {
             setNotif({ open: false, message: "" });
         }, 5000);
+    }
+
+    function timeConverter(timestamp) {
+        var a = new Date(timestamp);
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var month = months[a.getMonth()];
+        var date = a.getDate();
+        var year = a.getUTCFullYear();
+        var time = `${date} ${month}, ${year}`
+        return time;
     }
 
     const successNotification = (response) => {
@@ -109,35 +147,75 @@ const ProfilePage = () => {
             />
             {/*=========================================================================*/}
             <div style={{ margin: '2rem 0' }}>
-                <GridContainer className={classes.container}>
-                    <GridItem xs={12} sm={3}></GridItem>
-                    <GridItem xs={12} sm={6} md={4}>
-                        <Card profile>
-                            <CardAvatar profile>
-                                <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                                    <img src={user.imageUrl ? user.imageUrl : default_profileImage} alt="..." />
-                                </a>
-                            </CardAvatar>
-                            <CardBody profile>
-                                <h3 className={classes.cardCategory}>
-                                    {user.firstName + " " + user.lastName}
-                                </h3>
-                                <Muted>{user.city + ", " + user.region + ", " + user.country}</Muted>
+                <GridContainer>
+                    <GridItem xs={12} sm={12} md={4}>
+                        <GridContainer className={classes.container}>
+                            <GridItem xs={12} sm={12} md={12}>
+                                <Card profile>
+                                    <CardAvatar profile>
+                                        <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                                            <img src={user.imageUrl ? user.imageUrl : default_profileImage} alt="..." />
+                                        </a>
+                                    </CardAvatar>
+                                    <CardBody profile>
+                                        <h3 className={classes.cardCategory}>
+                                            {user.firstName + " " + user.lastName}
+                                        </h3>
+                                        <Muted>{user.city + ", " + user.region + ", " + user.country}</Muted>
 
-                            </CardBody>
-                            <CardFooter chart>
-                                <div className={classes.stats}>
-                                    <p>{user.about}</p>
-                                </div>
-                            </CardFooter>
-                        </Card>
+                                    </CardBody>
+                                    <CardFooter chart>
+                                        <div className={classes.stats}>
+                                            <p>{user.about}</p>
+                                        </div>
+                                    </CardFooter>
+                                </Card>
 
-                        <Button style={{ float: "left" }} color="rose" round onClick={() => { setEditImage(!editImage); }}>
-                            <PhotoCamera /> Edit Image
-                        </Button>
-                        <Button style={{ float: "right" }} color="rose" round onClick={() => { setEditDetails(!editDetails) }}>
-                            <EditIcon /> Edit Profile
-                        </Button>
+                                <Button color="rose" className={classes.button} onClick={() => { setEditImage(!editImage); }}>
+                                    <PhotoCamera /> Edit Image
+                                </Button>
+                                <Button color="rose" className={classes.button} onClick={() => { setEditDetails(!editDetails) }}>
+                                    <EditIcon /> Edit Profile
+                                </Button>
+                                <br />
+                                <br />
+                            </GridItem>
+                        </GridContainer>
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={8}>
+                        <GridContainer>
+                            {
+                                exps.filter(exp => exp.creator_id === localUser.result.uid).length > 0
+                                    ? exps.filter(exp => exp.creator_id === localUser.result.uid).map((exp, val) => {
+                                        return (
+                                            <GridItem xs={12} sm={6}>
+                                                <Card key={val}>
+                                                    <CardHeader color={exp.category === 'infopost' ? "info" : 'warning'} className={classes.head}>
+                                                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                                            <Typography variant="body1" gutterBottom>
+                                                                {exp.title}
+                                                            </Typography>
+                                                            <Button size="sm" color="transparent" disabled={!localUser?.result} onClick={() => dispatch(deleteExp(exp._id, history))}>
+                                                                <DeleteIcon />
+                                                            </Button>
+                                                        </div>
+                                                    </CardHeader>
+                                                    <CardBody key={exp._id}>
+                                                        <Typography variant="subtitle1" gutterBottom>
+                                                            {exp.description}
+                                                        </Typography>
+                                                        {/* <img src={exp.imageURL} alt={exp.title} className={classes.img}></img> */}
+                                                        <Divider />
+                                                    </CardBody>
+                                                    <CardFooter>
+                                                        <p style={{ color: 'grey' }}>{timeConverter(exp.createdAt)}</p>
+                                                    </CardFooter>
+                                                </Card>
+                                            </GridItem>
+                                        )
+                                    }) : <p style={{ padding: '2rem', textAlign: 'center' }}>Your posts appear here!</p>
+                            }
+                        </GridContainer>
                     </GridItem>
                 </GridContainer>
             </div>

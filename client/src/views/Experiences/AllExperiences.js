@@ -29,8 +29,8 @@ const useStyles = makeStyles((theme) => ({
         padding: "12px",
         width: '100%',
         margin: "10px 0",
-        borderRadius: "5px",
-        background: '#C2F9BB',
+        borderRadius: "25px",
+        // background: '#C2F9BB',
         color: 'black',
     },
     button: {
@@ -86,16 +86,16 @@ const AllExperiences = () => {
     return (
         <div>
             <GridContainer>
-                <GridItem xs={12} sm={2} md={4}>
+                <GridItem xs={12} sm={3}>
                     <div style={{ margin: '2rem 0' }}>
                         <Typography variant="h5" align="center">SORT</Typography>
-                        <Button className={classes.button} color="info" onClick={() => setSort('infopost')}>Info Posts</Button>
-                        <Button className={classes.button} color="warning" onClick={() => setSort('experience')}>Experiences</Button>
+                        <Button className={classes.button} round color="info" onClick={() => setSort('infopost')}>Info Posts</Button>
+                        <Button className={classes.button} round color="warning" onClick={() => setSort('experience')}>Experiences</Button>
                         <CountryDropdown className={classes.regionSelector} value={sort} onChange={(val) => setSort(val)} />
                         <Button fullWidth color="transparent" onClick={() => setSort('')}>Clear</Button>
                     </div>
                 </GridItem>
-                <GridItem xs={12} sm={10} md={8}>
+                <GridItem xs={12} sm={9}>
                     <GridContainer>
                         {
                             currentData

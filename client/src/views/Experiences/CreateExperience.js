@@ -135,6 +135,7 @@ const CreateExperience = () => {
                     close
                 />
                 <GridContainer >
+                    <GridItem xs={12} sm={1}></GridItem>
                     <GridItem xs={12} sm={10}>
                         <form onSubmit={handleSubmit}>
 
@@ -267,6 +268,7 @@ const CreateExperience = () => {
                             </Card>
                         </form>
                     </GridItem>
+                    <GridItem xs={12} sm={1}></GridItem>
                 </GridContainer>
             </div>
         </div>

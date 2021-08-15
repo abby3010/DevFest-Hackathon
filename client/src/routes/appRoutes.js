@@ -19,6 +19,7 @@ import CreateExperience from '../views/Experiences/CreateExperience.js';
 import AllExperiences from '../views/Experiences/AllExperiences.js';
 import ForumIcon from '@material-ui/icons/Forum';
 import HIVPortal from '../views/Portals/HIVAIDS.js';
+import CoronaPortal from '../views/Portals/Corona.js';
 
 export const appRoutes = () => {
 
@@ -29,6 +30,7 @@ export const appRoutes = () => {
   }
 
   var portalsList = [
+    { name: "Corona", path: '/app/portal/corona' },
     { name: "Cholera", path: '/app/portal/cholera' },
     { name: "Malaria", path: '/app/portal/malaria' },
     { name: "H1N1", path: '/app/portal/h1n1' },
@@ -66,6 +68,14 @@ export const appRoutes = () => {
     },
 
     // Individual Epidemic Portals
+    {
+      path: "/portal/corona",
+      name: "Corona",
+      icon: Person,
+      component: CoronaPortal,
+      layout: "/app",
+      showInDrawer: false,
+    },
     {
       path: "/portal/ebola",
       name: "Ebola",

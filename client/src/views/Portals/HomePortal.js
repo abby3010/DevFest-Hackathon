@@ -45,7 +45,7 @@ const HomePortal = () => {
                     {
                         info.map(elem => {
                             return (
-                                <GridItem xs={12} sm={6} md={4} key={elem}>
+                                <GridItem xs={12} sm={6} md={4} key={elem.link}>
                                     <Card>
                                         <div style={{ background: '#D378E3', padding: '0.5rem 0', textAlign: 'center' }}>
                                             <h5>{elem.name}</h5>

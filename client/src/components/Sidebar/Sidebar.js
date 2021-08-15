@@ -36,6 +36,7 @@ export default function Sidebar(props) {
       <FixedPlugin
         handleColorClick={handleColorClick}
         bgColor={color}
+        key={"FixedPlugin"}
       />
       {
         routes.filter((prop) => { return prop.showInDrawer }).map((prop, key) => {
@@ -49,7 +50,7 @@ export default function Sidebar(props) {
           return (
             <>
               <NavLink
-                key={key.toString()}
+                key={prop.path}
                 to={prop.layout + prop.path}
                 className={activePro + classes.item}
                 activeClassName="active"
@@ -76,28 +77,25 @@ export default function Sidebar(props) {
 
               {(prop.listItems) && (prop.listItems.length > 0) ?
                 <List className={classes.subList}>
-                  {prop.listItems.map((item, i) => {
-                    return (
-                      <NavLink
-                        key={i.toString() + item.name}
-                        to={item.path}
-                        className={activePro + classes.item}
-                        activeClassName="active"
-                      >
-                        <ListItem button className={classes.listItemLink + classNames({
-                          [" " + classes[color]]: activeRoute(item.path)
-                        })}>
-                          <ListItemText
-                            primary={item.name}
-                            className={classNames(classes.listItemText, classNames({
-                              [" " + classes.whiteFont]: activeRoute(item.path)
-                            }))}
-                            disableTypography={true}
-                          />
-                        </ListItem>
-                      </NavLink>
-                    );
-                  }
+                  {prop.listItems.map((item, i) =>
+                    <NavLink
+                      key={i}
+                      to={item.path}
+                      className={activePro + classes.item}
+                      activeClassName="active"
+                    >
+                      <ListItem button className={classes.listItemLink + classNames({
+                        [" " + classes[color]]: activeRoute(item.path)
+                      })}>
+                        <ListItemText
+                          primary={item.name}
+                          className={classNames(classes.listItemText, classNames({
+                            [" " + classes.whiteFont]: activeRoute(item.path)
+                          }))}
+                          disableTypography={true}
+                        />
+                      </ListItem>
+                    </NavLink>
                   )}
                 </List>
                 : null}

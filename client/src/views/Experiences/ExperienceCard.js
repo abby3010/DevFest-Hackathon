@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from "../../components/Card/Card.js";
 import CardBody from "../../components/Card/CardBody.js";
 import CardHeader from "../../components/Card/CardHeader.js";
@@ -18,6 +18,10 @@ const ExperienceCard = ({ exp }) => {
 
     const user = JSON.parse(localStorage.getItem("profile"));
 
+    const [isLiked, setIsLiked] = useState(exp.likes.find((like) => like === (user?.result?.privateKey)) ? true : false)
+
+    console.log(isLiked)
+
     function timeConverter(timestamp) {
         var a = new Date(timestamp);
         var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -28,18 +32,6 @@ const ExperienceCard = ({ exp }) => {
         return time;
     }
 
-    const Likes = () => {
-        if (exp.likes.length > 0) {
-            return exp.likes.find((like) => like === (user?.result?.privateKey))
-                ? (
-                    <><ThumbUpIcon />{exp.likes.length}</>
-                ) : (
-                    <><ThumbUpAltOutlinedIcon />{exp.likes.length}</>
-                );
-        }
-        return <><ThumbUpAltOutlinedIcon />{exp.likes.length > 0 ? exp.likes.length : null}</>;
-    };
-
     return (
         <GridItem xs={12} sm={6}>
             <Card>
@@ -48,8 +40,10 @@ const ExperienceCard = ({ exp }) => {
                         <Typography variant="body1" gutterBottom>
                             {exp.title}
                         </Typography>
-                        <Button size="sm" color="transparent" disabled={!user?.result} onClick={() => dispatch(likeExp(exp._id))}>
-                            <Likes />
+                        <Button size="sm" color="transparent" disabled={!user?.result} onClick={() => {dispatch(likeExp(exp._id)); setIsLiked(!isLiked)}}>
+                            {
+                                isLiked ? <ThumbUpIcon /> : <ThumbUpAltOutlinedIcon />
+                            }
                         </Button>
                     </div>
                 </CardHeader>

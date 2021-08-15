@@ -31,7 +31,11 @@ const Nav = () => {
     var loggedIn = localStorage.getItem('profile');
 
     const handleLoginClick = () => {
-        return history.push("/auth");
+        if (!loggedIn){
+            return history.push("/auth");
+        } else {
+            return history.push("/app/user");
+        }
     }
 
     const handlePortalClick = () => {
@@ -52,8 +56,7 @@ const Nav = () => {
                 </Button>
 
                 <Button color="transparent" onClick={handleLoginClick}>
-                    {loggedIn === null ? <h4> Login</h4> : <h4> My Account</h4>}
-
+                    {!loggedIn ? <h4> Login</h4> : <h4> My Account</h4>}
                 </Button>
 
             </Toolbar>

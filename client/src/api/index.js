@@ -24,7 +24,7 @@ export const getHashTags = () => API.post('/user/gethashtags');
 export const getUserProjects = (userData) => API.post('/user/getuserprojects', userData);
 
 // Creates a new project for the user
-export const createNewProject = (formData) => API.post('/user/createnewproject', formData);
+export const createNewExperience = (formData) => API.post('/user/createnewexperience', formData);
 
 // Fetch a particular project with projectID and privatekey(for edit access)
 export const fetchProject = (data) => API.post('/user/fetchproject', data);

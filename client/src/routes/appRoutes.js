@@ -4,6 +4,7 @@ import Person from "@material-ui/icons/Person";
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import HealingIcon from '@material-ui/icons/Healing';
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 // core components/views for App layout
 import ProfilePage from "../views/ProfilePage/Profile.js";
 import DiseaseInfo from '../views/DiseaseInfo/DiseaseInfo.js';
@@ -14,6 +15,7 @@ import MalariaPortal from '../views/Portals/Malaria.js';
 import H1N1Portal from '../views/Portals/H1N1.js';
 import Auth from '../views/Auth/AuthPage.js';
 import HomePortal from '../views/Portals/HomePortal.js';
+import CreateExperience from '../views/Experiences/CreateExperience.js';
 
 export const appRoutes = () => {
 
@@ -86,6 +88,14 @@ export const appRoutes = () => {
       showInDrawer: false,
     },
     // User Profile routes
+    {
+      path: "/create-experience",
+      name: "Create New",
+      icon: AddCircleIcon,
+      component: CreateExperience,
+      layout: "/app",
+      showInDrawer: loggedIn !== null ? true : false,
+    },
     {
       path: "/user",
       name: "Profile",

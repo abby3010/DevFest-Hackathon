@@ -1,4 +1,4 @@
-import Project from "../../databaseModels/Project.js";
+import Experience from "../../databaseModels/Experience.js";
 import User from "../../databaseModels/User.js";
 import dotenv from 'dotenv';
 dotenv.config();

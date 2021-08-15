@@ -30,6 +30,20 @@ const setProfileStyle = () => ({
             hexToRgb(blackColor) +
             ", 0.2)",
     },
+    expImage: {
+        width: "200px",
+        height: "200px",
+        objectFit: "contain",
+        // border: "1px solid grey",
+        boxShadow:
+            "0 16px 20px -12px rgba(" +
+            hexToRgb(blackColor) +
+            ", 0.56), 0 4px 25px 0px rgba(" +
+            hexToRgb(blackColor) +
+            ", 0.12), 0 10px 10px -5px rgba(" +
+            hexToRgb(blackColor) +
+            ", 0.2)",
+    },
     profileFooter: {
         padding: 0,
         margin: 0,
@@ -66,6 +80,12 @@ const setProfileStyle = () => ({
         height: "150px",
         objectFit: "contain",
     },
+    cardTextField: {
+        margin: '10px 0',
+    },
+    cardRadioLabel: {
+        color: '#000'
+    }
     // projectName: {
     //     color: "black",
     //     fontWeight: "bold",

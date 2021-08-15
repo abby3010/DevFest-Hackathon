@@ -16,6 +16,8 @@ import H1N1Portal from '../views/Portals/H1N1.js';
 import Auth from '../views/Auth/AuthPage.js';
 import HomePortal from '../views/Portals/HomePortal.js';
 import CreateExperience from '../views/Experiences/CreateExperience.js';
+import AllExperiences from '../views/Experiences/AllExperiences.js';
+import ForumIcon from '@material-ui/icons/Forum';
 
 export const appRoutes = () => {
 
@@ -50,6 +52,14 @@ export const appRoutes = () => {
       name: "Diseases",
       icon: HealingIcon,
       component: DiseaseInfo,
+      layout: "/app",
+      showInDrawer: true,
+    },
+    {
+      path: "/forum",
+      name: "Forum",
+      icon: ForumIcon,
+      component: AllExperiences,
       layout: "/app",
       showInDrawer: true,
     },

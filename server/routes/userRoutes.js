@@ -7,7 +7,6 @@ import { fetchUserData } from '../controllers/fetchUsers/fetchUserData.js';
 
 
 const router = express.Router();
-
 // router.post("/gethashtags", getHashTags);
 // router.post("/getuserprojects", getUserProjects);
 router.post("/createnewexperience", singleFileUploadController, createNewExperience);

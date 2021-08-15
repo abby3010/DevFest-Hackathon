@@ -23,6 +23,8 @@ export const getHashTags = () => API.post('/user/gethashtags');
 // Fetch user's projects
 export const getUserProjects = (userData) => API.post('/user/getuserprojects', userData);
 
+export const fetchAllExperiences = () => API.get('/fetchall');
+
 // Creates a new project for the user
 export const createNewExperience = (formData) => API.post('/user/createnewexperience', formData);
 

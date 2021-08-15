@@ -14,6 +14,7 @@ import MalariaPortal from '../views/Portals/Malaria.js';
 import H1N1Portal from '../views/Portals/H1N1.js';
 import Auth from '../views/Auth/AuthPage.js';
 import HomePortal from '../views/Portals/HomePortal.js';
+import HIVPortal from '../views/Portals/HIVAIDS.js';
 
 export const appRoutes = () => {
 
@@ -28,7 +29,7 @@ export const appRoutes = () => {
     { name: "Malaria", path: '/app/portal/malaria' },
     { name: "H1N1", path: '/app/portal/h1n1' },
     { name: "Ebola", path: '/app/portal/ebola' },
-
+    { name: "HIV/AIDS", path: '/app/portal/hiv' },
   ];
 
   return ([
@@ -82,6 +83,14 @@ export const appRoutes = () => {
       name: "H1N1",
       icon: Person,
       component: H1N1Portal,
+      layout: "/app",
+      showInDrawer: false,
+    },
+    {
+      path: "/portal/hiv",
+      name: "HIV/AIDS",
+      icon: Person,
+      component: HIVPortal,
       layout: "/app",
       showInDrawer: false,
     },

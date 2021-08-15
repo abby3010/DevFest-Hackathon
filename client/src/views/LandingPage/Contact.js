@@ -77,22 +77,22 @@ const Contact = () => {
                     Contact
                 </Typography>
             </div>
-            <div class="form-div">
+            <div className="form-div">
                 <form id="my-form"  onSubmit={handleSubmit}>
                     <div>
                         <div>
                             <div>
                                 <label>Name *</label>
-                                <input type="text" className="w-input" onChange={handleNameChange} dataName="Name" id="Name" required />
+                                <input type="text" className="w-input" onChange={handleNameChange} name="Name" id="Name" required />
                             </div>
                             <div>
                                 <label>Email *</label>
-                                <input type="email" className="w-input" onChange={handleEmailChange} dataName="Email" id="Email" required />
+                                <input type="email" className="w-input" onChange={handleEmailChange} name="Email" id="Email" required />
                             </div>
                         </div>
                         <div>
                             <label>Message *</label>
-                            <textarea data-name="Message" id="Message" onChange={handleMessageChange} className="w-textarea" required></textarea>
+                            <textarea name="Message" id="Message" onChange={handleMessageChange} className="w-textarea" required></textarea>
                         </div>
                         <input type="submit" value="SUBMIT" data-wait="Please wait..." className="submit-button" />
                     </div>

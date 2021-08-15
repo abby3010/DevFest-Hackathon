@@ -41,6 +41,7 @@ const GeoMap = ({ disease }) => {
                             ["Country", "Cases", "Deaths"],
                             ...all_together_data
                         ]}
+                        mapsApiKey='AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
                         legendToggle
                     />
                 </GridItem>
@@ -62,11 +63,11 @@ const GeoMap = ({ disease }) => {
                         ]}
                         options={{
                             colorAxis: { colors: ["#FEF95D", "#F76300", "#B00000"] },
-                            // colorAxis: { colors: ["#3a1c71", "#d76d77", "#ffaf7b"] },
                             backgroundColor: '#A5DEEF',
                             datalessRegionColor: '#ffffff',
                             defaultColor: '#f5f5f5',
                         }}
+                        mapsApiKey='AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
                         legendToggle
                     />
                 </GridItem>

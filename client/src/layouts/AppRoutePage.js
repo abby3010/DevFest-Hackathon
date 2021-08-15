@@ -16,12 +16,6 @@ import logo from "../assets/img/logo.gif";
 const switchRoutes = (routes) => (
   <Switch>
     {routes.map((prop, key) => {
-
-      // var loggedIn = localStorage.getItem('profile');
-
-      // if (loggedIn === null) {
-      //   return <Redirect key={key} to="/auth" />;
-      // }
       
       if (prop.layout === "/app") {
         return (

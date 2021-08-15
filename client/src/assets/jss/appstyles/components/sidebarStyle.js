@@ -97,7 +97,7 @@ const sidebarStyle = theme => ({
     margin: "2px 10px 0",
     position: 'relative',
     overflow: 'hidden',
-    maxHeight: 150,
+    // maxHeight: 150,
     "&:hover": {
       overflowY: "auto",
     },

@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
 
 const AllExperiences = () => {
     const classes = useStyles();
+    // eslint-disable-next-line
     const [notif, setNotif] = useState({ open: false, message: "", color: "info" });
     const [exps, setExps] = useState([]);
 

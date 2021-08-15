@@ -3,6 +3,9 @@ import Typography from '@material-ui/core/Typography';
 import * as api from '../../api/index';
 import AddAlert from "@material-ui/icons/AddAlert";
 import Snackbar from "../../components/Snackbar/Snackbar.js";
+import GridContainer from '../../components/Grid/GridContainer';
+import GridItem from '../../components/Grid/GridItem';
+import Chart from 'react-google-charts';
 
 const Contact = () => {
 
@@ -72,32 +75,97 @@ const Contact = () => {
                 closeNotification={() => setNotif({ open: false, message: "" })}
                 close
             />
-            <div style={{ padding: '2rem 1rem 1rem 1rem' }}>
-                <Typography variant="h3" align="center">
-                    Contact
-                </Typography>
-            </div>
-            <div className="form-div">
-                <form id="my-form"  onSubmit={handleSubmit}>
-                    <div>
-                        <div>
-                            <div>
-                                <label>Name *</label>
-                                <input type="text" className="w-input" onChange={handleNameChange} name="Name" id="Name" required />
-                            </div>
-                            <div>
-                                <label>Email *</label>
-                                <input type="email" className="w-input" onChange={handleEmailChange} name="Email" id="Email" required />
-                            </div>
-                        </div>
-                        <div>
-                            <label>Message *</label>
-                            <textarea name="Message" id="Message" onChange={handleMessageChange} className="w-textarea" required></textarea>
-                        </div>
-                        <input type="submit" value="SUBMIT" data-wait="Please wait..." className="submit-button" />
+            <GridContainer>
+                <GridItem xs={12} sm={4}>
+                    <Chart
+                        height={"400px"}
+                        chartType="AreaChart"
+                        loader={<div>Loading Chart...</div>}
+                        data={[
+                            ["Disease", "Cases", "Deaths"],
+                            ["Ebola", 6325462, 2555444],
+                            ["HIV/AIDS", 102742880.0, 2748730.0],
+                            ["Malaria", 666438730.0, 2159768.0],
+                            ["H1N1", 973183, 5289],
+                            ["Cholera", 9180678, 897204],
+                        ]}
+                        options={{
+                            title: "Epidemics' cases and deaths Column chart",
+                            vAxis: { logScale: true }
+                        }}
+                        legendToggle
+                    />
+                </GridItem>
+                <GridItem xs={12} sm={4}>
+                    <Chart
+                        height={"400px"}
+                        chartType="ColumnChart"
+                        loader={<div>Loading Chart...</div>}
+                        data={[
+                            ["Disease", "Cases", "Deaths"],
+                            ["Ebola", 6325462, 2555444],
+                            ["HIV/AIDS", 102742880.0, 2748730.0],
+                            ["Malaria", 666438730.0, 2159768.0],
+                            ["H1N1", 973183, 5289],
+                            ["Cholera", 9180678, 897204],
+                        ]}
+                        options={{
+                            title: "Epidemics' cases and deaths Pie chart",
+                            vAxis: { logScale: true }
+                        }}
+                        legendToggle
+                    />
+                </GridItem>
+
+                <GridItem xs={12} sm={4}>
+                    <Chart
+                        height={"400px"}
+                        chartType="PieChart"
+                        loader={<div>Loading Chart...</div>}
+                        data={[
+                            ["Disease", "Cases", "Deaths"],
+                            ["Ebola", 6325462, 2555444],
+                            ["HIV/AIDS", 102742880.0, 2748730.0],
+                            ["Malaria", 666438730.0, 2159768.0],
+                            ["H1N1", 973183, 5289],
+                            ["Cholera", 9180678, 897204],
+                        ]}
+                        options={{
+                            title: "Epidemics' cases and deaths Pie chart",
+                            vAxis: { logScale: true }
+                        }}
+                        legendToggle
+                    />
+                </GridItem>
+
+                <GridItem xs={12} sm={4}></GridItem>
+                <GridItem xs={12} sm={4}>
+                    <div style={{ padding: '2rem 1rem 1rem 1rem' }}>
+                        <Typography variant="h3" align="center">
+                            Contact
+                        </Typography>
                     </div>
-                </form>
-            </div>
+                    <form id="my-form" onSubmit={handleSubmit}>
+                        <div>
+                            <div>
+                                <div>
+                                    <label>Name *</label>
+                                    <input type="text" className="w-input" onChange={handleNameChange} name="Name" id="Name" required />
+                                </div>
+                                <div>
+                                    <label>Email *</label>
+                                    <input type="email" className="w-input" onChange={handleEmailChange} name="Email" id="Email" required />
+                                </div>
+                            </div>
+                            <div>
+                                <label>Message *</label>
+                                <textarea name="Message" id="Message" onChange={handleMessageChange} className="w-textarea" required></textarea>
+                            </div>
+                            <input type="submit" value="SUBMIT" data-wait="Please wait..." className="submit-button" />
+                        </div>
+                    </form>
+                </GridItem>
+            </GridContainer>
         </div>
     )
 }

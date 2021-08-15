@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import AddAlert from "@material-ui/icons/AddAlert";
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
 import EditIcon from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
 import { Typography } from '@material-ui/core';
 import Button from "../../components/CustomButtons/Button.js";
 import Muted from "../../components/Typography/Muted.js";
@@ -19,6 +20,10 @@ import CardHeader from "../../components/Card/CardHeader.js";
 import CardFooter from "../../components/Card/CardFooter.js";
 import Divider from '@material-ui/core/Divider';
 
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import { deleteExp } from '../../redux/auth/actions/post.js';
+
 import * as api from '../../api/index';
 import default_profileImage from '../../assets/img/default_profile_image.png';
 
@@ -31,6 +36,8 @@ const ProfilePage = () => {
     const classes = useStyles();
     const localUser = JSON.parse(localStorage.getItem("profile"));
     const [notif, setNotif] = useState({ open: false, message: "", color: "info" });
+    const dispatch = useDispatch();
+    const history = useHistory();
     // Editing controllers
     const [editDetails, setEditDetails] = useState(false);
     const [editImage, setEditImage] = useState(false);
@@ -184,9 +191,14 @@ const ProfilePage = () => {
                                             <GridItem xs={12} sm={6}>
                                                 <Card key={val}>
                                                     <CardHeader color={exp.category === 'infopost' ? "info" : 'warning'} className={classes.head}>
-                                                        <Typography variant="body1" gutterBottom>
-                                                            {exp.title}
-                                                        </Typography>
+                                                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                                            <Typography variant="body1" gutterBottom>
+                                                                {exp.title}
+                                                            </Typography>
+                                                            <Button size="sm" color="transparent" disabled={!localUser?.result} onClick={() => dispatch(deleteExp(exp._id, history))}>
+                                                                <DeleteIcon />
+                                                            </Button>
+                                                        </div>
                                                     </CardHeader>
                                                     <CardBody key={exp._id}>
                                                         <Typography variant="subtitle1" gutterBottom>
@@ -201,7 +213,7 @@ const ProfilePage = () => {
                                                 </Card>
                                             </GridItem>
                                         )
-                                    }) : <p style={{padding: '2rem', textAlign: 'center'}}>Your posts appear here!</p>
+                                    }) : <p style={{ padding: '2rem', textAlign: 'center' }}>Your posts appear here!</p>
                             }
                         </GridContainer>
                     </GridItem>

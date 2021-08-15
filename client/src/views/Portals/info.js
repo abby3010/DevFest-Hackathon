@@ -17,12 +17,12 @@ export const info = [
     {
         name: 'HIV/AIDS',
         link: '/app/portal/hiv',
-        para1: "HIV (human immunodeficiency virus) is a virus that attacks the body’s immune system. If HIV is not treated, it can lead to AIDS (acquired immunodeficiency syndrome). Learning the basics about HIV can keep you healthy and prevent HIV transmission. You can also download materials to share or watch videos on basic information about HIV. There is currently no effective cure. Once people get HIV, they have it for life. But with proper medical care, HIV can be controlled. People with HIV who get effective HIV treatment can live long, healthy lives and protect their partners."
+        para1: "HIV (human immunodeficiency virus) is a virus that attacks the body’s immune system. If HIV is not treated, it can lead to AIDS (acquired immunodeficiency syndrome). Learning the basics about HIV can keep you healthy and prevent HIV transmission. There is currently no effective cure. But with proper medical care, HIV can be controlled. People with HIV who get effective HIV treatment can live long, healthy lives and protect their partners."
     },
     {
         name: 'Ebola',
         link: '/app/portal/ebola',
-        para1: "Ebola Virus Disease (EVD) is a rare and deadly disease in people and nonhuman primates. The viruses that cause EVD are located mainly in sub-Saharan Africa. People can get EVD through direct contact with an infected animal (bat or nonhuman primate) or a sick or dead person infected with Ebola virus. The virus first spreads to people through direct contact with the blood, body fluids and tissues of animals. Ebola virus then spreads to other people through direct contact with body fluids of a person who is sick with or has died from EVD."
+        para1: "Ebola Virus Disease (EVD) is a rare and deadly disease in people and nonhuman primates. The viruses that cause EVD are located mainly in sub-Saharan Africa. People can get EVD through direct contact with an infected being. The virus first spreads to people through direct contact with the blood, body fluids and tissues of animals and then spreads to other people through direct contact with body fluids of a person who is sick with or has died from EVD."
     },
     {
         name: 'COVID-19',

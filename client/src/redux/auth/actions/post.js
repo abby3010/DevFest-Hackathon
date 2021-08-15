@@ -11,3 +11,13 @@ export const likeExp = (id) => async (dispatch) => {
     }
 
 };
+
+export const deleteExp = (id, history) => async (dispatch) => {
+    try {
+        await api.deleteExp(id)
+        dispatch({ type: 'DELETE', payload: id })
+        history.push('/app/forum')
+    } catch (error) {
+        console.log(error)
+    }
+}

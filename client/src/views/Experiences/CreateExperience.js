@@ -7,7 +7,6 @@ import Checkbox from "@material-ui/core/Checkbox";
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Divider from '@material-ui/core/Divider';
 
 // import LinearProgress from '@material-ui/core/LinearProgress';
 import { TextField, Switch } from '@material-ui/core';
@@ -27,7 +26,6 @@ import * as api from '../../api/index';
 
 import styles from "../../assets/jss/appstyles/views/setProfile.js";
 import checkboxAndRadioStyles from "../../assets/jss/appstyles/checkboxAdnRadioStyle.js";
-import default_profileImage from '../../assets/img/default_profile_image.png';
 import { fname, lname } from './RandomNameLists.js';
 
 const useStyles = makeStyles(styles);
@@ -85,8 +83,6 @@ const CreateExperience = () => {
     const [conditions, setConditions] = useState(false);
     const [useLocation, setUseLocation] = useState(true);
     const [isAnonymous, setIsAnonymous] = useState(false);
-    const [image, setImage] = useState();
-    const [imageUrl, setImageUrl] = useState('');
     const fullName = `${user.firstName} ${user.lastName}`
 
     const handleSubmit = async (e) => {
@@ -99,7 +95,6 @@ const CreateExperience = () => {
         formData.append("region", region ? region : user.region);
         formData.append("city", city ? city : user.city);
         formData.append("category", category);
-        formData.append('imageURL', imageUrl)
         formData.append("creator_id", localUser.result.uid);
         formData.append("creator_name", isAnonymous ? generateName() : fullName);
 
@@ -151,49 +146,6 @@ const CreateExperience = () => {
                                     <TextField variant="outlined" value={title} label="Title of your Post" fullWidth className={classes.cardTextField} onChange={(e) => setTitle(e.target.value)} required />
                                     <TextField variant="outlined" value={description} label="Write your post here!" fullWidth className={classes.cardTextField} multiline rows={6} onChange={(e) => setDescription(e.target.value)} required />
                                     <br />
-                                    <GridContainer>
-                                        <GridItem xs={12} sm={12} md={4}>
-                                            <div className={classes.image}>
-                                                {image ?
-                                                    <img
-                                                        className={classes.expImage}
-                                                        src={imageUrl ? imageUrl : URL.createObjectURL(image)}
-                                                        alt="Profile"
-                                                    /> :
-                                                    <img
-                                                        className={classes.expImage}
-                                                        src={default_profileImage}
-                                                        alt="Profile"
-                                                    />
-                                                }
-                                                <div style={{ padding: '10px 0', textAlign: 'center' }}>
-                                                    <Muted><i>Preview</i></Muted>
-                                                </div>
-                                            </div>
-                                        </GridItem>
-                                        <GridItem xs={12} sm={12} md={8}>
-                                            <div className={classes.selectImage}>
-                                                <input
-                                                    type="file"
-                                                    id="projectImage"
-                                                    accept="image/*"
-                                                    onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
-                                                    onChange={event => {
-                                                        const file = event.target.files[0];
-                                                        setImage(file);
-                                                        setImageUrl(null);
-                                                    }} />
-                                                {image ?
-                                                    <img src={imageUrl ? imageUrl : URL.createObjectURL(image)} className={classes.imagePreview} alt="project-logo" />
-                                                    : <img src={default_profileImage} className={classes.imagePreview} alt="project-logo" />
-                                                }
-                                                <Muted><i>Preferred: square dimensions - 400x400 or 512x512 (png, jpg, or jpeg)</i></Muted>
-                                            </div>
-                                        </GridItem>
-                                    </GridContainer>
-
-                                    <br />
-                                    <Divider />
 
                                     <div style={{ margin: '1rem 0' }}>
                                         <div style={{ display: 'flex' }}>

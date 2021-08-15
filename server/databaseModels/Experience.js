@@ -33,9 +33,6 @@ const experienceSchema = new Schema({
     city: {
         type: String,
     },
-    imageURL: {
-        type: String,
-    },
     likes: {
         type: [String],
         default: []

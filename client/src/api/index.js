@@ -33,6 +33,8 @@ export const likeExp = (id) => API.patch(`/user/${id}/likeExp`)
 // Fetch user's data for profile page
 export const fetchUserData = (data) => API.post('/user/fetchuserdata', data);
 
+export const deleteExp = (id) => API.delete(`/user/${id}`)
+
 // Update the user profile
 export const updateProfile = (data) => API.post('/update/updateprofile', data);
 export const updateProfileDetails = (data) => API.post('/update/profileDetails', data);

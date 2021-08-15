@@ -99,6 +99,7 @@ const Contact = () => {
                 <GridItem xs={12} sm={6}>
                     <Chart
                         height={"400px"}
+                        width={"400px"}
                         chartType="ColumnChart"
                         loader={<div>Loading Chart...</div>}
                         data={[
@@ -117,30 +118,12 @@ const Contact = () => {
                     />
                 </GridItem>
             </GridContainer>
-            <div style={{ padding: '2rem 1rem 1rem 1rem' }}>
+            {/* <div style={{ padding: '2rem 1rem 1rem 1rem' }}>
                 <Typography variant="h3" align="center">
                     Contact
                 </Typography>
-            </div>
-            <form id="my-form" onSubmit={handleSubmit}>
-                <div>
-                    <div>
-                        <div>
-                            <label>Name *</label>
-                            <input type="text" className="w-input" onChange={handleNameChange} name="Name" id="Name" required />
-                        </div>
-                        <div>
-                            <label>Email *</label>
-                            <input type="email" className="w-input" onChange={handleEmailChange} name="Email" id="Email" required />
-                        </div>
-                    </div>
-                    <div>
-                        <label>Message *</label>
-                        <textarea name="Message" id="Message" onChange={handleMessageChange} className="w-textarea" required></textarea>
-                    </div>
-                    <input type="submit" value="SUBMIT" data-wait="Please wait..." className="submit-button" />
-                </div>
-            </form>
+            </div> */}
+           
 
         </div>
     )

@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Server application for Workosmo",
+  "description": "Server application for Epinfo",
   "main": "index.js",
   "type": "module",
   "scripts": {

@@ -17,12 +17,6 @@ export const googleAuth = (formData) => API.post('/auth/googleAuth', formData);
 
 export const contactForm = (formData) => API.post('/contact', formData);
 
-// Get the list of all the hashtags
-export const getHashTags = () => API.post('/user/gethashtags');
-
-// Fetch user's projects
-export const getUserProjects = (userData) => API.post('/user/getuserprojects', userData);
-
 export const fetchAllExperiences = () => API.get('/fetchall');
 
 // Creates a new project for the user

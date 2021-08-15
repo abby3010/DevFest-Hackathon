@@ -9,9 +9,6 @@ import IconButton from "@material-ui/core/IconButton";
 import Hidden from "@material-ui/core/Hidden";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
-// core components
-// import NavbarLinks from "./NavbarLinks.js";
-// import Button from "../CustomButtons/Button.js";
 
 import styles from "../../assets/jss/appstyles/components/headerStyle.js";
 import { Typography } from "@material-ui/core";

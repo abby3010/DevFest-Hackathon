@@ -9,6 +9,7 @@ import Card from '../../components/Card/Card';
 import CardBody from '../../components/Card/CardBody';
 import CardHeader from '../../components/Card/CardHeader';
 import Snackbar from "../../components/Snackbar/Snackbar.js";
+import Muted from "../../components/Typography/Muted.js";
 
 import { getCoronaDataCountrywise } from '../../api';
 import { Divider, Typography } from '@material-ui/core';
@@ -27,6 +28,7 @@ export default function CoronaPortal() {
         const fetchData = async () => {
             let response = await getCoronaDataCountrywise();
             if (response.data !== null) {
+                console.log(response.data);
                 setCountrywiseData(response.data);
                 setActiveCases(response.data.world_total.active_cases);
                 setNewCases(response.data.world_total.new_cases);
@@ -56,6 +58,13 @@ export default function CoronaPortal() {
         return geoData;
     }
 
+    const formatNewDeathsData = (data) => {
+        var geoData = [["Country", "Cases"]];
+        for (let i = 0; i < data?.countries_stat.length; i++) {
+            geoData.push([data.countries_stat[i].country_name, parseInt(data.countries_stat[i].new_deaths.replace(/,/g, ''))]);
+        }
+        return geoData;
+    }
 
     const formatCasesData = (data) => {
         var geoData = [["Country", "Cases"]];
@@ -73,6 +82,15 @@ export default function CoronaPortal() {
         return geoData;
     }
 
+    function timeConverter(timestamp) {
+        var a = new Date(timestamp);
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var month = months[a.getMonth()];
+        var date = a.getDate();
+        var year = a.getUTCFullYear();
+        var time = `${date} ${month}, ${year}`
+        return time;
+    }
 
     const showGeoGraph = (geoData) => {
         return (
@@ -104,10 +122,10 @@ export default function CoronaPortal() {
                 close
             />
             <GridContainer>
-                <GridItem xs={12} sm={2}></GridItem>
+                <GridItem xs={12} sm={1}></GridItem>
 
                 {/* Geographs for cases and deaths worldwide upto date */}
-                <GridItem xs={12} sm={8}>
+                <GridItem xs={12} sm={10}>
                     <GridContainer>
                         <GridItem xs={12} sm={4}>
                             <Card>
@@ -160,7 +178,7 @@ export default function CoronaPortal() {
                                 </CardBody>
                             </Card>
                         </GridItem>
-                        <Divider visible={false}/>
+                        <Divider visible={false} />
                         <GridItem xs={12} sm={4}>
                             <Card>
                                 <CardHeader color="primary">
@@ -171,29 +189,52 @@ export default function CoronaPortal() {
                                 </CardBody>
                             </Card>
                         </GridItem>
-                        
                     </GridContainer>
 
+                    {/* Update on - date */}
+                    <Muted>{"All the statistical data is taken on " + timeConverter(countrywiseData.statistic_taken_at)}</Muted>
+                    <br/>
+
                     <GridContainer>
-                        <GridItem xs={12} sm={12}>
-                            <Typography variant="h5" gutterBottom>
-                                Overall Corona Cases
-                            </Typography>
-                            {showGeoGraph(formatCasesData(countrywiseData))}
+                        <GridItem xs={12} sm={6}>
+                            <Chart
+                                height={"400px"}
+                                chartType="PieChart"
+                                loader={<div>Loading Chart...</div>}
+                                data={formatNewCasesData(countrywiseData)}
+                                options={{
+                                    title: "Percentage of new Corona cases"
+                                }}
+                                mapsApiKey='AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+                                legendToggle
+                            />
+                        </GridItem>
+                        <GridItem xs={12} sm={6}>
+                            <Chart
+                                height={"400px"}
+                                chartType="PieChart"
+                                loader={<div>Loading Chart...</div>}
+                                data={formatNewDeathsData(countrywiseData)}
+                                options={{
+                                    title: "Percentage of recent Corona deaths"
+                                }}
+                                mapsApiKey='AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+                                legendToggle
+                            />
                         </GridItem>
                     </GridContainer>
-
                     <GridContainer>
-                        <GridItem xs={12} sm={12}>
+                        <GridItem xs={12} sm={6}>
+                            <br />
+                            <br />
                             <Typography variant="h5" gutterBottom>
                                 New Corona Cases
                             </Typography>
                             {showGeoGraph(formatNewCasesData(countrywiseData))}
                         </GridItem>
-                    </GridContainer>
-
-                    <GridContainer>
-                        <GridItem xs={12} sm={12}>
+                        <GridItem xs={12} sm={6}>
+                            <br />
+                            <br />
                             <Typography variant="h5" gutterBottom>
                                 Overall Corona Cases
                             </Typography>
@@ -202,17 +243,40 @@ export default function CoronaPortal() {
                     </GridContainer>
 
                     <GridContainer>
-                        <GridItem xs={12} sm={12}>
+                        <GridItem xs={12} sm={6}>
+                            <br />
+                            <br />
                             <Typography variant="h5" gutterBottom>
-                                Corona Deaths
+                                New Deaths from Corona
+                            </Typography>
+                            {showGeoGraph(formatNewDeathsData(countrywiseData))}
+                        </GridItem>
+                        <GridItem xs={12} sm={6}>
+                            <br />
+                            <br />
+                            <Typography variant="h5" gutterBottom>
+                                Overall Corona Deaths
                             </Typography>
                             {showGeoGraph(formatDeathsData(countrywiseData))}
                         </GridItem>
                     </GridContainer>
 
+                    <Card>
+                        <CardBody>
+                            <p>
+                                Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+                                <br/><br/>
+                                Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
+                                <br/><br/>
+                                The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face.
+                                <br/><br/>
+                                The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).
+                            </p>
+                        </CardBody>
+                    </Card>
                 </GridItem>
 
-                <GridItem xs={12} sm={2}></GridItem>
+                <GridItem xs={12} sm={1}></GridItem>
             </GridContainer>
         </>
     );

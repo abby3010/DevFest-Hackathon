@@ -31,16 +31,19 @@ const GeoMap = ({ disease }) => {
             <GridContainer>
                 {/* Line Graph for Deaths and Cases */}
                 <GridItem xs={12} sm={12}>
-                    <i><Typography variant="h5" gutterBottom>
+                    <Typography variant="h5" gutterBottom>
                         {disease[0] + " Cases vs. Deaths"}
-                    </Typography></i>
+                    </Typography>
                     <Chart
-                        chartType="LineChart"
+                        chartType="AreaChart"
                         loader={<div>Loading Chart</div>}
                         data={[
                             ["Country", "Cases", "Deaths"],
                             ...all_together_data
                         ]}
+                        options={{
+                            vAxis: { logScale:true}
+                        }}
                         mapsApiKey='AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
                         legendToggle
                     />
@@ -49,17 +52,74 @@ const GeoMap = ({ disease }) => {
             <br />
             <br />
             <GridContainer>
+                <GridItem xs={12} sm={6}>
+                    <Chart
+                        height={"400px"}
+                        chartType="PieChart"
+                        loader={<div>Loading Chart...</div>}
+                        data={[
+                            ["Country", "Cases"],
+                            ...cases_gchart_data
+                        ]}
+                        options={{
+                            title: "Percentage of Cases",
+                            
+                        }}
+                        mapsApiKey='AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+                        legendToggle
+                    />
+                </GridItem>
+                <GridItem xs={12} sm={6}>
+                    <Chart
+                        height={"400px"}
+                        chartType="PieChart"
+                        loader={<div>Loading Chart...</div>}
+                        data={[
+                            ["Country", "Deaths"],
+                            ...deaths_gchart_data
+                        ]}
+                        options={{
+                            title: "Percentage of Deaths"
+                        }}
+                        mapsApiKey='AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+                        legendToggle
+                    />
+                </GridItem>
+
                 {/* Geo Graph for Cases */}
-                <GridItem xs={12} sm={12}>
-                    <i><Typography variant="h5" gutterBottom>
+                <GridItem xs={12} sm={6}>
+                    <Typography variant="h5" gutterBottom>
                         {disease[0] + " Cases Geo Graph"}
-                    </Typography></i>
+                    </Typography>
                     <Chart
                         chartType="GeoChart"
                         loader={<div>Loading Chart</div>}
                         data={[
                             ["Country", "Cases"],
                             ...cases_gchart_data
+                        ]}
+                        options={{
+                            colorAxis: { colors: ["#FEF95D", "#F76300", "#B00000"] },
+                            backgroundColor: '#A5DEEF',
+                            datalessRegionColor: '#ffffff',
+                            defaultColor: '#f5f5f5',
+                            
+                        }}
+                        mapsApiKey='AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+                        legendToggle
+                    />
+                </GridItem>
+                {/* Geo Graph for Deaths */}
+                <GridItem xs={12} sm={6}>
+                    <Typography variant="h5" gutterBottom>
+                        {disease[0] + " Deaths Geo Graph"}
+                    </Typography>
+                    <Chart
+                        chartType="GeoChart"
+                        loader={<div>Loading Chart</div>}
+                        data={[
+                            ["Country", "Deaths"],
+                            ...deaths_gchart_data
                         ]}
                         options={{
                             colorAxis: { colors: ["#FEF95D", "#F76300", "#B00000"] },

@@ -146,8 +146,8 @@ const CreateExperience = () => {
                                     <p className={classes.cardCategoryWhite}>Share your experience/knowledge with other people!</p>
                                 </CardHeader>
                                 <CardBody>
-                                    <TextField variant="outlined" value={title} label="Title of your Post" fullWidth className={classes.cardTextField} onChange={(e) => setTitle(e.target.value)} />
-                                    <TextField variant="outlined" value={description} label="Write your post here!" fullWidth className={classes.cardTextField} multiline rows={6} onChange={(e) => setDescription(e.target.value)} />
+                                    <TextField variant="outlined" value={title} label="Title of your Post" fullWidth className={classes.cardTextField} onChange={(e) => setTitle(e.target.value)} required />
+                                    <TextField variant="outlined" value={description} label="Write your post here!" fullWidth className={classes.cardTextField} multiline rows={6} onChange={(e) => setDescription(e.target.value)} required />
                                     <br />
                                     <GridContainer>
                                         <GridItem xs={12} sm={12} md={4}>
@@ -255,14 +255,16 @@ const CreateExperience = () => {
                                         }}
                                         name="conditions"
                                     /> I AGREE
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Donec dignissim eu lectus sit amet fermentum. Vivamus eros orci,
-                                        laoreet in pharetra sed, tristique in lacus. Suspendisse justo libero,
-                                        euismod id neque a, commodo lobortis tortor. Vivamus ullamcorper, risus
-                                        at ultricies consequat, quam justo pulvinar massa, et sollicitudin quam
-                                        arcu eleifend metus. Quisque a dapibus ipsum, sit amet posuere felis. Curabitur blandit eu diam a porta.
-                                        Nulla pharetra vitae tortor vitae pharetra. Nullam imperdiet semper nulla, sit amet pulvinar arcu rutrum non.
-                                    </p>
+                                    <div>
+                                        1. No Promotions or spam <br />
+                                        <Muted>Give more than you take to the society. Self-promotion, spam, and irrelevant content are not acceptable.</Muted>
+                                        <br />
+                                        2. No Harmful Content <br />
+                                        <Muted>Do not post any content that is harmful to the community or the users.</Muted>
+                                        <br />
+                                        3. Anonmity <br/>
+                                        <Muted>If you chose to not disclose your identity with this post, </Muted>
+                                    </div>
                                     <Button type="submit" color="primary" disabled={!conditions}>Submit</Button>
                                 </CardBody>
                             </Card>

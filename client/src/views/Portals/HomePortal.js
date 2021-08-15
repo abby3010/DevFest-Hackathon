@@ -47,7 +47,7 @@ const HomePortal = () => {
                             return (
                                 <GridItem xs={12} sm={6} md={4} key={elem.link}>
                                     <Card>
-                                        <div style={{ background: '#D378E3', padding: '0.5rem 0', textAlign: 'center' }}>
+                                        <div style={{ background: '#9C27B0', color: '#FFFFFF', padding: '0.5rem 0', textAlign: 'center' }}>
                                             <h5>{elem.name}</h5>
                                         </div>
                                         <CardBody>

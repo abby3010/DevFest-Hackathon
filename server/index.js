@@ -26,10 +26,14 @@ app.use("/user", checkLoginStatus, userRouter);
 app.use("/update", checkLoginStatus, updateRouter);
 app.use("/fetchall", fetchRouter);
 
+app.get('/', (req, res) => {
+    res.send('Hello from Vaptured tError - EPINFO')
+})
+
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => app.listen(PORT, () => console.log(`Running Workosmo server on Port: http://localhost:${PORT}`)))
+    .then(() => app.listen(PORT, () => console.log(`Running Epinfo server on Port: ${PORT}`)))
     .catch((error) => console.log(`${error} did not connect`));
 
 mongoose.set('useFindAndModify', false);

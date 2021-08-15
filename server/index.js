@@ -11,6 +11,7 @@ import checkLoginStatus from './middlewares/checkLoginStatus.js';
 import userRouter from "./routes/userRoutes.js";
 import authRouter from "./routes/authRoutes.js";
 import updateRouter from "./routes/updateRoutes.js";
+import fetchRouter from "./routes/fetchAll.js";
 import { contactForm } from './routes/contactForm.js';
 
 const app = express();
@@ -23,6 +24,7 @@ app.use("/auth", authRouter);
 app.use("/contact", contactForm);
 app.use("/user", checkLoginStatus, userRouter);
 app.use("/update", checkLoginStatus, updateRouter);
+app.use("/fetchall", fetchRouter);
 
 const PORT = process.env.PORT || 5000;
 

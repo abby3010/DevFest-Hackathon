@@ -108,38 +108,39 @@ const ProfilePage = () => {
                 successNotification={successNotification}
             />
             {/*=========================================================================*/}
+            <div style={{ margin: '2rem 0' }}>
+                <GridContainer className={classes.container}>
+                    <GridItem xs={12} sm={3}></GridItem>
+                    <GridItem xs={12} sm={6} md={4}>
+                        <Card profile>
+                            <CardAvatar profile>
+                                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                                    <img src={user.imageUrl ? user.imageUrl : default_profileImage} alt="..." />
+                                </a>
+                            </CardAvatar>
+                            <CardBody profile>
+                                <h3 className={classes.cardCategory}>
+                                    {user.firstName + " " + user.lastName}
+                                </h3>
+                                <Muted>{user.city + ", " + user.region + ", " + user.country}</Muted>
 
-            <GridContainer className={classes.container}>
-                <GridItem xs={12} sm={3}></GridItem>
-                <GridItem xs={12} sm={6} md={4}>
-                    <Card profile>
-                        <CardAvatar profile>
-                            <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                                <img src={user.imageUrl ? user.imageUrl : default_profileImage} alt="..." />
-                            </a>
-                        </CardAvatar>
-                        <CardBody profile>
-                            <h3 className={classes.cardCategory}>
-                                {user.firstName + " " + user.lastName}
-                            </h3>
-                            <Muted>{user.city + ", " + user.region + ", " + user.country}</Muted>
+                            </CardBody>
+                            <CardFooter chart>
+                                <div className={classes.stats}>
+                                    <p>{user.about}</p>
+                                </div>
+                            </CardFooter>
+                        </Card>
 
-                        </CardBody>
-                        <CardFooter chart>
-                            <div className={classes.stats}>
-                            <p>{user.about}</p>
-                            </div>
-                        </CardFooter>
-                    </Card>
-
-                    <Button style={{ float: "left" }} color="rose" round onClick={() => { setEditImage(!editImage); }}>
-                        <PhotoCamera /> Edit Image
-                    </Button>
-                    <Button style={{ float: "right" }} color="rose" round onClick={() => { setEditDetails(!editDetails) }}>
-                        <EditIcon /> Edit Profile
-                    </Button>
-                </GridItem>
-            </GridContainer>
+                        <Button style={{ float: "left" }} color="rose" round onClick={() => { setEditImage(!editImage); }}>
+                            <PhotoCamera /> Edit Image
+                        </Button>
+                        <Button style={{ float: "right" }} color="rose" round onClick={() => { setEditDetails(!editDetails) }}>
+                            <EditIcon /> Edit Profile
+                        </Button>
+                    </GridItem>
+                </GridContainer>
+            </div>
         </>
     );
 

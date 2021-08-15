@@ -26,9 +26,6 @@ export const getUserProjects = (userData) => API.post('/user/getuserprojects', u
 // Creates a new project for the user
 export const createNewProject = (formData) => API.post('/user/createnewproject', formData);
 
-// Fetch a particular project with projectID and privatekey(for edit access)
-export const fetchProject = (data) => API.post('/user/fetchproject', data);
-
 // Fetch user's data for profile page
 export const fetchUserData = (data) => API.post('/user/fetchuserdata', data);
 
@@ -37,6 +34,22 @@ export const updateProfile = (data) => API.post('/update/updateprofile', data);
 export const updateProfileDetails = (data) => API.post('/update/profileDetails', data);
 export const updateProfileImage = (data) => API.post('/update/profileImage', data);
 
-// Update user's Project
-export const updateProjectDetails = (data) => API.post('/update/projectDetails', data);
-export const updateProjectDescription = (data) => API.post('/update/projectDescription', data);
+export const getCoronaDataCountrywise = async () => {
+    var options = {
+        method: 'GET',
+        url: 'https://corona-virus-world-and-india-data.p.rapidapi.com/api',
+        headers: {
+            'x-rapidapi-key': '81a9989238msh4456f74fed95fd7p11285bjsn5fd1c38f6143',
+            'x-rapidapi-host': 'corona-virus-world-and-india-data.p.rapidapi.com'
+        }
+    };
+
+    var returnData = { data: null, message: "Country wise Data not found, refresh the page" };
+    await axios.request(options).then(function (response) {
+        returnData.data = response.data;
+        returnData.message = "";
+    }).catch(function (err) {
+        console.log(err);
+    });
+    return returnData;
+}

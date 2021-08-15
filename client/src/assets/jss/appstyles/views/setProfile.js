@@ -86,54 +86,6 @@ const setProfileStyle = () => ({
     cardRadioLabel: {
         color: '#000'
     }
-    // projectName: {
-    //     color: "black",
-    //     fontWeight: "bold",
-    // },
-    // tagline: {
-    //     color: "black",
-    // },
-    // section: {
-    //     alignItems: "center",
-    //     justifyContent: "center"
-    // },
-    // newProjectBtn: {
-    //     marginLeft: "5%"
-    // },
-    // margin: {
-    //     zIndex: "4",
-    //     margin: "0"
-    // },
-    // searchWrapper: {
-    //     [theme.breakpoints.down("sm")]: {
-    //         width: "-webkit-fill-available",
-    //         margin: "10px 15px 0"
-    //     },
-    //     display: "inline-block",
-    //     float: "left",
-    // },
-
-    // datalistInput: {
-    //     marginTop: "10px",
-    //     width: "100%",
-    // },
-    // textfield: {
-    //     marginTop: "10px",
-    // },
-    // list: {
-    //     width: "100%",
-    // },
-    // listItem: {
-    //     borderRadius: 5,
-    //     border: "1px solid" + primaryColor[0],
-    //     padding: "3px 15px",
-    //     marginTop: 2,
-    // },
-    // imageLabel: {
-    //     marginTop: "10px",
-    //     fontSize: 15,
-    //     fontStyle: "bold"
-    // },
 
 });
 

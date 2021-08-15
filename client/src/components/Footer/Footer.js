@@ -9,7 +9,7 @@ import styles from "../../assets/jss/appstyles/components/footerStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function Footer(props) {
+export default function Footer() {
   const classes = useStyles();
   return (
     <footer className={classes.footer}>

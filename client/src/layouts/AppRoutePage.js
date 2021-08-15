@@ -11,7 +11,7 @@ import Sidebar from "../components/Sidebar/Sidebar.js";
 import appRoutes from "../routes/appRoutes.js";
 import styles from "../assets/jss/appstyles/layouts/userAppStyle.js";
 
-import logo from "../assets/img/logo.gif";
+import logo from "../assets/img/favicon.ico";
 
 const switchRoutes = (routes) => (
   <Switch>

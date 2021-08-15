@@ -8,18 +8,18 @@ export const createNewExperience = async (req, res) => {
 
     // Checking for compulsory fields
     if (title == null) {
-        return res.status(422).send({ message: "Project name is required!" });
+        return res.status(422).send({ message: "Experience name is required!" });
     } else if (description == null) {
-        return res.status(422).send({ message: "Project description is required!" });
+        return res.status(422).send({ message: "Experience description is required!" });
     } else if (creator_name == null) {
-        return res.status(422).send({ message: "Project tagline is required!" });
+        return res.status(422).send({ message: "Experience tagline is required!" });
     }
 
     try {
         const existingUser = await User.findById(creator_id);
         if (!existingUser) return res.status(404).json({ message: "User does not exist" });
 
-        // Creating a new project document in database
+        // Creating a new experience document in database
         const result = await Experience.create({
             title: title,
             description: description,
@@ -31,7 +31,7 @@ export const createNewExperience = async (req, res) => {
             city: city,
         });
 
-        return res.status(200).json({ message: "Project created successfully!" });
+        return res.status(200).json({ message: "Experience created successfully!" });
 
     } catch (e) {
         console.log(e);

@@ -15,18 +15,22 @@ export const login = (formData) => API.post('/auth/login', formData);
 export const signUp = (formData) => API.post('/auth/signUp', formData);
 export const googleAuth = (formData) => API.post('/auth/googleAuth', formData);
 
+// contact form route
 export const contactForm = (formData) => API.post('/contact', formData);
 
+// fetch all exps
 export const fetchAllExperiences = () => API.get('/fetchall');
 
-// Creates a new project for the user
+// create experience
 export const createNewExperience = (formData) => API.post('/user/createnewexperience', formData);
 
+// like experience
 export const likeExp = (id) => API.patch(`/user/${id}/likeExp`)
 
 // Fetch user's data for profile page
 export const fetchUserData = (data) => API.post('/user/fetchuserdata', data);
 
+// delete experience
 export const deleteExp = (id) => API.delete(`/user/${id}`)
 
 // Update the user profile
@@ -34,6 +38,7 @@ export const updateProfile = (data) => API.post('/update/updateprofile', data);
 export const updateProfileDetails = (data) => API.post('/update/profileDetails', data);
 export const updateProfileImage = (data) => API.post('/update/profileImage', data);
 
+// gets covid data
 export const getCoronaDataCountrywise = async () => {
     var options = {
         method: 'GET',

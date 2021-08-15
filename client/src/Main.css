@@ -110,10 +110,6 @@
         width: fit-content;
         margin: 0 auto;
     }
-
-    .contact{
-        padding: 2rem 0;
-    }
     
     .w-input{
         display: block;
@@ -204,8 +200,46 @@
     .home-portal{
         padding: 4rem 2rem;
     }
+
+    .background{
+        height: 90vh;
+            background-image: url('https://i.pinimg.com/originals/10/20/4e/10204e2cf94ed01b71805a97cdf1047b.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+      }
+
+      .modal {
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 5px;
+        color: #333;
+        font-family: sans-serif;
+        line-height: 1.5;
+        padding: 1rem 2rem;
+        margin-right: 10vw;
+          -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+          background-color: rgba(255, 255, 255, 0.5);  
+        }
     
     @media screen and (max-width: 1000px) {
+        .container {
+            justify-content: center;
+          }
+
+        .modal {
+            margin-right: 0;
+            padding: 0.5rem;
+            }
+
         .wrapper{
             width: 100%;
             display: block;

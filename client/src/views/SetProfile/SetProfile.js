@@ -142,8 +142,8 @@ const SetProfile = () => {
                                                     setImageUrl(null);
                                                 }} />
                                             {image ?
-                                                <img src={imageUrl ? imageUrl : URL.createObjectURL(image)} className={classes.imagePreview} alt="project-logo" />
-                                                : <img src={default_profileImage} className={classes.imagePreview} alt="project-logo" />
+                                                <img src={imageUrl ? imageUrl : URL.createObjectURL(image)} className={classes.imagePreview} alt="profile-logo" />
+                                                : <img src={default_profileImage} className={classes.imagePreview} alt="profile-logo" />
                                             }
                                             <Muted><i>Preferred: square dimensions - 400x400 or 512x512 (png, jpg, or jpeg)</i></Muted>
                                         </div>

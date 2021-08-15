@@ -27,17 +27,29 @@ const Main = () => {
                 </Typography>
                 <div className="table">
                     <ul>
-                        <li className="list-heading"><h3>Online Forum</h3></li>
+                        <li className="list-heading">
+                            <Typography variant="h5">
+                                Online Forums
+                            </Typography>
+                        </li>
                         <li>With communication everything is easier. We have created an online discussion in-site
                             forum where people can hold conversations in the form of posted messages. </li>
                     </ul>
                     <ul>
-                        <li className="list-heading"><h3>Infographics</h3></li>
+                        <li className="list-heading">
+                            <Typography variant="h5">
+                                Infographics
+                            </Typography>
+                        </li>
                         <li>Infographics are a valuable tool for visual communication. The most visually unique,
                             creative infographics are often the most effective, because they grab our attention and don’t let go.</li>
                     </ul>
                     <ul>
-                        <li className="list-heading"><h3>Epidecmics' Info</h3></li>
+                        <li className="list-heading">
+                            <Typography variant="h5">
+                                Epidemics' info
+                            </Typography>
+                        </li>
                         <li>All the data represented is astonishingly true. The past epidemic data like Ebola, Malaria, H1N1, etc.
                             have been shown through our archives. Nevertheless, the Corona related data is live and upto date. </li>
                     </ul>

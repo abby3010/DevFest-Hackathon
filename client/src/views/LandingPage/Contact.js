@@ -75,13 +75,17 @@ const Contact = () => {
                 closeNotification={() => setNotif({ open: false, message: "" })}
                 close
             />
-            <div style={{ overflowX: 'clip' }}>
+            <div style={{ overflowX: 'clip', padding: '4rem 1rem' }}>
+                <div style={{ marginBottom: '3rem' }}>
+                    <Typography variant="h4" align="center">
+                        Epidemics of the World Statistics
+                    </Typography>
+                </div>
                 <GridContainer>
                     <GridItem xs={12} sm={1}></GridItem>
                     <GridItem xs={12} sm={5}>
                         <Chart
-                            height={"400px"}
-                            width={"600px"}
+                            height={"300px"}
                             chartType="AreaChart"
                             loader={<div>Loading Chart...</div>}
                             data={[
@@ -101,9 +105,7 @@ const Contact = () => {
                     </GridItem>
                     <GridItem xs={12} sm={5}>
                         <Chart
-                            height={"400px"}
-                            width={"600px"}
-                            margin={'auto'}
+                            height={"300px"}
                             chartType="ColumnChart"
                             loader={<div>Loading Chart...</div>}
                             data={[
@@ -123,31 +125,38 @@ const Contact = () => {
                     </GridItem>
                     <GridItem xs={12} sm={1}></GridItem>
                 </GridContainer>
+                <p style={{ textAlign: 'center', color: 'grey', marginTop: '2rem' }}><i>“Transparency is critical in public health and epidemics; laypeople become either effective force-multipliers or stubborn walls.”</i></p>
             </div>
-            <div style={{ padding: '2rem 1rem 1rem 1rem' }}>
-                <Typography variant="h3" align="center">
-                    Contact
-                </Typography>
-                <form id="my-form" onSubmit={handleSubmit}>
-                    <div>
-                        <div>
+
+            <div className="background">
+                <div class="container">
+                    <div class="modal">
+                        <form id="my-form" onSubmit={handleSubmit}>
+                            <Typography variant="h3" align="center">
+                                Contact
+                            </Typography>
                             <div>
-                                <label>Name *</label>
-                                <input type="text" className="w-input" onChange={handleNameChange} name="Name" id="Name" required />
+                                <div>
+                                    <div>
+                                        <label style={{ color: 'black' }}>Name *</label>
+                                        <input type="text" className="w-input" onChange={handleNameChange} name="Name" id="Name" required />
+                                    </div>
+                                    <div>
+                                        <label style={{ color: 'black' }}>Email *</label>
+                                        <input type="email" className="w-input" onChange={handleEmailChange} name="Email" id="Email" required />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label style={{ color: 'black' }}>Message *</label>
+                                    <textarea name="Message" id="Message" onChange={handleMessageChange} className="w-textarea" required></textarea>
+                                </div>
+                                <input type="submit" value="SUBMIT" data-wait="Please wait..." className="submit-button" />
                             </div>
-                            <div>
-                                <label>Email *</label>
-                                <input type="email" className="w-input" onChange={handleEmailChange} name="Email" id="Email" required />
-                            </div>
-                        </div>
-                        <div>
-                            <label>Message *</label>
-                            <textarea name="Message" id="Message" onChange={handleMessageChange} className="w-textarea" required></textarea>
-                        </div>
-                        <input type="submit" value="SUBMIT" data-wait="Please wait..." className="submit-button" />
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
+
         </div>
     )
 }

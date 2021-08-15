@@ -40,7 +40,6 @@ export const appRoutes = () => {
 
   return ([
 
-    // Project routes
     {
       path: "/portals",
       name: "Portals",

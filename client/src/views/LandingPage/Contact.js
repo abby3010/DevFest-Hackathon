@@ -3,9 +3,9 @@ import Typography from '@material-ui/core/Typography';
 import * as api from '../../api/index';
 import AddAlert from "@material-ui/icons/AddAlert";
 import Snackbar from "../../components/Snackbar/Snackbar.js";
+import Chart from 'react-google-charts';
 import GridContainer from '../../components/Grid/GridContainer';
 import GridItem from '../../components/Grid/GridItem';
-import Chart from 'react-google-charts';
 
 const Contact = () => {
 
@@ -75,9 +75,9 @@ const Contact = () => {
                 closeNotification={() => setNotif({ open: false, message: "" })}
                 close
             />
-            <div style={{overflowX: 'clip'}}>
+            <div style={{ overflowX: 'clip' }}>
                 <GridContainer>
-                <GridItem xs={12} sm={1}></GridItem>
+                    <GridItem xs={12} sm={1}></GridItem>
                     <GridItem xs={12} sm={5}>
                         <Chart
                             height={"400px"}
@@ -128,6 +128,25 @@ const Contact = () => {
                 <Typography variant="h3" align="center">
                     Contact
                 </Typography>
+                <form id="my-form" onSubmit={handleSubmit}>
+                    <div>
+                        <div>
+                            <div>
+                                <label>Name *</label>
+                                <input type="text" className="w-input" onChange={handleNameChange} name="Name" id="Name" required />
+                            </div>
+                            <div>
+                                <label>Email *</label>
+                                <input type="email" className="w-input" onChange={handleEmailChange} name="Email" id="Email" required />
+                            </div>
+                        </div>
+                        <div>
+                            <label>Message *</label>
+                            <textarea name="Message" id="Message" onChange={handleMessageChange} className="w-textarea" required></textarea>
+                        </div>
+                        <input type="submit" value="SUBMIT" data-wait="Please wait..." className="submit-button" />
+                    </div>
+                </form>
             </div>
         </div>
     )

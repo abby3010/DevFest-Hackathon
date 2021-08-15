@@ -27,25 +27,19 @@ const Main = () => {
                 </Typography>
                 <div className="table">
                     <ul>
-                        <li className="list-heading">Lorem Ipsum</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                            optio, eaque rerum!</li>
+                        <li className="list-heading"><h3>Online Forum</h3></li>
+                        <li>With communication everything is easier. We have created an online discussion in-site
+                            forum where people can hold conversations in the form of posted messages. </li>
                     </ul>
                     <ul>
-                        <li className="list-heading">Lorem Ipsum</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                            optio, eaque rerum!</li>
+                        <li className="list-heading"><h3>Infographics</h3></li>
+                        <li>Infographics are a valuable tool for visual communication. The most visually unique,
+                            creative infographics are often the most effective, because they grab our attention and don’t let go.</li>
                     </ul>
                     <ul>
-                        <li className="list-heading">Lorem Ipsum</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                            optio, eaque rerum!</li>
+                        <li className="list-heading"><h3>Epidecmics' Info</h3></li>
+                        <li>All the data represented is astonishingly true. The past epidemic data like Ebola, Malaria, H1N1, etc.
+                            have been shown through our archives. Nevertheless, the Corona related data is live and upto date. </li>
                     </ul>
                 </div>
                 <div style={{ textAlign: 'center' }}>

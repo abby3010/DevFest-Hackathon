@@ -171,10 +171,10 @@ const ProfilePage = () => {
                                     </CardFooter>
                                 </Card>
 
-                                <Button color="rose" className={classes.button} onClick={() => { setEditImage(!editImage); }}>
+                                <Button color="rose" round className={classes.button} onClick={() => { setEditImage(!editImage); }}>
                                     <PhotoCamera /> Edit Image
                                 </Button>
-                                <Button color="rose" className={classes.button} onClick={() => { setEditDetails(!editDetails) }}>
+                                <Button color="rose" round className={classes.button} onClick={() => { setEditDetails(!editDetails) }}>
                                     <EditIcon /> Edit Profile
                                 </Button>
                                 <br />
@@ -204,7 +204,6 @@ const ProfilePage = () => {
                                                         <Typography variant="subtitle1" gutterBottom>
                                                             {exp.description}
                                                         </Typography>
-                                                        {/* <img src={exp.imageURL} alt={exp.title} className={classes.img}></img> */}
                                                         <Divider />
                                                     </CardBody>
                                                     <CardFooter>
@@ -213,7 +212,7 @@ const ProfilePage = () => {
                                                 </Card>
                                             </GridItem>
                                         )
-                                    }) : <p style={{ padding: '2rem', textAlign: 'center' }}>Your posts appear here!</p>
+                                    }) : <h5 style={{ padding: '2rem', textAlign: 'center' }}>Your posts will appear here!</h5>
                             }
                         </GridContainer>
                     </GridItem>
@@ -221,7 +220,6 @@ const ProfilePage = () => {
             </div>
         </>
     );
-
 }
 
 export default ProfilePage;

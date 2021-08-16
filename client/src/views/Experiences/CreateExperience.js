@@ -87,29 +87,29 @@ const CreateExperience = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        var formData = new FormData();
 
-        formData.append("title", title);
-        formData.append("description", description);
-        formData.append("country", country ? country : user.country);
-        formData.append("region", region ? region : user.region);
-        formData.append("city", city ? city : user.city);
-        formData.append("category", category);
-        formData.append("creator_id", localUser.result.uid);
-        formData.append("creator_name", isAnonymous ? generateName() : fullName);
-
+        var formData = {
+            "title" : title,
+            "description" : description,
+            "country": country ? country : user.country,
+            "region": region ? region : user.region,
+            "city": city ? city : user.city,
+            "category" : category,
+            "creator_id": localUser.result.uid,
+            "creator_name": isAnonymous ? generateName() : fullName
+        }
         api.createNewExperience(formData)
             .then(function (response) {
                 setNotif({ open: true, color: "success", message: response.data.message + ' Redirecting you!' });
                 setTimeout(function () {
                     setNotif({ open: false, message: "" });
                 }, 5000);
-                setTimeout(function(){
+                setTimeout(function () {
                     history.push("/app/forum");
-               }, 2000);
+                }, 2000);
             })
             .catch(function (error) {
-                var response = error.response.data;
+                var response = error?.response.data;
                 setNotif({ open: true, color: "danger", message: "Post not created! " + response.message });
                 setTimeout(function () {
                     setNotif({ open: false, message: "" });
@@ -132,9 +132,9 @@ const CreateExperience = () => {
                     close
                 />
                 <GridContainer >
-                    <GridItem xs={12} sm={1}></GridItem>
+                    <GridItem xs={12} sm={2}></GridItem>
                     <GridItem xs={12} sm={10}>
-                        <form onSubmit={handleSubmit}>
+                        <form style={{ padding: 0, margin: 0 }} onSubmit={handleSubmit}>
 
                             {/* Title and desciption card  */}
                             <Card>
@@ -144,7 +144,7 @@ const CreateExperience = () => {
                                 </CardHeader>
                                 <CardBody>
                                     <TextField variant="outlined" value={title} label="Title of your Post" fullWidth className={classes.cardTextField} onChange={(e) => setTitle(e.target.value)} required />
-                                    <TextField variant="outlined" value={description} label="Write your post here!" fullWidth className={classes.cardTextField} multiline rows={6} onChange={(e) => setDescription(e.target.value)} required />
+                                    <TextField variant="outlined" value={description} label="Write your post here!" fullWidth className={classes.cardTextField} multiline onChange={(e) => setDescription(e.target.value)} required />
                                     <br />
 
                                     <div style={{ margin: '1rem 0' }}>
@@ -216,7 +216,7 @@ const CreateExperience = () => {
                                         2. No Harmful Content <br />
                                         <Muted>Do not post any content that is harmful to the community or the users.</Muted>
                                         <br />
-                                        3. Anonmity <br/>
+                                        3. Anonmity <br />
                                         <Muted>If you chose to not disclose your identity with this post, your name will not be visible to the readers! </Muted>
                                     </div>
                                     <Button type="submit" color="primary" disabled={!conditions}>Submit</Button>

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: "http://localhost:5000", });
+const API = axios.create({ baseURL: "https://epinfo-vt.herokuapp.com", });
 
 API.interceptors.request.use(function (req) {
     let storage = localStorage.getItem('profile');

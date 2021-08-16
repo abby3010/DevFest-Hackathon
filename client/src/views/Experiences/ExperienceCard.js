@@ -20,8 +20,6 @@ const ExperienceCard = ({ exp }) => {
 
     const [isLiked, setIsLiked] = useState(exp.likes.find((like) => like === (user?.result?.privateKey)) ? true : false)
 
-    console.log(isLiked)
-
     function timeConverter(timestamp) {
         var a = new Date(timestamp);
         var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];

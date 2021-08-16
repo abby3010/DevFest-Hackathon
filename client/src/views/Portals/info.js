@@ -1,5 +1,10 @@
 export const info = [
     {
+        name: 'Covid-19',
+        link: '/app/portal/covid19',
+        para1: "Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness."
+    },
+    {
         name: 'Cholera',
         link: '/app/portal/cholera',
         para1: "Cholera can be endemic or epidemic. A cholera-endemic area is an area where confirmed cholera cases were detected during the last 3 years with evidence of local transmission. Cholera is an acute diarrhoeal infection caused by ingestion of food or water contaminated with the bacterium Vibrio cholerae. Cholera remains a global threat to public health and an indicator of inequity and lack of social development."
@@ -24,9 +29,5 @@ export const info = [
         link: '/app/portal/ebola',
         para1: "Ebola Virus Disease (EVD) is a rare and deadly disease in people and nonhuman primates. The viruses that cause EVD are located mainly in sub-Saharan Africa. People can get EVD through direct contact with an infected being. The virus first spreads to people through direct contact with the blood, body fluids and tissues of animals and then spreads to other people through direct contact with body fluids of a person who is sick with or has died from EVD."
     },
-    {
-        name: 'COVID-19',
-        link: '/app/portal/covid19',
-        para1: "Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness."
-    }
+    
 ]

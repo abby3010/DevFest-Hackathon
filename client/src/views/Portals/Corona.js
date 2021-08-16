@@ -12,7 +12,7 @@ import Snackbar from "../../components/Snackbar/Snackbar.js";
 import Muted from "../../components/Typography/Muted.js";
 
 import { getCoronaDataCountrywise } from '../../api';
-import { Divider, Typography } from '@material-ui/core';
+import { CircularProgress, Divider, Typography } from '@material-ui/core';
 
 export default function CoronaPortal() {
     const [notif, setNotif] = useState({ open: false, message: "", color: "info" });
@@ -23,12 +23,12 @@ export default function CoronaPortal() {
     const [totalCases, setTotalCases] = useState();
     const [totalDeaths, setTotalDeath] = useState();
     const [totalRecoveredCases, setTotalRecoveredCases] = useState();
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchData = async () => {
             let response = await getCoronaDataCountrywise();
             if (response.data !== null) {
-                console.log(response.data);
                 setCountrywiseData(response.data);
                 setActiveCases(response.data.world_total.active_cases);
                 setNewCases(response.data.world_total.new_cases);
@@ -36,8 +36,10 @@ export default function CoronaPortal() {
                 setTotalCases(response.data.world_total.total_cases);
                 setTotalDeath(response.data.world_total.total_deaths);
                 setTotalRecoveredCases(response.data.world_total.total_recovered);
+                setIsLoading(false);
             } else {
                 errorNotification(response.message);
+                setIsLoading(false);
             }
         }
         fetchData();
@@ -133,7 +135,7 @@ export default function CoronaPortal() {
                                     <h4>Active Cases</h4>
                                 </CardHeader>
                                 <CardBody>
-                                    <p>{activeCases}</p>
+                                    {isLoading ? <CircularProgress /> : <p>{activeCases}</p>}
                                 </CardBody>
                             </Card>
                         </GridItem>
@@ -144,7 +146,7 @@ export default function CoronaPortal() {
                                     <h4>New Cases</h4>
                                 </CardHeader>
                                 <CardBody>
-                                    <p>{newCases}</p>
+                                    {isLoading ? <CircularProgress /> : <p>{newCases}</p>}
                                 </CardBody>
                             </Card>
                         </GridItem>
@@ -154,7 +156,7 @@ export default function CoronaPortal() {
                                     <h4>New Deaths</h4>
                                 </CardHeader>
                                 <CardBody>
-                                    <p>{newDeaths}</p>
+                                    {isLoading ? <CircularProgress /> : <p>{newDeaths}</p>}
                                 </CardBody>
                             </Card>
                         </GridItem>
@@ -164,7 +166,7 @@ export default function CoronaPortal() {
                                     <h4>Total Recovered</h4>
                                 </CardHeader>
                                 <CardBody>
-                                    <p>{totalRecoveredCases}</p>
+                                    {isLoading ? <CircularProgress /> : <p>{totalRecoveredCases}</p>}
                                 </CardBody>
                             </Card>
                         </GridItem>
@@ -174,7 +176,7 @@ export default function CoronaPortal() {
                                     <h4>Total Cases</h4>
                                 </CardHeader>
                                 <CardBody>
-                                    <p>{totalCases}</p>
+                                    {isLoading ? <CircularProgress /> : <p>{totalCases}</p>}
                                 </CardBody>
                             </Card>
                         </GridItem>
@@ -185,7 +187,7 @@ export default function CoronaPortal() {
                                     <h4>Total Deaths</h4>
                                 </CardHeader>
                                 <CardBody>
-                                    <p>{totalDeaths}</p>
+                                    {isLoading ? <CircularProgress /> : <p>{totalDeaths}</p>}
                                 </CardBody>
                             </Card>
                         </GridItem>

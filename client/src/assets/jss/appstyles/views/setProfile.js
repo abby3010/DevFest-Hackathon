@@ -6,7 +6,8 @@ import {
 
 const setProfileStyle = () => ({
     root: {
-        margin: "0 20px !important",
+        margin: "0px 0px !important",
+        padding: "0px !important"
     },
     image: {
         display: "grid",

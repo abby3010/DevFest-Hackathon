@@ -14,7 +14,6 @@ export const contactForm = async (req, res) => {
         if (req.body.message == null)
             return res.status(404).json({ message: "Please add your message for us!", success: false });
 
-        console.log(req.body.message);
         await Contacts.create({
             name: req.body.name,
             email: req.body.email,

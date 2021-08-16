@@ -7,6 +7,7 @@ import './Main.css';
 import UserApp from './layouts/AppRoutePage';
 import SetProfile from './views/SetProfile/SetProfile';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { PageNotFound } from './views/PageNotFound/404PageNotFound';
 
 
 const font = "'Questrial', sans-serif";
@@ -23,10 +24,11 @@ function App() {
       <MuiThemeProvider theme={theme}>
         <Suspense fallback={<div>Loading...</div>}>
           <Switch>
-            <Route path="/" exact component={LandingPage} />
-            <Route path="/auth" component={Auth} />
+            <Route exact path="/" component={LandingPage} />
+            <Route exact path="/auth" component={Auth} />
             <Route path="/app" component={UserApp} />
-            <Route path="/setProfile" exact component={SetProfile} />
+            <Route exact path="/setProfile" component={SetProfile} />
+            <Route path="" component={PageNotFound} />
           </Switch>
         </Suspense>
       </MuiThemeProvider>

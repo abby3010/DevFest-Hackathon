@@ -38,7 +38,7 @@ export const googleAuth = (formData, history) => async (dispatch) => {
         if (data.newUser) {
             history.push("/setProfile");
         } else {
-            history.push('/app');
+            history.push('/app/portals');
         }
     } catch (error) {
         console.log(error);

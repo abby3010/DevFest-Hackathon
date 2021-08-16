@@ -5,6 +5,7 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import HealingIcon from '@material-ui/icons/Healing';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
+import BarChartIcon from '@material-ui/icons/BarChart';
 // core components/views for App layout
 import ProfilePage from "../views/ProfilePage/Profile.js";
 import DiseaseInfo from '../views/DiseaseInfo/DiseaseInfo.js';
@@ -20,7 +21,9 @@ import AllExperiences from '../views/Experiences/AllExperiences.js';
 import ForumIcon from '@material-ui/icons/Forum';
 import HIVPortal from '../views/Portals/HIVAIDS.js';
 import CoronaPortal from '../views/Portals/Corona.js';
+import HealthStats from '../views/HealthStats/HealthStats.js';
 import { AppPageNotFound } from '../views/PageNotFound/404AppPageNotFound';
+
 export const appRoutes = () => {
 
   var loggedIn = localStorage.getItem('profile');
@@ -62,6 +65,14 @@ export const appRoutes = () => {
       name: "Forum",
       icon: ForumIcon,
       component: AllExperiences,
+      layout: "/app",
+      showInDrawer: true,
+    },
+    {
+      path: "/health",
+      name: "Health Stats",
+      icon: BarChartIcon,
+      component: HealthStats,
       layout: "/app",
       showInDrawer: true,
     },

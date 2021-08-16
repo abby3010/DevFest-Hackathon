@@ -1,3 +1,17 @@
+.dis-car::-webkit-scrollbar {
+    width: 0.2rem;
+    height: 2rem;
+}
+
+.dis-car::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.dis-car::-webkit-scrollbar-thumb {
+    background: #dbdbdb;
+    border-radius: 0;
+}
+
 .landing{
     background-color: white;
 }

@@ -88,7 +88,7 @@ const DiseaseInfo = () => {
                                     <div style={{ background: '#008DC9', color: '#FFFFFF', padding: '0.5rem 0' }}>
                                         <Typography variant="h6" align="center">{key[1]}</Typography>
                                     </div>
-                                    <CardBody>
+                                    <CardBody className="dis-car" style={{height: '300px', overflowY: 'auto'}}>
                                         <Muted>Description</Muted>
                                         {key[7]}
                                         <br />

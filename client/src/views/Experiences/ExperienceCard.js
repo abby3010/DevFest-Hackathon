@@ -46,7 +46,7 @@ const ExperienceCard = ({ exp }) => {
                     </div>
                 </CardHeader>
                 <CardBody key={exp._id}>
-                    <Typography variant="subtitle1" gutterBottom>
+                    <Typography variant="subtitle1" gutterBottom style={{whiteSpace: "pre-line"}}>
                         {exp.description}
                     </Typography>
                     <i><p style={{ marginTop: '10px', color: 'grey', textAlign: 'right' }}>{`- ${exp.creator_name}`}</p></i>

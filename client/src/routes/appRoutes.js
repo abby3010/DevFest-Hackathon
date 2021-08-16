@@ -24,13 +24,9 @@ import CoronaPortal from '../views/Portals/Corona.js';
 import HealthStats from '../views/HealthStats/HealthStats.js';
 import { AppPageNotFound } from '../views/PageNotFound/404AppPageNotFound';
 
-export const appRoutes = () => {
+export const appRoutes = (props) => {
 
   var loggedIn = localStorage.getItem('profile');
-
-  if (loggedIn === null) {
-
-  }
 
   var portalsList = [
     { name: "COVID19", path: '/app/portal/corona' },
@@ -161,11 +157,11 @@ export const appRoutes = () => {
     },
 
     {
-      path: "",
-      name: "",
+      path: "pagenotfound",
+      name: "Page not found",
       icon: null,
       component: AppPageNotFound,
-      layout: "/app",
+      layout: null,
       showInDrawer: false,
     },
 

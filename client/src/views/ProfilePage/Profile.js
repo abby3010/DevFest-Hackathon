@@ -21,7 +21,7 @@ import CardFooter from "../../components/Card/CardFooter.js";
 import Divider from '@material-ui/core/Divider';
 
 import { useDispatch } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { Redirect, useHistory } from 'react-router-dom';
 import { deleteExp } from '../../redux/auth/actions/post.js';
 
 import * as api from '../../api/index';
@@ -42,13 +42,17 @@ const ProfilePage = () => {
     const [editDetails, setEditDetails] = useState(false);
     const [editImage, setEditImage] = useState(false);
 
+
+
     // State Variables
     const [user, setUser] = useState({
-        firstName: localUser.result.firstName,
-        lastName: localUser.result.lastName,
+        firstName: localUser?.result.firstName,
+        lastName: localUser?.result.lastName,
     });
 
     const [exps, setExps] = useState([]);
+
+
 
     useEffect(() => {
         api.fetchAllExperiences()
@@ -67,7 +71,7 @@ const ProfilePage = () => {
     }, []);
 
     useEffect(() => {
-        api.fetchUserData({ uid: localUser.result.uid, privateKey: localUser.result.privateKey })
+        api.fetchUserData({ uid: localUser?.result.uid, privateKey: localUser?.result.privateKey })
             .then((response) => {
                 setUser(response.data.user);
             })
@@ -79,8 +83,12 @@ const ProfilePage = () => {
                 }, 5000);
             });
 
-    }, [localUser.result.uid, localUser.result.privateKey]);
+    }, [localUser?.result.uid, localUser?.result.privateKey]);
 
+    if (localUser === null) {
+        return <Redirect to="/auth" />;
+    }
+    
     const errorNotification = (error) => {
         var response = error.response?.data;
         setNotif({ open: true, color: "danger", message: response?.message ? response.message : "Something went wrong!" });

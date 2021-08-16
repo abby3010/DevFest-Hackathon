@@ -23,8 +23,10 @@ export default function Header(props) {
     var name;
     props.routes.map(prop => {
       if (window.location.href.indexOf(prop.layout + prop.path) !== -1) {
+        console.log(prop.name, "sdjfnsdkjfn")
         name = prop.name;
       }
+      
       return null;
     });
     return name;
@@ -45,7 +47,7 @@ export default function Header(props) {
             {makeBrand()}
           </Typography>
         </div>
-        
+
         <Hidden mdUp implementation="css">
           <IconButton
             color="inherit"

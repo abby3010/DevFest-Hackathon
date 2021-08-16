@@ -20,7 +20,7 @@ import Card from "../../components/Card/Card.js";
 import CardBody from "../../components/Card/CardBody.js";
 import CardHeader from "../../components/Card/CardHeader.js";
 import Muted from "../../components/Typography/Muted.js";
-import { useHistory } from 'react-router-dom';
+import { Redirect, useHistory } from 'react-router-dom';
 
 import * as api from '../../api/index';
 
@@ -54,13 +54,15 @@ const CreateExperience = () => {
     // const [loading, setLoading] = useState(false);
 
     const localUser = JSON.parse(localStorage.getItem("profile"));
+
+
     const [user, setUser] = useState({
-        firstName: localUser.result.firstName,
-        lastName: localUser.result.lastName,
+        firstName: localUser?.result.firstName,
+        lastName: localUser?.result.lastName,
     });
 
     useEffect(() => {
-        api.fetchUserData({ uid: localUser.result.uid, privateKey: localUser.result.privateKey })
+        api.fetchUserData({ uid: localUser?.result.uid, privateKey: localUser?.result.privateKey })
             .then((response) => {
                 setUser(response.data.user);
             })
@@ -72,7 +74,7 @@ const CreateExperience = () => {
                 }, 5000);
             });
 
-    }, [localUser.result.uid, localUser.result.privateKey]);
+    }, [localUser?.result.uid, localUser?.result.privateKey]);
 
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
@@ -89,12 +91,12 @@ const CreateExperience = () => {
         e.preventDefault();
 
         var formData = {
-            "title" : title,
-            "description" : description,
+            "title": title,
+            "description": description,
             "country": country ? country : user.country,
             "region": region ? region : user.region,
             "city": city ? city : user.city,
-            "category" : category,
+            "category": category,
             "creator_id": localUser.result.uid,
             "creator_name": isAnonymous ? generateName() : fullName
         }
@@ -116,6 +118,10 @@ const CreateExperience = () => {
                 }, 5000);
             });
 
+    }
+
+    if (localUser === null) {
+        return <Redirect to="/auth" />;
     }
 
     return (
@@ -195,8 +201,6 @@ const CreateExperience = () => {
                             {/* Accept Policy Card  */}
                             <Card>
                                 <CardBody>
-                                    {/* {loading ? <LinearProgress /> : null} */}
-
                                     <Checkbox
                                         checked={conditions}
                                         tabIndex={-1}

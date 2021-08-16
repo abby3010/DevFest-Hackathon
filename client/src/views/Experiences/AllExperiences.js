@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import * as api from '../../api/index';
-import { Typography } from "@material-ui/core";
+import { CircularProgress, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "../../components/Grid/GridContainer.js";
 import GridItem from "../../components/Grid/GridItem.js";
@@ -8,6 +8,8 @@ import Button from '../../components/CustomButtons/Button';
 import { CountryDropdown } from 'react-country-region-selector';
 import Pagination from '@material-ui/lab/Pagination';
 import ExperienceCard from './ExperienceCard';
+import Snackbar from "../../components/Snackbar/Snackbar.js";
+import AddAlert from "@material-ui/icons/AddAlert";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -45,16 +47,18 @@ const AllExperiences = () => {
     const [notif, setNotif] = useState({ open: false, message: "", color: "info" });
     const [exps, setExps] = useState([]);
     const [sort, setSort] = useState('');
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         api.fetchAllExperiences()
             .then((response) => {
                 setExps(response.data);
+                setLoading(false);
             })
             .catch((error) => {
                 var response = error.response?.data;
                 console.error(error)
-                setNotif({ open: true, color: "danger", message: response?.message });
+                setNotif({ open: true, color: "danger", message: response?.message ?? "Something went wrong" });
                 setTimeout(function () {
                     setNotif({ open: false, message: "" });
                 }, 5000);
@@ -77,7 +81,7 @@ const AllExperiences = () => {
     // get current disease
     const indexOfLastPost = currentPage * dataPerPage;
     const indexOfFirstPost = indexOfLastPost - dataPerPage;
-    const currentData = expList.slice(indexOfFirstPost, indexOfLastPost);
+    const currentData = expList?.slice(indexOfFirstPost, indexOfLastPost);
 
     const handleChange = (event, value) => {
         setCurrentPage(value);
@@ -85,6 +89,15 @@ const AllExperiences = () => {
 
     return (
         <div>
+            <Snackbar
+                place="tr"
+                color={notif.color}
+                icon={AddAlert}
+                message={notif.message}
+                open={notif.open}
+                closeNotification={() => setNotif({ open: false, message: "" })}
+                close
+            />
             <GridContainer>
                 <GridItem xs={12} sm={3}>
                     <div style={{ margin: '2rem 0' }}>
@@ -97,7 +110,7 @@ const AllExperiences = () => {
                 </GridItem>
                 <GridItem xs={12} sm={9}>
                     <GridContainer>
-                        {
+                        {loading ? <CircularProgress align="center"/> :
                             currentData
                                 ? currentData.map((exp, val) => {
                                     return (

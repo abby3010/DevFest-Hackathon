@@ -12,29 +12,27 @@ import { Typography } from '@material-ui/core';
 
 const HealthStats = () => {
 
-    const [countryMalaria, setCountryMalaria] = useState('Afghanistan')
-    const [countryTB, setCountryTB] = useState('Afghanistan')
-    const [countryLifeExp, setCountryLifeExp] = useState('Afghanistan')
-    const [countryMatMor, setCountryMatMor] = useState('Afghanistan')
+    const [countryMalaria, setCountryMalaria] = useState('India')
+    const [countryTB, setCountryTB] = useState('India')
+    const [countryLifeExp, setCountryLifeExp] = useState('India')
+    const [countryMatMor, setCountryMatMor] = useState('India')
 
     const SelectMenu = ({ countryList, country, setCountry, text }) => {
         return (
-            <>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <Typography variant="h5" gutterBottom>
-                        {text}
-                    </Typography>
-                    <Select size="small" variant='outlined' value={country} onChange={(e) => setCountry(e.target.value)}>
-                        {
-                            countryList.map((elem) => {
-                                return (
-                                    <MenuItem value={elem["country"]}>{elem["country"]}</MenuItem>
-                                )
-                            })
-                        }
-                    </Select>
-                </div>
-            </>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <Typography variant="h5" gutterBottom>
+                    {text}
+                </Typography>
+                <Select size="small" variant='outlined' value={country} onChange={(e) => setCountry(e.target.value)}>
+                    {
+                        countryList.map((elem) => {
+                            return (
+                                <MenuItem key={elem["country"]} value={elem["country"]}>{elem["country"]}</MenuItem>
+                            )
+                        })
+                    }
+                </Select>
+            </div>
         )
     }
 

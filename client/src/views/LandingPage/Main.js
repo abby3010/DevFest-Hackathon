@@ -7,7 +7,7 @@ const Main = () => {
         <>
             <main className="wrapper">
                 <div className="image">
-                    <img src={vec} alt="im"></img>
+                    <img src={vec} alt="homeimage"></img>
                 </div>
                 <div>
                     <div className="title">

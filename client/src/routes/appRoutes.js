@@ -20,7 +20,7 @@ import AllExperiences from '../views/Experiences/AllExperiences.js';
 import ForumIcon from '@material-ui/icons/Forum';
 import HIVPortal from '../views/Portals/HIVAIDS.js';
 import CoronaPortal from '../views/Portals/Corona.js';
-
+import { AppPageNotFound } from '../views/PageNotFound/404AppPageNotFound';
 export const appRoutes = () => {
 
   var loggedIn = localStorage.getItem('profile');
@@ -147,6 +147,15 @@ export const appRoutes = () => {
       component: Auth,
       layout: "/",
       showInDrawer: true,
+    },
+
+    {
+      path: "",
+      name: "",
+      icon: null,
+      component: AppPageNotFound,
+      layout: "/app",
+      showInDrawer: false,
     },
 
   ]);

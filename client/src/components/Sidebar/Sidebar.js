@@ -109,7 +109,6 @@ export default function Sidebar(props) {
       <a
         href="/"
         className={classNames(classes.logoLink)}
-        target="_blank"
       >
         <div className={classes.logoImage}>
           <img src={logo} alt="logo" className={classes.img} />

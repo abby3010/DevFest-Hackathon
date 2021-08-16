@@ -4,8 +4,6 @@ import mongoose from 'mongoose';
 export const likeExp = async (req, res) => {
     const { id } = req.params;
 
-    // console.log(id);
-
     if (!req.userId) {
         return res.json({ message: "Unauthenticated" });
       }
